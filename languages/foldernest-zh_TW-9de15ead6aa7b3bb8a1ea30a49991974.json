@@ -1,0 +1,32 @@
+{
+    "translation-revision-date": "2026-10-01T10:20:55+00:00",
+    "generator": "FolderNest i18n-build",
+    "domain": "foldernest",
+    "locale_data": {
+        "foldernest": {
+            "": {
+                "domain": "foldernest",
+                "lang": "zh_TW",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Load failed": [
+                "載入失敗"
+            ],
+            "Save failed": [
+                "儲存失敗"
+            ],
+            "Loading…": [
+                "載入中…"
+            ],
+            "No media is directly attached to this post (featured image included).": [
+                "此文章沒有直接附屬的媒體（含精選圖片）。"
+            ],
+            "— Unassigned —": [
+                "— 未分類 —"
+            ],
+            "Media folders": [
+                "媒體資料夾"
+            ]
+        }
+    }
+}

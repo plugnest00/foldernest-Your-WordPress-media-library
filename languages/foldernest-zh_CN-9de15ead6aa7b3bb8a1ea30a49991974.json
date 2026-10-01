@@ -1,0 +1,32 @@
+{
+    "translation-revision-date": "2026-10-01T10:20:55+00:00",
+    "generator": "FolderNest i18n-build",
+    "domain": "foldernest",
+    "locale_data": {
+        "foldernest": {
+            "": {
+                "domain": "foldernest",
+                "lang": "zh_CN",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Load failed": [
+                "加载失败"
+            ],
+            "Save failed": [
+                "保存失败"
+            ],
+            "Loading…": [
+                "加载中…"
+            ],
+            "No media is directly attached to this post (featured image included).": [
+                "此文章没有直接附属的媒体（含精选图片）。"
+            ],
+            "— Unassigned —": [
+                "— 未分类 —"
+            ],
+            "Media folders": [
+                "媒体文件夹"
+            ]
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "translation-revision-date": "2026-10-01T10:20:55+00:00",
+    "generator": "FolderNest i18n-build",
+    "domain": "foldernest",
+    "locale_data": {
+        "foldernest": {
+            "": {
+                "domain": "foldernest",
+                "lang": "zh_CN",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Unused media is now filtered. Review it, then delete with \"Delete permanently\" in the bulk bar.": [
+                "已筛选出未使用媒体。确认后用批量列的\"永久删除\"删除。"
+            ],
+            "Will rescan all site references (about 10–30 seconds), then permanently delete all %d unused media.\nFiles will be removed. This cannot be undone!\n\nContinue?": [
+                "将先重新扫描全站引用（约 10–30 秒），再「永久删除」全部 %d 个未被引用的媒体。\n文件会一并移除，无法复原！\n\n确定继续吗？"
+            ],
+            "Rescanning site references…": [
+                "正在重新扫描全站引用…"
+            ],
+            "Rescanning site references… %1$d \/ %2$d": [
+                "正在重新扫描全站引用… %1$d \/ %2$d"
+            ],
+            "Loading…": [
+                "加载中…"
+            ],
+            "Great! No images are missing alt text.": [
+                "太好了！没有缺替代文字的图片。"
+            ],
+            "Alt text…": [
+                "替代文字…"
+            ],
+            "Load failed: %s": [
+                "加载失败：%s"
+            ],
+            "Filled %d empty fields from filenames.": [
+                "已依文件名填入 %d 个空栏。"
+            ],
+            "Nothing to fill — every field already has text.": [
+                "没有可填的栏位——每栏都已有文字。"
+            ],
+            "All fields restored to their original values.": [
+                "所有栏位已还原原值。"
+            ],
+            "No alt text was filled in.": [
+                "没有填写任何替代文字。"
+            ],
+            "Operation failed.": [
+                "操作失败。"
+            ],
+            "Folder structure exported.": [
+                "已导出文件夹结构。"
+            ],
+            "Export failed: %s": [
+                "导出失败：%s"
+            ],
+            "Paste the exported JSON first.": [
+                "请先贴上导出的 JSON。"
+            ],
+            "Invalid JSON. Please check the content.": [
+                "JSON 格式错误，请确认内容。"
+            ],
+            "No other folder plugins with folder data were detected.": [
+                "没有侦测到其他含文件夹数据的插件。"
+            ],
+            "%d folders": [
+                "%d 个文件夹"
+            ],
+            "Import": [
+                "导入结构"
+            ],
+            "Imported": [
+                "已导入"
+            ]
+        }
+    }
+}

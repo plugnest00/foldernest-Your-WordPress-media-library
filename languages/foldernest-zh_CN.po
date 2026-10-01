@@ -1,0 +1,1075 @@
+# FolderNest 简体中文.
+msgid ""
+msgstr ""
+"Project-Id-Version: FolderNest 2.4.1\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Processing…"
+msgstr "处理中…"
+
+msgid "Invalid server response. Please reload the page."
+msgstr "服务器响应格式错误，请重新加载页面。"
+
+msgid "Operation failed."
+msgstr "操作失败。"
+
+msgid "Total media"
+msgstr "媒体总数"
+
+msgid "Folders"
+msgstr "文件夹"
+
+msgid "Unassigned"
+msgstr "未分类"
+
+msgid "In use"
+msgstr "使用中"
+
+msgid "Unused"
+msgstr "未被引用"
+
+msgid "Not scanned"
+msgstr "尚未扫描"
+
+msgid "All media"
+msgstr "全部媒体"
+
+msgid "Pinned"
+msgstr "钉选"
+
+msgid "Folder access roles"
+msgstr "文件夹访问角色"
+
+msgid "Unpin folder"
+msgstr "取消钉选"
+
+msgid "Pin folder"
+msgstr "钉选文件夹"
+
+msgid "Folder color"
+msgstr "文件夹颜色"
+
+msgid "Rename"
+msgstr "重命名"
+
+msgid "Delete"
+msgstr "删除"
+
+msgid "All media (uploads land in Unassigned)"
+msgstr "全部媒体（上传后归入未分类）"
+
+msgid "No tags yet."
+msgstr "还没有标签。"
+
+msgid "Copy URL"
+msgstr "复制网址"
+
+msgid "Add new folder"
+msgstr "新增文件夹"
+
+msgid "Add"
+msgstr "加入"
+
+msgid "%d media in total"
+msgstr "%d 个媒体"
+
+msgid "Previous"
+msgstr "上一页"
+
+msgid "Page %1$d of %2$d, %3$d media in total"
+msgstr "第 %1$d / %2$d 页，共 %3$d 个媒体"
+
+msgid "Next"
+msgstr "下一页"
+
+msgid "— Select folder —"
+msgstr "— 选择文件夹 —"
+
+msgid "— Unassigned —"
+msgstr "— 未分类 —"
+
+msgid "Open in native editor"
+msgstr "在原生编辑页开启"
+
+msgid "Delete permanently (skips trash, cannot be undone)"
+msgstr "永久删除（不进回收桶，无法复原）"
+
+msgid "Delete permanently"
+msgstr "永久删除"
+
+msgid "Title"
+msgstr "标题"
+
+msgid "Alt text"
+msgstr "替代文字 Alt"
+
+msgid "Caption"
+msgstr "说明 Caption"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Folder"
+msgstr "所属文件夹"
+
+msgid "Tags"
+msgstr "标签"
+
+msgid "Save changes"
+msgstr "保存更改"
+
+msgid "File size: "
+msgstr "文件大小："
+
+msgid "Dimensions: "
+msgstr "尺寸："
+
+msgid "Type: "
+msgstr "类型："
+
+msgid "Uploaded: "
+msgstr "上传日期："
+
+msgid "Usage: "
+msgstr "使用状态："
+
+msgid "Saved."
+msgstr "已保存。"
+
+msgid "Select a target folder first."
+msgstr "请先选择目标文件夹。"
+
+msgid "Permanently delete ALL %d matching media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr "确定要「永久删除」全部符合条件的 %d 个媒体吗？\n文件与所有缩图会一并移除，无法复原！"
+
+msgid "Permanently delete %d media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr "确定要「永久删除」%d 个媒体吗？\n文件与所有缩图会一并移除，无法复原！"
+
+msgid "Warning: %d of them are in use by posts; deleting will leave missing images in your content."
+msgstr "⚠ 注意：其中 %d 个正在被文章使用中，删除会造成文章内容缺图。"
+
+msgid "Enter tag names."
+msgstr "请输入标签名称。"
+
+msgid "Fill in at least one field."
+msgstr "请至少填写一个字段。"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "No color"
+msgstr "无颜色"
+
+msgid "Custom"
+msgstr "自定义颜色"
+
+msgid "New folder name:"
+msgstr "新文件夹名称："
+
+msgid "Folder created."
+msgstr "文件夹已创建。"
+
+msgid "Folder renamed."
+msgstr "文件夹已重命名。"
+
+msgid "Folder deleted."
+msgstr "文件夹已删除。"
+
+msgid "New tag name:"
+msgstr "新标签名称："
+
+msgid "Tag created."
+msgstr "标签已创建。"
+
+msgid "No rules yet. Click \"Add rule\" below to start."
+msgstr "还没有规则，点击下方“新增规则”开始。"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Rule name"
+msgstr "规则名称"
+
+msgid "Filename contains (comma-separated, any)"
+msgstr "文件名包含（逗号分隔，任一命中）"
+
+msgid "e.g. asmr,drama"
+msgstr "如：asmr,drama"
+
+msgid "File extensions (comma-separated)"
+msgstr "扩展名（逗号分隔）"
+
+msgid "e.g. mp3,m4a"
+msgstr "如：mp3,m4a"
+
+msgid "Filename regex (advanced, optional)"
+msgstr "文件名正则（进阶，可留空）"
+
+msgid "e.g. ^3star-"
+msgstr "如：^3star-"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Any"
+msgstr "不限"
+
+msgid "Image"
+msgstr "图片"
+
+msgid "Audio"
+msgstr "音频"
+
+msgid "Video"
+msgstr "视频"
+
+msgid "Document"
+msgstr "文档"
+
+msgid "Min width (px, 0 = any)"
+msgstr "最小宽度（px，0=不限）"
+
+msgid "Year (0 = any)"
+msgstr "年份（0=不限）"
+
+msgid "Target folder (use / for nesting; folders are created automatically)"
+msgstr "归入文件夹（可用 / 建立多层，不存在会自动创建）"
+
+msgid "e.g. Videos/ASMR"
+msgstr "如：影音汇/ASMR"
+
+msgid "Also add tags (comma-separated, optional)"
+msgstr "同时加上标签（逗号分隔，可留空）"
+
+msgid "Only process unassigned media (recommended)"
+msgstr "只处理尚未分类的媒体（建议保持勾选）"
+
+msgid "Rules saved."
+msgstr "规则已保存。"
+
+msgid "Examples:"
+msgstr "例："
+
+msgid "items"
+msgstr "个"
+
+msgid " (skipped %d)"
+msgstr "（略过 %d）"
+
+msgid "Dry run (nothing has been saved yet)"
+msgstr "试跑结果（尚未写入任何数据）"
+
+msgid "No media matches the current rules."
+msgstr "没有任何媒体符合目前的规则。"
+
+msgid "Media in scope"
+msgstr "范围内媒体总数"
+
+msgid "No rule matched"
+msgstr "没有规则命中"
+
+msgid "Skipped (already assigned)"
+msgstr "已分类而略过"
+
+msgid "Will be assigned"
+msgstr "将会被归类"
+
+msgid "Auto-assigning…"
+msgstr "自动分类中…"
+
+msgid "Auto-assigning… %1$d / %2$d (assigned %3$d, skipped %4$d)"
+msgstr "自动分类中… %1$d / %2$d（已归类 %3$d，略过 %4$d）"
+
+msgid "Auto-assign complete: %1$d assigned, %2$d skipped. Undo it from Activity Log if needed."
+msgstr "自动分类完成：归类 %1$d 个，略过 %2$d 个。可从“操作记录”还原。"
+
+msgid "Too many batches; stopped. Run again to continue."
+msgstr "处理批次过多，已停止。可重新执行以继续。"
+
+msgid "Analyzing site references…"
+msgstr "正在分析全站引用…"
+
+msgid "Scanning usage… %1$d / %2$d"
+msgstr "扫描使用状态… %1$d / %2$d"
+
+msgid "Scan complete: %d media processed."
+msgstr "扫描完成，共处理 %d 个媒体。"
+
+msgid "Loading…"
+msgstr "加载中…"
+
+msgid "No activity yet."
+msgstr "还没有任何操作记录。"
+
+msgid "%d media"
+msgstr "%d 个媒体"
+
+msgid "Undone"
+msgstr "已还原"
+
+msgid "Undo"
+msgstr "还原"
+
+msgid "Cannot undo"
+msgstr "无法还原"
+
+msgid "Undo this action?"
+msgstr "确定要还原这笔操作吗？"
+
+msgid "Undone."
+msgstr "已还原。"
+
+msgid "Building file size index… %d remaining"
+msgstr "正在创建文件尺寸索引…剩余 %d 个"
+
+msgid "URL copied to clipboard."
+msgstr "已复制网址到剪贴板。"
+
+msgid "Copy failed. Copy it manually from the details panel."
+msgstr "复制失败，请从详情面板手动复制。"
+
+msgid "Selected all %d matching media (across pages)."
+msgstr "已选取全部符合条件的 %d 个媒体（跨页生效）。"
+
+msgid "Permanently delete this media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr "确定要「永久删除」这个媒体吗？\n文件与所有缩图会一并移除，无法复原！"
+
+msgid "Warning: this media is currently in use by posts; deleting will leave missing images in your content."
+msgstr "⚠ 注意：此媒体目前正在被文章使用中，删除会造成文章内容缺图。"
+
+msgid "URL copied."
+msgstr "网址已复制。"
+
+msgid "Copy failed. Select and copy manually."
+msgstr "复制失败，请手动选取。"
+
+msgid "Auto-copy is not supported in this browser. Select and copy manually."
+msgstr "此浏览器不支持自动复制，请手动选取。"
+
+msgid "Uploaded %d media. The list and folders have been updated."
+msgstr "已上传 %d 个媒体，列表与文件夹已更新。"
+
+msgid "Upload failed: %s"
+msgstr "上传失败：%s"
+
+msgid "Upload failed."
+msgstr "上传失败。"
+
+msgid "Media scripts are not loaded. Please reload the page."
+msgstr "媒体脚本尚未加载，请重新加载页面。"
+
+msgid "Upload media"
+msgstr "上传媒体"
+
+msgid "Uploading %1$d / %2$d (%3$d%%)"
+msgstr "上传中 %1$d / %2$d（%3$d%%）"
+
+msgid "Reset to the default rules? Your current rules will be overwritten."
+msgstr "确定要还原成预设规则吗？目前的规则会被覆盖。"
+
+msgid "New rule"
+msgstr "新规则"
+
+msgid "Load failed"
+msgstr "加载失败"
+
+msgid "Save failed"
+msgstr "保存失败"
+
+msgid "No media is directly attached to this post (featured image included)."
+msgstr "此文章没有直接附属的媒体（含精选图片）。"
+
+msgid "Media folders"
+msgstr "媒体文件夹"
+
+msgid "FolderNest"
+msgstr "文件夹巢"
+
+msgid "Unused-media cleanup wizard"
+msgstr "未使用媒体清理向导"
+
+msgid "Missing-alt batch workflow"
+msgstr "待补 Alt 批量工作流"
+
+msgid "Folder import/export & import from other folder plugins"
+msgstr "文件夹导入/导出与从其他文件夹插件导入"
+
+msgid "Delete folder together with its files (typed confirmation)"
+msgstr "删除文件夹时可连带删除其中文件（打字确认）"
+
+msgid "Delete this folder?\n\nMedia and physical files inside are kept; subfolders move up one level."
+msgstr "确定要删除这个文件夹吗？\n\n文件夹内的媒体与实体文件都会完整保留，子文件夹会上移一层。"
+
+msgid "Delete this tag? The media itself is not affected."
+msgstr "确定要删除这个标签吗？媒体本身不会受影响。"
+
+msgid "Apply auto-assign? You can undo it from Activity Log afterwards."
+msgstr "确定要套用自动分类吗？套用后可以从“操作记录”还原。"
+
+msgid "Select some media first."
+msgstr "请先选取媒体。"
+
+msgid "No media matches the current filters."
+msgstr "没有符合条件的媒体。"
+
+msgid "Your account does not have permission to manage media."
+msgstr "你的账号没有管理媒体的权限。"
+
+msgid "This plugin only writes classification data; it never moves or rewrites media files."
+msgstr "本插件只写入分类数据，不会移动或改写任何媒体文件"
+
+msgid "File paths untouched"
+msgstr "不影响文件路径"
+
+msgid "Organize media with folders and tags. Everything writes to the database only — media URLs and physical files never change."
+msgstr "用文件夹与标签整理媒体，所有操作都只写入数据库，媒体网址与实体文件完全不变。"
+
+msgid "Pro feature"
+msgstr "Pro 功能"
+
+msgid "Clean up unused"
+msgstr "清理未使用"
+
+msgid "Missing alt"
+msgstr "待补 Alt"
+
+msgid "Scan usage"
+msgstr "扫描使用状态"
+
+msgid "Auto-assign"
+msgstr "自动分类"
+
+msgid "Activity log"
+msgstr "操作记录"
+
+msgid "Select files to upload"
+msgstr "选择文件上传"
+
+msgid "Or drop files here — actually"
+msgstr "或把文件拖进此区——其实"
+
+msgid "the whole page is a dropzone"
+msgstr "整页都是拖放区"
+
+msgid "drop onto a folder row and the files land in that folder; drop anywhere else and they land in"
+msgstr "拖到哪个文件夹就传进那个文件夹，拖在其他位置＝"
+
+msgid "the folder you are browsing"
+msgstr "目前浏览的文件夹"
+
+msgid " (it follows the folder selected on the left)."
+msgstr "（切换左侧文件夹即跟着变）。"
+
+msgid "Export"
+msgstr "导出结构"
+
+msgid "Import"
+msgstr "导入结构"
+
+msgid "From plugins"
+msgstr "从插件导入"
+
+msgid "Add new tag"
+msgstr "新增标签"
+
+msgid "Search filename or title…"
+msgstr "搜索文件名或标题…"
+
+msgid "All types"
+msgstr "全部类型"
+
+msgid "Usage status: All"
+msgstr "使用状态：全部"
+
+msgid "Newest first"
+msgstr "最新上传"
+
+msgid "Oldest first"
+msgstr "最旧上传"
+
+msgid "Title A→Z"
+msgstr "标题 A→Z"
+
+msgid "Title Z→A"
+msgstr "标题 Z→A"
+
+msgid "File size high→low"
+msgstr "文件大→小"
+
+msgid "File size low→high"
+msgstr "文件小→大"
+
+msgid "ID high→low"
+msgstr "ID 大→小"
+
+msgid "Include subfolders"
+msgstr "含子文件夹"
+
+msgid "View mode"
+msgstr "视图模式"
+
+msgid "Grid view"
+msgstr "缩略图视图"
+
+msgid "List view"
+msgstr "列表视图"
+
+msgid "Hold and drag on empty space, or press a card briefly and drag, to box-select multiple items. Hold Ctrl/Cmd while dragging to add to the selection."
+msgstr "在空白处按住拖曳、或长按卡片后拖曳，即可框选多个；按住 Ctrl 拖曳则为累加选取。"
+
+msgid "Drag cards onto a folder on the left to move them (multi-select works); drop on \"Unassigned\" to remove folders."
+msgstr "选取后把卡片直接拖到左侧文件夹即可移动（可多选、可跨文件夹）；拖到“未分类”则移出文件夹。"
+
+msgid "Selected"
+msgstr "已选"
+
+msgid "Select all matching"
+msgstr "选取全部符合条件"
+
+msgid "Clear selection"
+msgstr "清除选取"
+
+msgid "Move to"
+msgstr "移动到"
+
+msgid "Remove from folders"
+msgstr "移出文件夹"
+
+msgid "Comma-separated; missing tags are created"
+msgstr "多个标签用逗号分隔，不存在会自动创建"
+
+msgid "Add tags"
+msgstr "新增标签"
+
+msgid "Remove tags"
+msgstr "移除标签"
+
+msgid "Batch edit fields"
+msgstr "批量编辑字段"
+
+msgid "Variables:"
+msgstr "可用变量："
+
+msgid "full filename"
+msgstr "完整文件名"
+
+msgid "filename without extension"
+msgstr "不含扩展名的文件名"
+
+msgid "extension"
+msgstr "扩展名"
+
+msgid "counter"
+msgstr "流水号"
+
+msgid "original value"
+msgstr "原值"
+
+msgid "Empty fields are left unchanged."
+msgstr "留空的字段不会被更动。"
+
+msgid "e.g. {stem}"
+msgstr "例：{stem}"
+
+msgid "Apply mode"
+msgstr "套用方式"
+
+msgid "Replace original value"
+msgstr "覆盖原值"
+
+msgid "Append after original"
+msgstr "附加在原值后面"
+
+msgid "Prepend before original"
+msgstr "加在原值前面"
+
+msgid "Apply fields"
+msgstr "套用字段"
+
+msgid "Click any media to edit its details here"
+msgstr "点选任一媒体即可在这里编辑信息"
+
+msgid "Rules are evaluated top-down; the first matching rule wins."
+msgstr "规则由上往下比对，第一条命中的规则生效。"
+
+msgid "Run \"Dry run\" to preview the result before applying."
+msgstr "建议先按“试跑预览”确认结果，再按“开始套用”。"
+
+msgid "Scope:"
+msgstr "套用范围："
+
+msgid "Unassigned only"
+msgstr "仅未分类"
+
+msgid "Images only"
+msgstr "仅图片"
+
+msgid "Audio only"
+msgstr "仅音频"
+
+msgid "Videos only"
+msgstr "仅视频"
+
+msgid "Save rules"
+msgstr "保存规则"
+
+msgid "Restore default rules"
+msgstr "还原预设规则"
+
+msgid "Dry run"
+msgstr "试跑预览"
+
+msgid "Apply now"
+msgstr "开始套用"
+
+msgid "Every batch action keeps a snapshot and can be undone with one click. Only classification and field changes are recorded — files are never touched."
+msgstr "每一次批量操作都留有快照，可以一键还原。记录只保留分类与字段变更，不涉及任何文件。"
+
+msgid "FolderNest Pro"
+msgstr "FolderNest Pro"
+
+msgid "This feature is part of FolderNest Pro:"
+msgstr "此功能属于 FolderNest Pro："
+
+msgid "Annual license, activate instantly with the key we email you."
+msgstr "年度授权，付款后序号立即寄到你的信箱，贴上即用。"
+
+msgid "Buy FolderNest Pro"
+msgstr "购买 FolderNest Pro"
+
+msgid "Cancel"
+msgstr "中止"
+
+msgid "Security check failed. Please reload the page."
+msgstr "安全校验失败，请重新加载页面。"
+
+msgid "Media not found."
+msgstr "找不到这个媒体。"
+
+msgid "No media selected."
+msgstr "没有选取任何媒体。"
+
+msgid "Removed %d media from all folders."
+msgstr "已将 %d 个媒体移出所有文件夹。"
+
+msgid "Select a valid target folder."
+msgstr "请选择有效的目标文件夹。"
+
+msgid "Specify at least one tag."
+msgstr "请指定至少一个标签。"
+
+msgid "Updated fields for %d media."
+msgstr "已更新 %d 个媒体的字段。"
+
+msgid "Permanently deleted %d media."
+msgstr "已永久删除 %d 个媒体。"
+
+msgid "(%d failed)"
+msgstr "（%d 个删除失败）"
+
+msgid "Post not found."
+msgstr "找不到文章。"
+
+msgid "Folder not found."
+msgstr "找不到文件夹。"
+
+msgid "Invalid color."
+msgstr "颜色格式不正确。"
+
+msgid "Folder color updated."
+msgstr "文件夹颜色已更新。"
+
+msgid "Folder pinned."
+msgstr "文件夹已钉选。"
+
+msgid "Folder unpinned."
+msgstr "文件夹已取消钉选。"
+
+msgid "Enter a folder name."
+msgstr "请输入文件夹名称。"
+
+msgid "A folder with the same name already exists at this level."
+msgstr "同一层已经有同名文件夹了。"
+
+msgid "Missing parameters."
+msgstr "参数不完整。"
+
+msgid "Folder deleted (the media itself is not affected)."
+msgstr "文件夹已删除（媒体本身完全不受影响）。"
+
+msgid "A folder cannot be moved into itself."
+msgstr "不能把文件夹移到它自己里面。"
+
+msgid "A folder cannot be moved into its own subfolder."
+msgstr "不能把文件夹移到它自己的子文件夹里。"
+
+msgid "Folder moved."
+msgstr "文件夹已移动。"
+
+msgid "This tag already exists."
+msgstr "这个标签已经存在。"
+
+msgid "Tag deleted."
+msgstr "标签已删除。"
+
+msgid "Invalid rule format."
+msgstr "规则格式不正确。"
+
+msgid "Saved %d rules."
+msgstr "已保存 %d 条规则。"
+
+msgid "Restored the default rules."
+msgstr "已还原为预设规则。"
+
+msgid "Cancelled. Everything already applied can be undone from Activity Log."
+msgstr "已中止，先前套用的部分仍可从操作记录还原。"
+
+msgid "No job is running."
+msgstr "没有进行中的工作。"
+
+msgid "Reference index rebuilt. The next scan will re-analyze site content."
+msgstr "引用索引已重建，下次扫描会重新分析全站内容。"
+
+msgid "Restored the previous state of %d media."
+msgstr "已还原 %d 个媒体的先前状态。"
+
+msgid "Videos"
+msgstr "视频"
+
+msgid "Pictures"
+msgstr "图片"
+
+msgid "Documents"
+msgstr "文档"
+
+msgid "Rule"
+msgstr "规则"
+
+msgid "No media in scope."
+msgstr "没有符合范围的媒体。"
+
+msgid "No auto-assign job is running."
+msgstr "没有进行中的自动分类工作。"
+
+msgid "Activity entry not found."
+msgstr "找不到这笔操作记录。"
+
+msgid "This action has already been undone."
+msgstr "这笔操作已经还原过了。"
+
+msgid "This action has no restorable snapshot (too many items, or the record is corrupted)."
+msgstr "这笔操作没有可还原的完整快照（项目数过多或记录已损毁）。"
+
+msgid "Assign folder"
+msgstr "指派文件夹"
+
+msgid "Usage scan"
+msgstr "使用状态扫描"
+
+msgid "System"
+msgstr "系统"
+
+msgid "User #%d"
+msgstr "用户 #%d"
+
+msgid "Upload to folder:"
+msgstr "上传到文件夹："
+
+msgid "(none — classify later)"
+msgstr "（不指定，之后再分类）"
+
+msgid "Folder:"
+msgstr "文件夹："
+
+msgid "All folders"
+msgstr "所有文件夹"
+
+msgid "Filter by folder"
+msgstr "按文件夹筛选"
+
+msgid "Filter by tag"
+msgstr "按标签筛选"
+
+msgid "All tags"
+msgstr "所有标签"
+
+msgid "Filter by usage status"
+msgstr "按使用状态筛选"
+
+msgid "Open FolderNest"
+msgstr "前往文件夹巢"
+
+msgid "FolderNest is now active."
+msgstr "FolderNest 已启用。"
+
+msgid "Media can now be organized with folders and tags — file paths and URLs are never touched."
+msgstr "媒体现在可以用“文件夹”与“标签”分类，完全不会影响文件路径与网址。"
+
+msgid "Dismiss"
+msgstr "不再显示"
+
+msgid "Media folder"
+msgstr "媒体文件夹"
+
+msgid "Search folders"
+msgstr "搜索文件夹"
+
+msgid "Parent folder"
+msgstr "上层文件夹"
+
+msgid "Edit folder"
+msgstr "编辑文件夹"
+
+msgid "Update folder"
+msgstr "更新文件夹"
+
+msgid "New folder name"
+msgstr "新文件夹名称"
+
+msgid "Media tags"
+msgstr "媒体标签"
+
+msgid "Media tag"
+msgstr "媒体标签"
+
+msgid "Search tags"
+msgstr "搜索标签"
+
+msgid "Edit tag"
+msgstr "编辑标签"
+
+msgid "Update tag"
+msgstr "更新标签"
+
+msgid "New tag name"
+msgstr "新标签名称"
+
+msgid "Pick a folder before uploading and files land in it directly. Classification only — file paths and URLs never change."
+msgstr "选好文件夹再上传，文件会直接归到该文件夹。只影响分类，不会改变文件路径与网址。"
+
+msgid "Unused media is now filtered. Review it, then delete with \"Delete permanently\" in the bulk bar."
+msgstr "已筛选出未使用媒体。确认后用批量列的\"永久删除\"删除。"
+
+msgid "Will rescan all site references (about 10–30 seconds), then permanently delete all %d unused media.\nFiles will be removed. This cannot be undone!\n\nContinue?"
+msgstr "将先重新扫描全站引用（约 10–30 秒），再「永久删除」全部 %d 个未被引用的媒体。\n文件会一并移除，无法复原！\n\n确定继续吗？"
+
+msgid "Rescanning site references…"
+msgstr "正在重新扫描全站引用…"
+
+msgid "Rescanning site references… %1$d / %2$d"
+msgstr "正在重新扫描全站引用… %1$d / %2$d"
+
+msgid "Great! No images are missing alt text."
+msgstr "太好了！没有缺替代文字的图片。"
+
+msgid "Alt text…"
+msgstr "替代文字…"
+
+msgid "Load failed: %s"
+msgstr "加载失败：%s"
+
+msgid "Filled %d empty fields from filenames."
+msgstr "已依文件名填入 %d 个空栏。"
+
+msgid "Nothing to fill — every field already has text."
+msgstr "没有可填的栏位——每栏都已有文字。"
+
+msgid "All fields restored to their original values."
+msgstr "所有栏位已还原原值。"
+
+msgid "No alt text was filled in."
+msgstr "没有填写任何替代文字。"
+
+msgid "Folder structure exported."
+msgstr "已导出文件夹结构。"
+
+msgid "Export failed: %s"
+msgstr "导出失败：%s"
+
+msgid "Paste the exported JSON first."
+msgstr "请先贴上导出的 JSON。"
+
+msgid "Invalid JSON. Please check the content."
+msgstr "JSON 格式错误，请确认内容。"
+
+msgid "No other folder plugins with folder data were detected."
+msgstr "没有侦测到其他含文件夹数据的插件。"
+
+msgid "%d folders"
+msgstr "%d 个文件夹"
+
+msgid "Imported"
+msgstr "已导入"
+
+msgid "Clean up unused media"
+msgstr "清理未使用媒体"
+
+msgid "\"Unused\" means no reference was found in any post or page content at scan time. We recommend filtering and reviewing before deleting; deletion cannot be undone."
+msgstr "“未被引用”代表扫描时没有在任何文章／页面内容中找到引用。建议先筛选确认再删除；删除后无法复原。"
+
+msgid "Currently unused:"
+msgstr "目前未被引用："
+
+msgid "Filter unused media (recommended — review first)"
+msgstr "筛选出未使用媒体（推荐，先人工确认）"
+
+msgid "Permanently delete ALL unused media now"
+msgstr "直接永久删除全部未使用"
+
+msgid "Run"
+msgstr "执行"
+
+msgid "Missing alt text"
+msgstr "待补替代文字（Alt）"
+
+msgid "Lists images without alt text. Alt text is a basic accessibility and SEO requirement. Empty rows are skipped."
+msgstr "列出尚未填写替代文字的图片。替代文字是无障碍与 SEO 的基本要求。留空的列会被略过。"
+
+msgid "Fill every empty field with a humanized version of its filename (you can edit before applying)."
+msgstr "以文件名转成的可读文字填入每个空栏（应用前可再编辑）。"
+
+msgid "Auto-fill from filename"
+msgstr "依文件名自动填写"
+
+msgid "Restore original"
+msgstr "还原原值"
+
+msgid "Apply all (skip empty)"
+msgstr "套用全部（略过留空）"
+
+msgid "Import folder structure"
+msgstr "导入文件夹结构"
+
+msgid "Paste a previously exported JSON. Folders with the same name at the same level are skipped; nothing is overwritten."
+msgstr "贴上先前导出的 JSON。同名同层的文件夹会跳过，不会覆盖现有结构。"
+
+msgid "Import JSON"
+msgstr "导入 JSON"
+
+msgid "Start import"
+msgstr "开始导入"
+
+msgid "Once set, only users with the selected roles can see this folder (and its subfolders) and its media. Leave all unchecked to make it visible to everyone. Administrators are never restricted."
+msgstr "设定后，只有具备勾选角色的用户能看到这个文件夹（含子文件夹）与其中媒体。全部不勾＝所有人可见。管理员不受限制。"
+
+msgid "Visible roles (multi-select)"
+msgstr "可见角色（可多选）"
+
+msgid "Save"
+msgstr "保存"
+
+msgid "Delete folder"
+msgstr "删除文件夹"
+
+msgid "media"
+msgstr "个媒体"
+
+msgid "Keep media — remove this folder only (media becomes unassigned)"
+msgstr "保留媒体——只删除文件夹本身（媒体变为未分类）"
+
+msgid "Also permanently delete ALL media inside this folder and its subfolders (cannot be undone!)"
+msgstr "同时永久删除此文件夹与其子文件夹内的全部媒体（无法复原！）"
+
+msgid "Type the folder name exactly to confirm:"
+msgstr "输入完整的文件夹名称以确认："
+
+msgid "Import from other folder plugins"
+msgstr "从其他文件夹插件导入"
+
+msgid "Detected plugins with folder data are listed below. Importing copies the folder tree into FolderNest; your source plugin's data is never modified, and importing twice duplicates nothing."
+msgstr "下方列出侦测到含文件夹数据的插件。导入会把文件夹树复制到 FolderNest；来源插件的数据完全不会被更动，重复导入也不会重复创建。"
+
+msgid "This feature requires an active FolderNest Pro license."
+msgstr "此功能需要有效的 FolderNest Pro 授权。"
+
+msgid "Updated alt text for %d media."
+msgstr "已更新 %d 个替代文字。"
+
+msgid "The import data contains no usable folders or tags."
+msgstr "导入数据中没有可用的文件夹或标签。"
+
+msgid "Imported: %1$d new folders (%2$d already existed), %3$d tags."
+msgstr "已导入：新增 %1$d 个文件夹（略过已存在 %2$d 个）、标签 %3$d 个。"
+
+msgid "Only administrators can change folder permissions."
+msgstr "只有管理员能变更文件夹权限。"
+
+msgid "Access roles for \"%s\" updated."
+msgstr "“%s”的访问角色已更新。"
+
+msgid "Type the folder name exactly to confirm the deletion."
+msgstr "请输入完整的文件夹名称以确认删除。"
+
+msgid "Folder \"%1$s\" and %2$d media files were permanently deleted."
+msgstr "文件夹“%1$s”与其中 %2$d 个媒体文件已永久删除。"
+
+msgid "Unknown import source."
+msgstr "未知的导入来源。"
+
+msgid "No folders found in the source plugin."
+msgstr "来源插件中没有找到任何文件夹。"
+
+msgid "Imported: %1$d folders created, %2$d already existed (skipped)."
+msgstr "导入完成：新增 %1$d 个文件夹，%2$d 个已存在（略过）。"
+
+msgid "Activation failed: %s"
+msgstr "激活失败：%s"
+
+msgid "License activated. Pro features are unlocked."
+msgstr "授权已启用，Pro 功能已解锁。"
+
+msgid "License deactivated."
+msgstr "授权已停用。"
+
+msgid "Email support@plugnest.dev with your license key for priority support."
+msgstr "来信 support@plugnest.dev 并附上你的序列号，可获优先支持。"
+
+msgid "FolderNest Pro — License"
+msgstr "FolderNest Pro — 授权"
+
+msgid "Pro features: unused-media cleanup wizard, missing-alt batch workflow, folder import/export, folder access roles."
+msgstr "Pro 功能：未使用媒体清理向导、待补 Alt 批量工作流、文件夹导入/导出与文件夹访问角色。"
+
+msgid "Status"
+msgstr "状态"
+
+msgid "Active"
+msgstr "有效"
+
+msgid "renews / expires on %s"
+msgstr "续订／到期日：%s"
+
+msgid "Not active"
+msgstr "未启用"
+
+msgid "Last validation"
+msgstr "最后验证时间"
+
+msgid "Support"
+msgstr "支持"
+
+msgid "Documentation"
+msgstr "使用文档"
+
+msgid "Deactivate license on this site"
+msgstr "在本站停用授权"
+
+msgid "License key"
+msgstr "序列号"
+
+msgid "Activate"
+msgstr "启用"
+
+msgid "no license key entered. Pro features are locked."
+msgstr "尚未输入序列号，Pro 功能已锁定。"
+
+msgid "the license could not be validated (expired, revoked, or the license server was unreachable for more than 14 days)."
+msgstr "授权无法验证（已过期、已撤销，或授权服务器超过 14 天无法连线）。"
+
+msgid "Open license settings"
+msgstr "打开授权设置"
+

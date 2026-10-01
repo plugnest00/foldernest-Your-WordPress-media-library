@@ -1,0 +1,380 @@
+{
+    "translation-revision-date": "2026-10-01T10:20:55+00:00",
+    "generator": "FolderNest i18n-build",
+    "domain": "foldernest",
+    "locale_data": {
+        "foldernest": {
+            "": {
+                "domain": "foldernest",
+                "lang": "zh_TW",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Processing…": [
+                "處理中…"
+            ],
+            "Invalid server response. Please reload the page.": [
+                "伺服器回應格式錯誤，請重新整理頁面。"
+            ],
+            "Operation failed.": [
+                "操作失敗。"
+            ],
+            "Total media": [
+                "媒體總數"
+            ],
+            "Folders": [
+                "資料夾"
+            ],
+            "Unassigned": [
+                "未分類"
+            ],
+            "In use": [
+                "使用中"
+            ],
+            "Unused": [
+                "未被引用"
+            ],
+            "Not scanned": [
+                "尚未掃描"
+            ],
+            "All media": [
+                "全部媒體"
+            ],
+            "Pinned": [
+                "釘選"
+            ],
+            "Folder access roles": [
+                "存取角色限制"
+            ],
+            "Unpin folder": [
+                "取消釘選"
+            ],
+            "Pin folder": [
+                "釘選資料夾"
+            ],
+            "Folder color": [
+                "資料夾顏色"
+            ],
+            "Rename": [
+                "重新命名"
+            ],
+            "Delete": [
+                "刪除"
+            ],
+            "All media (uploads land in Unassigned)": [
+                "全部媒體（上傳後落在未分類）"
+            ],
+            "No tags yet.": [
+                "還沒有標籤。"
+            ],
+            "Copy URL": [
+                "複製網址"
+            ],
+            "Add new folder": [
+                "新增資料夾"
+            ],
+            "Add": [
+                "加入"
+            ],
+            "%d media in total": [
+                "%d 個媒體"
+            ],
+            "Previous": [
+                "上一頁"
+            ],
+            "Page %1$d of %2$d, %3$d media in total": [
+                "第 %1$d \/ %2$d 頁，共 %3$d 個媒體"
+            ],
+            "Next": [
+                "下一頁"
+            ],
+            "— Select folder —": [
+                "— 選擇資料夾 —"
+            ],
+            "— Unassigned —": [
+                "— 未分類 —"
+            ],
+            "Open in native editor": [
+                "在原生編輯頁開啟"
+            ],
+            "Delete permanently (skips trash, cannot be undone)": [
+                "永久刪除（不進回收桶，無法復原）"
+            ],
+            "Delete permanently": [
+                "永久刪除"
+            ],
+            "Title": [
+                "標題"
+            ],
+            "Alt text": [
+                "替代文字 Alt"
+            ],
+            "Caption": [
+                "說明 Caption"
+            ],
+            "Description": [
+                "描述"
+            ],
+            "Folder": [
+                "所屬資料夾"
+            ],
+            "Tags": [
+                "標籤"
+            ],
+            "Save changes": [
+                "儲存變更"
+            ],
+            "File size: ": [
+                "檔案大小："
+            ],
+            "Dimensions: ": [
+                "尺寸："
+            ],
+            "Type: ": [
+                "類型："
+            ],
+            "Uploaded: ": [
+                "上傳日期："
+            ],
+            "Usage: ": [
+                "使用狀態："
+            ],
+            "Saved.": [
+                "已儲存。"
+            ],
+            "Select a target folder first.": [
+                "請先選擇目標資料夾。"
+            ],
+            "Permanently delete ALL %d matching media?\nThe files and all thumbnails will be removed. This cannot be undone!": [
+                "確定要「永久刪除」全部符合條件的 %d 個媒體嗎？\n檔案與所有縮圖會一併移除，無法復原！"
+            ],
+            "Permanently delete %d media?\nThe files and all thumbnails will be removed. This cannot be undone!": [
+                "確定要「永久刪除」%d 個媒體嗎？\n檔案與所有縮圖會一併移除，無法復原！"
+            ],
+            "Warning: %d of them are in use by posts; deleting will leave missing images in your content.": [
+                "⚠ 注意：其中 %d 個正在被文章使用中，刪除會造成文章內容缺圖。"
+            ],
+            "Enter tag names.": [
+                "請輸入標籤名稱。"
+            ],
+            "Fill in at least one field.": [
+                "請至少填寫一個欄位。"
+            ],
+            "Close": [
+                "關閉"
+            ],
+            "No color": [
+                "無顏色"
+            ],
+            "Custom": [
+                "自訂顏色"
+            ],
+            "New folder name:": [
+                "新資料夾名稱："
+            ],
+            "Folder created.": [
+                "資料夾已建立。"
+            ],
+            "Folder renamed.": [
+                "資料夾已重新命名。"
+            ],
+            "Folder deleted.": [
+                "資料夾已刪除。"
+            ],
+            "New tag name:": [
+                "新標籤名稱："
+            ],
+            "Tag created.": [
+                "標籤已建立。"
+            ],
+            "No rules yet. Click \"Add rule\" below to start.": [
+                "還沒有規則，按下方「新增規則」開始。"
+            ],
+            "Enable": [
+                " 啟用"
+            ],
+            "Rule name": [
+                "規則名稱"
+            ],
+            "Filename contains (comma-separated, any)": [
+                "檔名包含（逗號分隔，任一命中）"
+            ],
+            "e.g. asmr,drama": [
+                "例：asmr,drama"
+            ],
+            "File extensions (comma-separated)": [
+                "副檔名（逗號分隔）"
+            ],
+            "e.g. mp3,m4a": [
+                "例：mp3,m4a"
+            ],
+            "Filename regex (advanced, optional)": [
+                "檔名正則（進階，可留空）"
+            ],
+            "e.g. ^3star-": [
+                "例：^3star-"
+            ],
+            "Type": [
+                "類型"
+            ],
+            "Any": [
+                "不限"
+            ],
+            "Image": [
+                "圖片"
+            ],
+            "Audio": [
+                "音訊"
+            ],
+            "Video": [
+                "影片"
+            ],
+            "Document": [
+                "文件"
+            ],
+            "Min width (px, 0 = any)": [
+                "最小寬度（px，0=不限）"
+            ],
+            "Year (0 = any)": [
+                "年份（0=不限）"
+            ],
+            "Target folder (use \/ for nesting; folders are created automatically)": [
+                "歸入資料夾（可用 \/ 建立多層，不存在會自動建立）"
+            ],
+            "e.g. Videos\/ASMR": [
+                "例：影音匯\/ASMR"
+            ],
+            "Also add tags (comma-separated, optional)": [
+                "同時加上標籤（逗號分隔，可留空）"
+            ],
+            "Only process unassigned media (recommended)": [
+                " 只處理尚未分類的媒體（建議保持勾選）"
+            ],
+            "Rules saved.": [
+                "規則已儲存。"
+            ],
+            "Examples:": [
+                "例："
+            ],
+            "items": [
+                "個"
+            ],
+            " (skipped %d)": [
+                "（略過 %d）"
+            ],
+            "Dry run (nothing has been saved yet)": [
+                "試跑結果（尚未寫入任何資料）"
+            ],
+            "No media matches the current rules.": [
+                "沒有任何媒體符合目前的規則。"
+            ],
+            "Media in scope": [
+                "範圍內媒體總數"
+            ],
+            "No rule matched": [
+                "沒有規則命中"
+            ],
+            "Skipped (already assigned)": [
+                "已分類而略過"
+            ],
+            "Will be assigned": [
+                "將會被歸類"
+            ],
+            "Auto-assigning…": [
+                "自動分類中…"
+            ],
+            "Auto-assigning… %1$d \/ %2$d (assigned %3$d, skipped %4$d)": [
+                "自動分類中… %1$d \/ %2$d（已歸類 %3$d，略過 %4$d）"
+            ],
+            "Auto-assign complete: %1$d assigned, %2$d skipped. Undo it from Activity Log if needed.": [
+                "自動分類完成：歸類 %1$d 個，略過 %2$d 個。可從「操作記錄」還原。"
+            ],
+            "Too many batches; stopped. Run again to continue.": [
+                "處理批次過多，已停止。可重新執行以繼續。"
+            ],
+            "Analyzing site references…": [
+                "正在分析全站引用…"
+            ],
+            "Scanning usage… %1$d \/ %2$d": [
+                "掃描使用狀態… %1$d \/ %2$d"
+            ],
+            "Scan complete: %d media processed.": [
+                "掃描完成，共處理 %d 個媒體。"
+            ],
+            "Loading…": [
+                "載入中…"
+            ],
+            "No activity yet.": [
+                "還沒有任何操作記錄。"
+            ],
+            "%d media": [
+                "%d 個媒體"
+            ],
+            "Undone": [
+                "已還原"
+            ],
+            "Undo": [
+                "還原"
+            ],
+            "Cannot undo": [
+                "無法還原"
+            ],
+            "Undo this action?": [
+                "確定要還原這筆操作嗎？"
+            ],
+            "Undone.": [
+                "已還原。"
+            ],
+            "Building file size index… %d remaining": [
+                "正在建立檔案尺寸索引…剩餘 %d 個"
+            ],
+            "URL copied to clipboard.": [
+                "已複製網址到剪貼簿。"
+            ],
+            "Copy failed. Copy it manually from the details panel.": [
+                "複製失敗，請從詳細面板手動複製。"
+            ],
+            "Selected all %d matching media (across pages).": [
+                "已選取全部符合條件的 %d 個媒體（跨頁生效）。"
+            ],
+            "Permanently delete this media?\nThe files and all thumbnails will be removed. This cannot be undone!": [
+                "確定要「永久刪除」這個媒體嗎？\n檔案與所有縮圖會一併移除，無法復原！"
+            ],
+            "Warning: this media is currently in use by posts; deleting will leave missing images in your content.": [
+                "⚠ 注意：此媒體目前正在被文章使用中，刪除會造成文章內容缺圖。"
+            ],
+            "URL copied.": [
+                "網址已複製。"
+            ],
+            "Copy failed. Select and copy manually.": [
+                "複製失敗，請手動選取。"
+            ],
+            "Auto-copy is not supported in this browser. Select and copy manually.": [
+                "此瀏覽器不支援自動複製，請手動選取。"
+            ],
+            "Uploaded %d media. The list and folders have been updated.": [
+                "已上傳 %d 個媒體，清單與資料夾已更新。"
+            ],
+            "Upload failed: %s": [
+                "上傳失敗：%s"
+            ],
+            "Upload failed.": [
+                "上傳失敗。"
+            ],
+            "Media scripts are not loaded. Please reload the page.": [
+                "媒體腳本尚未載入，請重新整理頁面。"
+            ],
+            "Upload media": [
+                "上傳媒體"
+            ],
+            "Uploading %1$d \/ %2$d (%3$d%%)": [
+                "上傳中 %1$d \/ %2$d（%3$d%%）"
+            ],
+            "Reset to the default rules? Your current rules will be overwritten.": [
+                "確定要還原成預設規則嗎？目前的規則會被覆蓋。"
+            ],
+            "New rule": [
+                "新規則"
+            ]
+        }
+    }
+}

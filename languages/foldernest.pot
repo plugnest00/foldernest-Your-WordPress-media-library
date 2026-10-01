@@ -1,0 +1,1073 @@
+# FolderNest translation template.
+msgid ""
+msgstr ""
+"Project-Id-Version: FolderNest 2.4.1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Processing…"
+msgstr ""
+
+msgid "Invalid server response. Please reload the page."
+msgstr ""
+
+msgid "Operation failed."
+msgstr ""
+
+msgid "Total media"
+msgstr ""
+
+msgid "Folders"
+msgstr ""
+
+msgid "Unassigned"
+msgstr ""
+
+msgid "In use"
+msgstr ""
+
+msgid "Unused"
+msgstr ""
+
+msgid "Not scanned"
+msgstr ""
+
+msgid "All media"
+msgstr ""
+
+msgid "Pinned"
+msgstr ""
+
+msgid "Folder access roles"
+msgstr ""
+
+msgid "Unpin folder"
+msgstr ""
+
+msgid "Pin folder"
+msgstr ""
+
+msgid "Folder color"
+msgstr ""
+
+msgid "Rename"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "All media (uploads land in Unassigned)"
+msgstr ""
+
+msgid "No tags yet."
+msgstr ""
+
+msgid "Copy URL"
+msgstr ""
+
+msgid "Add new folder"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+msgid "%d media in total"
+msgstr ""
+
+msgid "Previous"
+msgstr ""
+
+msgid "Page %1$d of %2$d, %3$d media in total"
+msgstr ""
+
+msgid "Next"
+msgstr ""
+
+msgid "— Select folder —"
+msgstr ""
+
+msgid "— Unassigned —"
+msgstr ""
+
+msgid "Open in native editor"
+msgstr ""
+
+msgid "Delete permanently (skips trash, cannot be undone)"
+msgstr ""
+
+msgid "Delete permanently"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Alt text"
+msgstr ""
+
+msgid "Caption"
+msgstr ""
+
+msgid "Description"
+msgstr ""
+
+msgid "Folder"
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+msgid "Save changes"
+msgstr ""
+
+msgid "File size: "
+msgstr ""
+
+msgid "Dimensions: "
+msgstr ""
+
+msgid "Type: "
+msgstr ""
+
+msgid "Uploaded: "
+msgstr ""
+
+msgid "Usage: "
+msgstr ""
+
+msgid "Saved."
+msgstr ""
+
+msgid "Select a target folder first."
+msgstr ""
+
+msgid "Permanently delete ALL %d matching media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr ""
+
+msgid "Permanently delete %d media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr ""
+
+msgid "Warning: %d of them are in use by posts; deleting will leave missing images in your content."
+msgstr ""
+
+msgid "Enter tag names."
+msgstr ""
+
+msgid "Fill in at least one field."
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "No color"
+msgstr ""
+
+msgid "Custom"
+msgstr ""
+
+msgid "New folder name:"
+msgstr ""
+
+msgid "Folder created."
+msgstr ""
+
+msgid "Folder renamed."
+msgstr ""
+
+msgid "Folder deleted."
+msgstr ""
+
+msgid "New tag name:"
+msgstr ""
+
+msgid "Tag created."
+msgstr ""
+
+msgid "No rules yet. Click \"Add rule\" below to start."
+msgstr ""
+
+msgid "Enable"
+msgstr ""
+
+msgid "Rule name"
+msgstr ""
+
+msgid "Filename contains (comma-separated, any)"
+msgstr ""
+
+msgid "e.g. asmr,drama"
+msgstr ""
+
+msgid "File extensions (comma-separated)"
+msgstr ""
+
+msgid "e.g. mp3,m4a"
+msgstr ""
+
+msgid "Filename regex (advanced, optional)"
+msgstr ""
+
+msgid "e.g. ^3star-"
+msgstr ""
+
+msgid "Type"
+msgstr ""
+
+msgid "Any"
+msgstr ""
+
+msgid "Image"
+msgstr ""
+
+msgid "Audio"
+msgstr ""
+
+msgid "Video"
+msgstr ""
+
+msgid "Document"
+msgstr ""
+
+msgid "Min width (px, 0 = any)"
+msgstr ""
+
+msgid "Year (0 = any)"
+msgstr ""
+
+msgid "Target folder (use / for nesting; folders are created automatically)"
+msgstr ""
+
+msgid "e.g. Videos/ASMR"
+msgstr ""
+
+msgid "Also add tags (comma-separated, optional)"
+msgstr ""
+
+msgid "Only process unassigned media (recommended)"
+msgstr ""
+
+msgid "Rules saved."
+msgstr ""
+
+msgid "Examples:"
+msgstr ""
+
+msgid "items"
+msgstr ""
+
+msgid " (skipped %d)"
+msgstr ""
+
+msgid "Dry run (nothing has been saved yet)"
+msgstr ""
+
+msgid "No media matches the current rules."
+msgstr ""
+
+msgid "Media in scope"
+msgstr ""
+
+msgid "No rule matched"
+msgstr ""
+
+msgid "Skipped (already assigned)"
+msgstr ""
+
+msgid "Will be assigned"
+msgstr ""
+
+msgid "Auto-assigning…"
+msgstr ""
+
+msgid "Auto-assigning… %1$d / %2$d (assigned %3$d, skipped %4$d)"
+msgstr ""
+
+msgid "Auto-assign complete: %1$d assigned, %2$d skipped. Undo it from Activity Log if needed."
+msgstr ""
+
+msgid "Too many batches; stopped. Run again to continue."
+msgstr ""
+
+msgid "Analyzing site references…"
+msgstr ""
+
+msgid "Scanning usage… %1$d / %2$d"
+msgstr ""
+
+msgid "Scan complete: %d media processed."
+msgstr ""
+
+msgid "Loading…"
+msgstr ""
+
+msgid "No activity yet."
+msgstr ""
+
+msgid "%d media"
+msgstr ""
+
+msgid "Undone"
+msgstr ""
+
+msgid "Undo"
+msgstr ""
+
+msgid "Cannot undo"
+msgstr ""
+
+msgid "Undo this action?"
+msgstr ""
+
+msgid "Undone."
+msgstr ""
+
+msgid "Building file size index… %d remaining"
+msgstr ""
+
+msgid "URL copied to clipboard."
+msgstr ""
+
+msgid "Copy failed. Copy it manually from the details panel."
+msgstr ""
+
+msgid "Selected all %d matching media (across pages)."
+msgstr ""
+
+msgid "Permanently delete this media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr ""
+
+msgid "Warning: this media is currently in use by posts; deleting will leave missing images in your content."
+msgstr ""
+
+msgid "URL copied."
+msgstr ""
+
+msgid "Copy failed. Select and copy manually."
+msgstr ""
+
+msgid "Auto-copy is not supported in this browser. Select and copy manually."
+msgstr ""
+
+msgid "Uploaded %d media. The list and folders have been updated."
+msgstr ""
+
+msgid "Upload failed: %s"
+msgstr ""
+
+msgid "Upload failed."
+msgstr ""
+
+msgid "Media scripts are not loaded. Please reload the page."
+msgstr ""
+
+msgid "Upload media"
+msgstr ""
+
+msgid "Uploading %1$d / %2$d (%3$d%%)"
+msgstr ""
+
+msgid "Reset to the default rules? Your current rules will be overwritten."
+msgstr ""
+
+msgid "New rule"
+msgstr ""
+
+msgid "Load failed"
+msgstr ""
+
+msgid "Save failed"
+msgstr ""
+
+msgid "No media is directly attached to this post (featured image included)."
+msgstr ""
+
+msgid "Media folders"
+msgstr ""
+
+msgid "FolderNest"
+msgstr ""
+
+msgid "Unused-media cleanup wizard"
+msgstr ""
+
+msgid "Missing-alt batch workflow"
+msgstr ""
+
+msgid "Folder import/export & import from other folder plugins"
+msgstr ""
+
+msgid "Delete folder together with its files (typed confirmation)"
+msgstr ""
+
+msgid "Delete this folder?\n\nMedia and physical files inside are kept; subfolders move up one level."
+msgstr ""
+
+msgid "Delete this tag? The media itself is not affected."
+msgstr ""
+
+msgid "Apply auto-assign? You can undo it from Activity Log afterwards."
+msgstr ""
+
+msgid "Select some media first."
+msgstr ""
+
+msgid "No media matches the current filters."
+msgstr ""
+
+msgid "Your account does not have permission to manage media."
+msgstr ""
+
+msgid "This plugin only writes classification data; it never moves or rewrites media files."
+msgstr ""
+
+msgid "File paths untouched"
+msgstr ""
+
+msgid "Organize media with folders and tags. Everything writes to the database only — media URLs and physical files never change."
+msgstr ""
+
+msgid "Pro feature"
+msgstr ""
+
+msgid "Clean up unused"
+msgstr ""
+
+msgid "Missing alt"
+msgstr ""
+
+msgid "Scan usage"
+msgstr ""
+
+msgid "Auto-assign"
+msgstr ""
+
+msgid "Activity log"
+msgstr ""
+
+msgid "Select files to upload"
+msgstr ""
+
+msgid "Or drop files here — actually"
+msgstr ""
+
+msgid "the whole page is a dropzone"
+msgstr ""
+
+msgid "drop onto a folder row and the files land in that folder; drop anywhere else and they land in"
+msgstr ""
+
+msgid "the folder you are browsing"
+msgstr ""
+
+msgid " (it follows the folder selected on the left)."
+msgstr ""
+
+msgid "Export"
+msgstr ""
+
+msgid "Import"
+msgstr ""
+
+msgid "From plugins"
+msgstr ""
+
+msgid "Add new tag"
+msgstr ""
+
+msgid "Search filename or title…"
+msgstr ""
+
+msgid "All types"
+msgstr ""
+
+msgid "Usage status: All"
+msgstr ""
+
+msgid "Newest first"
+msgstr ""
+
+msgid "Oldest first"
+msgstr ""
+
+msgid "Title A→Z"
+msgstr ""
+
+msgid "Title Z→A"
+msgstr ""
+
+msgid "File size high→low"
+msgstr ""
+
+msgid "File size low→high"
+msgstr ""
+
+msgid "ID high→low"
+msgstr ""
+
+msgid "Include subfolders"
+msgstr ""
+
+msgid "View mode"
+msgstr ""
+
+msgid "Grid view"
+msgstr ""
+
+msgid "List view"
+msgstr ""
+
+msgid "Hold and drag on empty space, or press a card briefly and drag, to box-select multiple items. Hold Ctrl/Cmd while dragging to add to the selection."
+msgstr ""
+
+msgid "Drag cards onto a folder on the left to move them (multi-select works); drop on \"Unassigned\" to remove folders."
+msgstr ""
+
+msgid "Selected"
+msgstr ""
+
+msgid "Select all matching"
+msgstr ""
+
+msgid "Clear selection"
+msgstr ""
+
+msgid "Move to"
+msgstr ""
+
+msgid "Remove from folders"
+msgstr ""
+
+msgid "Comma-separated; missing tags are created"
+msgstr ""
+
+msgid "Add tags"
+msgstr ""
+
+msgid "Remove tags"
+msgstr ""
+
+msgid "Batch edit fields"
+msgstr ""
+
+msgid "Variables:"
+msgstr ""
+
+msgid "full filename"
+msgstr ""
+
+msgid "filename without extension"
+msgstr ""
+
+msgid "extension"
+msgstr ""
+
+msgid "counter"
+msgstr ""
+
+msgid "original value"
+msgstr ""
+
+msgid "Empty fields are left unchanged."
+msgstr ""
+
+msgid "e.g. {stem}"
+msgstr ""
+
+msgid "Apply mode"
+msgstr ""
+
+msgid "Replace original value"
+msgstr ""
+
+msgid "Append after original"
+msgstr ""
+
+msgid "Prepend before original"
+msgstr ""
+
+msgid "Apply fields"
+msgstr ""
+
+msgid "Click any media to edit its details here"
+msgstr ""
+
+msgid "Rules are evaluated top-down; the first matching rule wins."
+msgstr ""
+
+msgid "Run \"Dry run\" to preview the result before applying."
+msgstr ""
+
+msgid "Scope:"
+msgstr ""
+
+msgid "Unassigned only"
+msgstr ""
+
+msgid "Images only"
+msgstr ""
+
+msgid "Audio only"
+msgstr ""
+
+msgid "Videos only"
+msgstr ""
+
+msgid "Save rules"
+msgstr ""
+
+msgid "Restore default rules"
+msgstr ""
+
+msgid "Dry run"
+msgstr ""
+
+msgid "Apply now"
+msgstr ""
+
+msgid "Every batch action keeps a snapshot and can be undone with one click. Only classification and field changes are recorded — files are never touched."
+msgstr ""
+
+msgid "FolderNest Pro"
+msgstr ""
+
+msgid "This feature is part of FolderNest Pro:"
+msgstr ""
+
+msgid "Annual license, activate instantly with the key we email you."
+msgstr ""
+
+msgid "Buy FolderNest Pro"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Security check failed. Please reload the page."
+msgstr ""
+
+msgid "Media not found."
+msgstr ""
+
+msgid "No media selected."
+msgstr ""
+
+msgid "Removed %d media from all folders."
+msgstr ""
+
+msgid "Select a valid target folder."
+msgstr ""
+
+msgid "Specify at least one tag."
+msgstr ""
+
+msgid "Updated fields for %d media."
+msgstr ""
+
+msgid "Permanently deleted %d media."
+msgstr ""
+
+msgid "(%d failed)"
+msgstr ""
+
+msgid "Post not found."
+msgstr ""
+
+msgid "Folder not found."
+msgstr ""
+
+msgid "Invalid color."
+msgstr ""
+
+msgid "Folder color updated."
+msgstr ""
+
+msgid "Folder pinned."
+msgstr ""
+
+msgid "Folder unpinned."
+msgstr ""
+
+msgid "Enter a folder name."
+msgstr ""
+
+msgid "A folder with the same name already exists at this level."
+msgstr ""
+
+msgid "Missing parameters."
+msgstr ""
+
+msgid "Folder deleted (the media itself is not affected)."
+msgstr ""
+
+msgid "A folder cannot be moved into itself."
+msgstr ""
+
+msgid "A folder cannot be moved into its own subfolder."
+msgstr ""
+
+msgid "Folder moved."
+msgstr ""
+
+msgid "This tag already exists."
+msgstr ""
+
+msgid "Tag deleted."
+msgstr ""
+
+msgid "Invalid rule format."
+msgstr ""
+
+msgid "Saved %d rules."
+msgstr ""
+
+msgid "Restored the default rules."
+msgstr ""
+
+msgid "Cancelled. Everything already applied can be undone from Activity Log."
+msgstr ""
+
+msgid "No job is running."
+msgstr ""
+
+msgid "Reference index rebuilt. The next scan will re-analyze site content."
+msgstr ""
+
+msgid "Restored the previous state of %d media."
+msgstr ""
+
+msgid "Videos"
+msgstr ""
+
+msgid "Pictures"
+msgstr ""
+
+msgid "Documents"
+msgstr ""
+
+msgid "Rule"
+msgstr ""
+
+msgid "No media in scope."
+msgstr ""
+
+msgid "No auto-assign job is running."
+msgstr ""
+
+msgid "Activity entry not found."
+msgstr ""
+
+msgid "This action has already been undone."
+msgstr ""
+
+msgid "This action has no restorable snapshot (too many items, or the record is corrupted)."
+msgstr ""
+
+msgid "Assign folder"
+msgstr ""
+
+msgid "Usage scan"
+msgstr ""
+
+msgid "System"
+msgstr ""
+
+msgid "User #%d"
+msgstr ""
+
+msgid "Upload to folder:"
+msgstr ""
+
+msgid "(none — classify later)"
+msgstr ""
+
+msgid "Folder:"
+msgstr ""
+
+msgid "All folders"
+msgstr ""
+
+msgid "Filter by folder"
+msgstr ""
+
+msgid "Filter by tag"
+msgstr ""
+
+msgid "All tags"
+msgstr ""
+
+msgid "Filter by usage status"
+msgstr ""
+
+msgid "Open FolderNest"
+msgstr ""
+
+msgid "FolderNest is now active."
+msgstr ""
+
+msgid "Media can now be organized with folders and tags — file paths and URLs are never touched."
+msgstr ""
+
+msgid "Dismiss"
+msgstr ""
+
+msgid "Media folder"
+msgstr ""
+
+msgid "Search folders"
+msgstr ""
+
+msgid "Parent folder"
+msgstr ""
+
+msgid "Edit folder"
+msgstr ""
+
+msgid "Update folder"
+msgstr ""
+
+msgid "New folder name"
+msgstr ""
+
+msgid "Media tags"
+msgstr ""
+
+msgid "Media tag"
+msgstr ""
+
+msgid "Search tags"
+msgstr ""
+
+msgid "Edit tag"
+msgstr ""
+
+msgid "Update tag"
+msgstr ""
+
+msgid "New tag name"
+msgstr ""
+
+msgid "Pick a folder before uploading and files land in it directly. Classification only — file paths and URLs never change."
+msgstr ""
+
+msgid "Unused media is now filtered. Review it, then delete with \"Delete permanently\" in the bulk bar."
+msgstr ""
+
+msgid "Will rescan all site references (about 10–30 seconds), then permanently delete all %d unused media.\nFiles will be removed. This cannot be undone!\n\nContinue?"
+msgstr ""
+
+msgid "Rescanning site references…"
+msgstr ""
+
+msgid "Rescanning site references… %1$d / %2$d"
+msgstr ""
+
+msgid "Great! No images are missing alt text."
+msgstr ""
+
+msgid "Alt text…"
+msgstr ""
+
+msgid "Load failed: %s"
+msgstr ""
+
+msgid "Filled %d empty fields from filenames."
+msgstr ""
+
+msgid "Nothing to fill — every field already has text."
+msgstr ""
+
+msgid "All fields restored to their original values."
+msgstr ""
+
+msgid "No alt text was filled in."
+msgstr ""
+
+msgid "Folder structure exported."
+msgstr ""
+
+msgid "Export failed: %s"
+msgstr ""
+
+msgid "Paste the exported JSON first."
+msgstr ""
+
+msgid "Invalid JSON. Please check the content."
+msgstr ""
+
+msgid "No other folder plugins with folder data were detected."
+msgstr ""
+
+msgid "%d folders"
+msgstr ""
+
+msgid "Imported"
+msgstr ""
+
+msgid "Clean up unused media"
+msgstr ""
+
+msgid "\"Unused\" means no reference was found in any post or page content at scan time. We recommend filtering and reviewing before deleting; deletion cannot be undone."
+msgstr ""
+
+msgid "Currently unused:"
+msgstr ""
+
+msgid "Filter unused media (recommended — review first)"
+msgstr ""
+
+msgid "Permanently delete ALL unused media now"
+msgstr ""
+
+msgid "Run"
+msgstr ""
+
+msgid "Missing alt text"
+msgstr ""
+
+msgid "Lists images without alt text. Alt text is a basic accessibility and SEO requirement. Empty rows are skipped."
+msgstr ""
+
+msgid "Fill every empty field with a humanized version of its filename (you can edit before applying)."
+msgstr ""
+
+msgid "Auto-fill from filename"
+msgstr ""
+
+msgid "Restore original"
+msgstr ""
+
+msgid "Apply all (skip empty)"
+msgstr ""
+
+msgid "Import folder structure"
+msgstr ""
+
+msgid "Paste a previously exported JSON. Folders with the same name at the same level are skipped; nothing is overwritten."
+msgstr ""
+
+msgid "Import JSON"
+msgstr ""
+
+msgid "Start import"
+msgstr ""
+
+msgid "Once set, only users with the selected roles can see this folder (and its subfolders) and its media. Leave all unchecked to make it visible to everyone. Administrators are never restricted."
+msgstr ""
+
+msgid "Visible roles (multi-select)"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Delete folder"
+msgstr ""
+
+msgid "media"
+msgstr ""
+
+msgid "Keep media — remove this folder only (media becomes unassigned)"
+msgstr ""
+
+msgid "Also permanently delete ALL media inside this folder and its subfolders (cannot be undone!)"
+msgstr ""
+
+msgid "Type the folder name exactly to confirm:"
+msgstr ""
+
+msgid "Import from other folder plugins"
+msgstr ""
+
+msgid "Detected plugins with folder data are listed below. Importing copies the folder tree into FolderNest; your source plugin's data is never modified, and importing twice duplicates nothing."
+msgstr ""
+
+msgid "This feature requires an active FolderNest Pro license."
+msgstr ""
+
+msgid "Updated alt text for %d media."
+msgstr ""
+
+msgid "The import data contains no usable folders or tags."
+msgstr ""
+
+msgid "Imported: %1$d new folders (%2$d already existed), %3$d tags."
+msgstr ""
+
+msgid "Only administrators can change folder permissions."
+msgstr ""
+
+msgid "Access roles for \"%s\" updated."
+msgstr ""
+
+msgid "Type the folder name exactly to confirm the deletion."
+msgstr ""
+
+msgid "Folder \"%1$s\" and %2$d media files were permanently deleted."
+msgstr ""
+
+msgid "Unknown import source."
+msgstr ""
+
+msgid "No folders found in the source plugin."
+msgstr ""
+
+msgid "Imported: %1$d folders created, %2$d already existed (skipped)."
+msgstr ""
+
+msgid "Activation failed: %s"
+msgstr ""
+
+msgid "License activated. Pro features are unlocked."
+msgstr ""
+
+msgid "License deactivated."
+msgstr ""
+
+msgid "Email support@plugnest.dev with your license key for priority support."
+msgstr ""
+
+msgid "FolderNest Pro — License"
+msgstr ""
+
+msgid "Pro features: unused-media cleanup wizard, missing-alt batch workflow, folder import/export, folder access roles."
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Active"
+msgstr ""
+
+msgid "renews / expires on %s"
+msgstr ""
+
+msgid "Not active"
+msgstr ""
+
+msgid "Last validation"
+msgstr ""
+
+msgid "Support"
+msgstr ""
+
+msgid "Documentation"
+msgstr ""
+
+msgid "Deactivate license on this site"
+msgstr ""
+
+msgid "License key"
+msgstr ""
+
+msgid "Activate"
+msgstr ""
+
+msgid "no license key entered. Pro features are locked."
+msgstr ""
+
+msgid "the license could not be validated (expired, revoked, or the license server was unreachable for more than 14 days)."
+msgstr ""
+
+msgid "Open license settings"
+msgstr ""
+
