@@ -1,5 +1,5 @@
 /**
- * FolderNest — Gutenberg 側欄。
+ * PlugNest Media Folders — Gutenberg 側欄。
  *
  * 在區塊編輯器的「文件」設定側欄加入「媒體資料夾」面板：
  * 列出直接附屬於這篇文章的媒體（含精選圖片），每個可即時指派資料夾。
@@ -42,9 +42,9 @@
 				.then( function ( r ) { return r.json(); } )
 				.then( function ( j ) {
 					if ( j && j.success ) { setItems( { loading: false, items: j.data.items || [], error: '' } ); }
-					else { setItems( { loading: false, items: [], error: __( 'Load failed', 'foldernest' ) } ); }
+					else { setItems( { loading: false, items: [], error: __( 'Load failed', 'plugnest-media-folders' ) } ); }
 				} )
-				.catch( function () { setItems( { loading: false, items: [], error: __( 'Load failed', 'foldernest' ) } ); } );
+				.catch( function () { setItems( { loading: false, items: [], error: __( 'Load failed', 'plugnest-media-folders' ) } ); } );
 		}, [ postId ] );
 
 		function setFolder( id, folderId ) {
@@ -56,21 +56,21 @@
 			fetch( CFG.ajaxUrl, { method: 'POST', credentials: 'same-origin', body: body } )
 				.then( function ( r ) { return r.json(); } )
 				.then( function ( j ) {
-					if ( ! j.success ) { window.alert( j.data && j.data.message ? j.data.message : __( 'Save failed', 'foldernest' ) ); }
+					if ( ! j.success ) { window.alert( j.data && j.data.message ? j.data.message : __( 'Save failed', 'plugnest-media-folders' ) ); }
 				} );
 		}
 
 		var rows;
 		if ( items.loading ) {
-			rows = [ el( 'p', { key: 'l' }, __( 'Loading…', 'foldernest' ) ) ];
+			rows = [ el( 'p', { key: 'l' }, __( 'Loading…', 'plugnest-media-folders' ) ) ];
 		} else if ( items.error ) {
 			rows = [ el( 'p', { key: 'e' }, items.error ) ];
 		} else if ( ! items.length ) {
-			rows = [ el( 'p', { key: 'n' }, __( 'No media is directly attached to this post (featured image included).', 'foldernest' ) ) ];
+			rows = [ el( 'p', { key: 'n' }, __( 'No media is directly attached to this post (featured image included).', 'plugnest-media-folders' ) ) ];
 		} else {
 			rows = items.map( function ( it, idx ) {
 				var current = it.folders && it.folders.length ? String( it.folders[ 0 ].term_id ) : '';
-				var options = [ el( 'option', { key: 'none', value: '' }, __( '— Unassigned —', 'foldernest' ) ) ]
+				var options = [ el( 'option', { key: 'none', value: '' }, __( '— Unassigned —', 'plugnest-media-folders' ) ) ]
 					.concat( ( CFG.folders || [] ).map( function ( f, i ) {
 						return el( 'option', { key: f.term_id, value: String( f.term_id ) },
 							'\u00A0\u00A0\u00A0'.repeat( f.depth || 0 ) + f.name + ' (' + ( f.count || 0 ) + ')' );
@@ -89,7 +89,7 @@
 
 		return el( window.wp.editPost.PluginDocumentSettingPanel, {
 			name: 'mn-mm-folders',
-			title: __( 'Media folders', 'foldernest' ),
+			title: __( 'Media folders', 'plugnest-media-folders' ),
 			icon: 'images-alt2',
 			initialOpen: false,
 		}, rows );

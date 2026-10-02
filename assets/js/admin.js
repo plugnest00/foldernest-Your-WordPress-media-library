@@ -1,10 +1,10 @@
 /**
- * FolderNest — 後台互動邏輯。
+ * PlugNest Media Folders — 後台互動邏輯。
  *
  * 全部使用原生 JavaScript，不依賴 jQuery。
  * 所有寫入都經過 AJAX，並在畫面上即時反映結果。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 ( function () {
@@ -133,7 +133,7 @@
 
 		wrap.hidden = ! show;
 		if ( show ) {
-			label.textContent = text || __( 'Processing…', 'foldernest' );
+			label.textContent = text || __( 'Processing…', 'plugnest-media-folders' );
 			fill.style.width = ( percent || 0 ) + '%';
 			cancel.hidden = ! cancellable;
 		}
@@ -170,11 +170,11 @@
 		try {
 			json = await response.json();
 		} catch ( e ) {
-			throw new Error( __( 'Invalid server response. Please reload the page.', 'foldernest' ) );
+			throw new Error( __( 'Invalid server response. Please reload the page.', 'plugnest-media-folders' ) );
 		}
 
 		if ( ! json || ! json.success ) {
-			const msg = json && json.data && json.data.message ? json.data.message : __( 'Operation failed.', 'foldernest' );
+			const msg = json && json.data && json.data.message ? json.data.message : __( 'Operation failed.', 'plugnest-media-folders' );
 			throw new Error( msg );
 		}
 
@@ -198,12 +198,12 @@
 		state.stats = stats;
 
 		const items = [
-			{ value: stats.total, label: __( 'Total media', 'foldernest' ) },
-			{ value: stats.folders, label: __( 'Folders', 'foldernest' ) },
-			{ value: stats.unassigned, label: __( 'Unassigned', 'foldernest' ), cls: 'mn-mm-stat--warn' },
-			{ value: stats.used, label: __( 'In use', 'foldernest' ) },
-			{ value: stats.unused, label: __( 'Unused', 'foldernest' ), cls: 'mn-mm-stat--alert' },
-			{ value: stats.unscanned, label: __( 'Not scanned', 'foldernest' ) },
+			{ value: stats.total, label: __( 'Total media', 'plugnest-media-folders' ) },
+			{ value: stats.folders, label: __( 'Folders', 'plugnest-media-folders' ) },
+			{ value: stats.unassigned, label: __( 'Unassigned', 'plugnest-media-folders' ), cls: 'mn-mm-stat--warn' },
+			{ value: stats.used, label: __( 'In use', 'plugnest-media-folders' ) },
+			{ value: stats.unused, label: __( 'Unused', 'plugnest-media-folders' ), cls: 'mn-mm-stat--alert' },
+			{ value: stats.unscanned, label: __( 'Not scanned', 'plugnest-media-folders' ) },
 		];
 
 		$( '#mn-mm-stats' ).innerHTML = items
@@ -231,7 +231,7 @@
 		rows.push(
 			item( {
 				key: 'all',
-				name: __( 'All media', 'foldernest' ),
+				name: __( 'All media', 'plugnest-media-folders' ),
 				count: state.stats.total,
 				depth: 0,
 				active: state.folderId === 0,
@@ -240,7 +240,7 @@
 		rows.push(
 			item( {
 				key: 'none',
-				name: __( 'Unassigned', 'foldernest' ),
+				name: __( 'Unassigned', 'plugnest-media-folders' ),
 				count: state.stats.unassigned,
 				depth: 0,
 				active: state.folderId === 'none',
@@ -251,7 +251,7 @@
 		/* 釘選（星標）資料夾：平鋪在樹頂，點擊直接跳轉；★ 可點擊取消釘選。 */
 		const pinned = state.folders.filter( ( f ) => f.star );
 		if ( pinned.length ) {
-			rows.push( '<li class="mn-mm-tree-pinned-label">' + __( 'Pinned', 'foldernest' ) + '</li>' );
+			rows.push( '<li class="mn-mm-tree-pinned-label">' + __( 'Pinned', 'plugnest-media-folders' ) + '</li>' );
 			pinned.forEach( ( f ) => {
 				rows.push(
 					item( {
@@ -308,7 +308,7 @@
 				: '';
 			/* 有設定角色的資料夾：名稱後挂鎖徽章（告知受限中）。 */
 			const lockBadge = ( o.roles && o.roles.length )
-				? ' <span class="mn-mm-tree-lock" title="' + esc( __( 'Folder access roles', 'foldernest' ) ) + '">🔒</span>'
+				? ' <span class="mn-mm-tree-lock" title="' + esc( __( 'Folder access roles', 'plugnest-media-folders' ) ) + '">🔒</span>'
 				: '';
 
 			/* 釘選列的 ★ 是可點擊的取消鈕（其餘區域點擊＝跳轉）。 */
@@ -328,7 +328,7 @@
 					'>' +
 					'<button type="button" class="mn-mm-tree-star is-starred" data-star="' +
 					o.termId +
-					'" data-starred="1" title="' + __( 'Unpin folder', 'foldernest' ) + '">★</button>' +
+					'" data-starred="1" title="' + __( 'Unpin folder', 'plugnest-media-folders' ) + '">★</button>' +
 					colorDot +
 					'<span class="mn-mm-tree-name">' +
 					esc( o.name ) +
@@ -344,7 +344,7 @@
 			const rolesBtn =
 				'<button type="button" data-roles="' +
 				o.termId +
-				'" title="' + __( 'Folder access roles', 'foldernest' ) + '" class="' +
+				'" title="' + __( 'Folder access roles', 'plugnest-media-folders' ) + '" class="' +
 				( CFG.pro ? '' : 'mn-mm-pro-locked' ) +
 				'">🔒</button>';
 			const starBtn =
@@ -352,7 +352,7 @@
 				o.termId +
 				'" data-starred="' +
 				( o.star ? '1' : '0' ) +
-				'" title="' + __( 'Pin folder', 'foldernest' ) + '" class="' +
+				'" title="' + __( 'Pin folder', 'plugnest-media-folders' ) + '" class="' +
 				( o.star ? 'is-starred' : '' ) +
 				'">★</button>';
 			const colorBtn =
@@ -360,19 +360,19 @@
 				o.termId +
 				'" data-current="' +
 				esc( o.color || '' ) +
-				'" title="' + __( 'Folder color', 'foldernest' ) + '">🎨</button>';
+				'" title="' + __( 'Folder color', 'plugnest-media-folders' ) + '">🎨</button>';
 			const actions =
 				o.termId !== undefined
 					? '<span class="mn-mm-tree-actions">' +
 					  '<button type="button" data-rename="' +
 					  o.termId +
-					  '" title="' + __( 'Rename', 'foldernest' ) + '">✎</button>' +
+					  '" title="' + __( 'Rename', 'plugnest-media-folders' ) + '">✎</button>' +
 					  colorBtn +
 					  starBtn +
 					  rolesBtn +
 					  '<button type="button" class="mn-mm-danger" data-delete="' +
 					  o.termId +
-					  '" title="' + __( 'Delete', 'foldernest' ) + '">✕</button>' +
+					  '" title="' + __( 'Delete', 'plugnest-media-folders' ) + '">✕</button>' +
 					  '</span>'
 					: '';
 
@@ -451,9 +451,9 @@
 		if ( ! el ) {
 			return;
 		}
-		let name = __( 'All media (uploads land in Unassigned)', 'foldernest' );
+		let name = __( 'All media (uploads land in Unassigned)', 'plugnest-media-folders' );
 		if ( state.folderId === 'none' ) {
-			name = __( 'Unassigned', 'foldernest' );
+			name = __( 'Unassigned', 'plugnest-media-folders' );
 		} else if ( state.folderId > 0 ) {
 			const f = state.folders.find( ( x ) => x.term_id === parseInt( state.folderId, 10 ) );
 			if ( f ) {
@@ -466,7 +466,7 @@
 	function renderTags() {
 		const box = $( '#mn-mm-tags' );
 		if ( ! state.tags.length ) {
-			box.innerHTML = '<span class="mn-mm-hint">' + __( 'No tags yet.', 'foldernest' ) + '</span>';
+			box.innerHTML = '<span class="mn-mm-hint">' + __( 'No tags yet.', 'plugnest-media-folders' ) + '</span>';
 			return;
 		}
 		box.innerHTML = state.tags
@@ -513,17 +513,17 @@
 
 				let flags = '';
 				if ( item.used === 0 ) {
-					flags += '<span class="mn-mm-flag mn-mm-flag--unused">' + __( 'Unused', 'foldernest' ) + '</span>';
+					flags += '<span class="mn-mm-flag mn-mm-flag--unused">' + __( 'Unused', 'plugnest-media-folders' ) + '</span>';
 				} else if ( item.used === 1 ) {
-					flags += '<span class="mn-mm-flag mn-mm-flag--used">' + __( 'In use', 'foldernest' ) + '</span>';
+					flags += '<span class="mn-mm-flag mn-mm-flag--used">' + __( 'In use', 'plugnest-media-folders' ) + '</span>';
 				}
 				if ( ! item.folders.length ) {
-					flags += '<span class="mn-mm-flag mn-mm-flag--unassigned">' + __( 'Unassigned', 'foldernest' ) + '</span>';
+					flags += '<span class="mn-mm-flag mn-mm-flag--unassigned">' + __( 'Unassigned', 'plugnest-media-folders' ) + '</span>';
 				}
 
 				const folderLabel = item.folders.length
 					? item.folders.map( ( f ) => f.name ).join( ', ' )
-					: __( 'Unassigned', 'foldernest' );
+					: __( 'Unassigned', 'plugnest-media-folders' );
 
 				const size = item.width && item.height ? item.width + '×' + item.height : item.ext;
 
@@ -541,7 +541,7 @@
 					'</span>' +
 					'<button type="button" class="mn-mm-card-copy" data-url="' +
 					esc( item.url ) +
-					'" title="' + __( 'Copy URL', 'foldernest' ) + '"><span class="dashicons dashicons-admin-links"></span></button>' +
+					'" title="' + __( 'Copy URL', 'plugnest-media-folders' ) + '"><span class="dashicons dashicons-admin-links"></span></button>' +
 					'</div>' +
 					'<div class="mn-mm-card-body">' +
 					'<div class="mn-mm-card-name" title="' +
@@ -637,7 +637,7 @@
 			'<button type="button" class="mn-mm-crumb' +
 			( currentId === 0 ? ' is-here' : '' ) +
 			'" data-crumb="0">' +
-			__( 'All media', 'foldernest' ) +
+			__( 'All media', 'plugnest-media-folders' ) +
 			'</button>';
 		crumbs.forEach( ( c, i ) => {
 			html += '<span class="sep">›</span>';
@@ -678,11 +678,11 @@
 			'<button type="button" class="mn-mm-folder-tile is-add" data-tile-add="' +
 			currentId +
 			'" title="' +
-			__( 'Add new folder', 'foldernest' ) +
+			__( 'Add new folder', 'plugnest-media-folders' ) +
 			'">' +
 			'<span class="dashicons dashicons-plus-alt2"></span>' +
 			'<span class="mn-mm-tile-name">' +
-			__( 'Add', 'foldernest' ) +
+			__( 'Add', 'plugnest-media-folders' ) +
 			'</span>' +
 			'</button>';
 		html += '</div>';
@@ -724,7 +724,7 @@
 		if ( state.total <= state.perPage ) {
 			box.innerHTML =
 				'<span class="mn-mm-pagination-info">' +
-				sprintf( __( '%d media in total', 'foldernest' ), state.total ) +
+				sprintf( __( '%d media in total', 'plugnest-media-folders' ), state.total ) +
 				'</span>';
 			return;
 		}
@@ -734,15 +734,15 @@
 			( state.paged - 1 ) +
 			'"' +
 			( state.paged <= 1 ? ' disabled' : '' ) +
-			'>' + __( 'Previous', 'foldernest' ) + '</button>' +
+			'>' + __( 'Previous', 'plugnest-media-folders' ) + '</button>' +
 			'<span class="mn-mm-pagination-info">' +
-			sprintf( __( 'Page %1$d of %2$d, %3$d media in total', 'foldernest' ), state.paged, state.pages, state.total ) +
+			sprintf( __( 'Page %1$d of %2$d, %3$d media in total', 'plugnest-media-folders' ), state.paged, state.pages, state.total ) +
 			'</span>' +
 			'<button type="button" class="button" data-page="' +
 			( state.paged + 1 ) +
 			'"' +
 			( state.paged >= state.pages ? ' disabled' : '' ) +
-			'>' + __( 'Next', 'foldernest' ) + '</button>';
+			'>' + __( 'Next', 'plugnest-media-folders' ) + '</button>';
 	}
 
 	/* =========================================================
@@ -763,7 +763,7 @@
 		/* 重建資料夾下拉，但保留使用者已選的值。 */
 		const sel = $( '#mn-mm-bulk-folder' );
 		const previous = sel.value;
-		const options = [ '<option value="">' + __( '— Select folder —', 'foldernest' ) + '</option>' ];
+		const options = [ '<option value="">' + __( '— Select folder —', 'plugnest-media-folders' ) + '</option>' ];
 		state.folders.forEach( ( f ) => {
 			options.push(
 				'<option value="' +
@@ -828,7 +828,7 @@
 			preview = '<div class="mn-mm-inspector-preview"><span class="dashicons ' + iconOf( item.type ) + '"></span></div>';
 		}
 
-		const folderOptions = [ '<option value="">' + __( '— Unassigned —', 'foldernest' ) + '</option>' ]
+		const folderOptions = [ '<option value="">' + __( '— Unassigned —', 'plugnest-media-folders' ) + '</option>' ]
 			.concat(
 				state.folders.map(
 					( f ) =>
@@ -858,10 +858,10 @@
 
 		const usageText =
 			item.used === 1
-				? '<span style="color:#007017">' + __( 'In use', 'foldernest' ) + '</span>'
+				? '<span style="color:#007017">' + __( 'In use', 'plugnest-media-folders' ) + '</span>'
 				: item.used === 0
-				? '<span style="color:#b32d2e">' + __( 'Unused', 'foldernest' ) + '</span>'
-				: __( 'Not scanned', 'foldernest' );
+				? '<span style="color:#b32d2e">' + __( 'Unused', 'plugnest-media-folders' ) + '</span>'
+				: __( 'Not scanned', 'plugnest-media-folders' );
 
 		body.innerHTML =
 			preview +
@@ -871,47 +871,47 @@
 			'<div class="mn-mm-inspector-actions">' +
 			'<a class="button button-small" href="' +
 			esc( CFG.editUrl + '?post=' + item.id + '&action=edit' ) +
-			'" target="_blank" rel="noopener">' + __( 'Open in native editor', 'foldernest' ) + '</a>' +
+			'" target="_blank" rel="noopener">' + __( 'Open in native editor', 'plugnest-media-folders' ) + '</a>' +
 			'<button type="button" class="button button-small" data-copy="' +
 			esc( item.url ) +
-			'">' + __( 'Copy URL', 'foldernest' ) + '</button>' +
+			'">' + __( 'Copy URL', 'plugnest-media-folders' ) + '</button>' +
 			'<button type="button" class="button button-small mn-mm-danger-btn" data-inspector-delete="' +
 			esc( item.id ) +
-			'" title="' + __( 'Delete permanently (skips trash, cannot be undone)', 'foldernest' ) + '">' + __( 'Delete permanently', 'foldernest' ) + '</button>' +
+			'" title="' + __( 'Delete permanently (skips trash, cannot be undone)', 'plugnest-media-folders' ) + '">' + __( 'Delete permanently', 'plugnest-media-folders' ) + '</button>' +
 			'</div>' +
-			'<div class="mn-mm-field-row"><label>' + __( 'Title', 'foldernest' ) + '</label><input type="text" id="mn-mm-f-title" value="' +
+			'<div class="mn-mm-field-row"><label>' + __( 'Title', 'plugnest-media-folders' ) + '</label><input type="text" id="mn-mm-f-title" value="' +
 			esc( item.title ) +
 			'"></div>' +
-			'<div class="mn-mm-field-row"><label>' + __( 'Alt text', 'foldernest' ) + '</label><input type="text" id="mn-mm-f-alt" value="' +
+			'<div class="mn-mm-field-row"><label>' + __( 'Alt text', 'plugnest-media-folders' ) + '</label><input type="text" id="mn-mm-f-alt" value="' +
 			esc( item.alt ) +
 			'"></div>' +
-			'<div class="mn-mm-field-row"><label>' + __( 'Caption', 'foldernest' ) + '</label><input type="text" id="mn-mm-f-caption" value="' +
+			'<div class="mn-mm-field-row"><label>' + __( 'Caption', 'plugnest-media-folders' ) + '</label><input type="text" id="mn-mm-f-caption" value="' +
 			esc( item.caption ) +
 			'"></div>' +
-			'<div class="mn-mm-field-row"><label>' + __( 'Description', 'foldernest' ) + '</label><textarea id="mn-mm-f-desc">' +
+			'<div class="mn-mm-field-row"><label>' + __( 'Description', 'plugnest-media-folders' ) + '</label><textarea id="mn-mm-f-desc">' +
 			esc( item.description ) +
 			'</textarea></div>' +
-			'<div class="mn-mm-field-row"><label>' + __( 'Folder', 'foldernest' ) + '</label><select id="mn-mm-f-folder">' +
+			'<div class="mn-mm-field-row"><label>' + __( 'Folder', 'plugnest-media-folders' ) + '</label><select id="mn-mm-f-folder">' +
 			folderOptions +
 			'</select></div>' +
-			'<div class="mn-mm-field-row"><label>' + __( 'Tags', 'foldernest' ) + '</label><div class="mn-mm-tags">' +
-			( tagChips || '<span class="mn-mm-hint">' + __( 'No tags yet.', 'foldernest' ) + '</span>' ) +
+			'<div class="mn-mm-field-row"><label>' + __( 'Tags', 'plugnest-media-folders' ) + '</label><div class="mn-mm-tags">' +
+			( tagChips || '<span class="mn-mm-hint">' + __( 'No tags yet.', 'plugnest-media-folders' ) + '</span>' ) +
 			'</div></div>' +
-			'<button type="button" class="button button-primary" id="mn-mm-save-item">' + __( 'Save changes', 'foldernest' ) + '</button>' +
+			'<button type="button" class="button button-primary" id="mn-mm-save-item">' + __( 'Save changes', 'plugnest-media-folders' ) + '</button>' +
 			'<ul class="mn-mm-meta-list">' +
-			'<li>' + __( 'File size: ', 'foldernest' ) + '<strong>' +
+			'<li>' + __( 'File size: ', 'plugnest-media-folders' ) + '<strong>' +
 			esc( item.filesize_human ) +
 			'</strong></li>' +
-			'<li>' + __( 'Dimensions: ', 'foldernest' ) + '<strong>' +
+			'<li>' + __( 'Dimensions: ', 'plugnest-media-folders' ) + '<strong>' +
 			esc( item.width && item.height ? item.width + ' × ' + item.height : '—' ) +
 			'</strong></li>' +
-			'<li>' + __( 'Type: ', 'foldernest' ) + '<strong>' +
+			'<li>' + __( 'Type: ', 'plugnest-media-folders' ) + '<strong>' +
 			esc( item.mime ) +
 			'</strong></li>' +
-			'<li>' + __( 'Uploaded: ', 'foldernest' ) + '<strong>' +
+			'<li>' + __( 'Uploaded: ', 'plugnest-media-folders' ) + '<strong>' +
 			esc( item.date_human ) +
 			'</strong></li>' +
-			'<li>' + __( 'Usage: ', 'foldernest' ) + '<strong>' +
+			'<li>' + __( 'Usage: ', 'plugnest-media-folders' ) + '<strong>' +
 			usageText +
 			'</strong></li>' +
 			'<li>ID: <strong>' +
@@ -943,7 +943,7 @@
 			const item = await api( 'save_item', payload );
 			state.current = item;
 			renderInspector( item );
-			toast( __( 'Saved.', 'foldernest' ), 'ok' );
+			toast( __( 'Saved.', 'plugnest-media-folders' ), 'ok' );
 			await refresh( false );
 		} catch ( e ) {
 			toast( e.message, 'error' );
@@ -965,7 +965,6 @@
 
 	async function loadMedia() {
 		/* 重新載入會把卡片整個換掉，進行中的框選就沒有意義了。 */
-		cancelHold();
 		if ( marquee ) {
 			marqueeCancel();
 		}
@@ -1074,24 +1073,17 @@
 	/* =========================================================
 	 *  拉框選取
 	 *
-	 *  兩種啟動方式：
-	 *    1. 在網格空白處按下並拖曳 → 立即開始
-	 *    2. 在卡片上「長按」約 0.35 秒後拖曳 → 開始
-	 *       （短按直接拖曳仍是原本的「拖到資料夾」，不會被搶走）
+	 *  在網格「空白處」按下並拖曳 → 框選（卡片上的按下手勢完全讓給
+	 *  原生拖曳與勾選，避免任何計時器與拖曳搶手勢）。
 	 *
 	 *  按住 Ctrl / Cmd / Shift 拉框 = 累加選取，否則為取代選取。
 	 * ========================================================= */
 
-	const MARQUEE_HOLD_MS = 350; /* 長按多久才進入框選 */
-	const MARQUEE_TOLERANCE = 6; /* 長按期間容忍的位移（px） */
 	const MARQUEE_EDGE = 64; /* 自動捲動的感應邊界（px） */
 	const MARQUEE_EDGE_MAX = 20; /* 自動捲動的最大速度（px / frame） */
 
 	let marquee = null;
 	let marqueeRaf = 0;
-	let holdTimer = null;
-	let holdCard = null;
-	let holdPoint = null;
 	let suppressClickUntil = 0;
 
 	function marqueeBox() {
@@ -1107,12 +1099,7 @@
 	}
 
 	function cancelHold() {
-		if ( holdTimer ) {
-			window.clearTimeout( holdTimer );
-			holdTimer = null;
-		}
-		holdCard = null;
-		holdPoint = null;
+		/* 已無長按機制（卡片手勢全讓給拖曳/勾選），保留空函式供相容。 */
 	}
 
 	/**
@@ -1355,7 +1342,7 @@
 			if ( kind === 'folder-move' || kind === 'folder-add' ) {
 				const folderId = $( '#mn-mm-bulk-folder' ).value;
 				if ( ! folderId ) {
-					toast( __( 'Select a target folder first.', 'foldernest' ), 'error' );
+					toast( __( 'Select a target folder first.', 'plugnest-media-folders' ), 'error' );
 					return;
 				}
 				data = await api(
@@ -1374,10 +1361,10 @@
 				).length;
 
 				let msg = selectAll
-					? sprintf( __( 'Permanently delete ALL %d matching media?\nThe files and all thumbnails will be removed. This cannot be undone!', 'foldernest' ), state.total )
-					: sprintf( __( 'Permanently delete %d media?\nThe files and all thumbnails will be removed. This cannot be undone!', 'foldernest' ), ids.length );
+					? sprintf( __( 'Permanently delete ALL %d matching media?\nThe files and all thumbnails will be removed. This cannot be undone!', 'plugnest-media-folders' ), state.total )
+					: sprintf( __( 'Permanently delete %d media?\nThe files and all thumbnails will be removed. This cannot be undone!', 'plugnest-media-folders' ), ids.length );
 				if ( usedCount > 0 ) {
-					msg += '\n\n' + sprintf( __( 'Warning: %d of them are in use by posts; deleting will leave missing images in your content.', 'foldernest' ), usedCount );
+					msg += '\n\n' + sprintf( __( 'Warning: %d of them are in use by posts; deleting will leave missing images in your content.', 'plugnest-media-folders' ), usedCount );
 				}
 				if ( ! window.confirm( msg ) ) {
 					return;
@@ -1387,7 +1374,7 @@
 			} else if ( kind === 'tag-add' || kind === 'tag-remove' ) {
 				const names = $( '#mn-mm-bulk-tags' ).value.trim();
 				if ( ! names ) {
-					toast( __( 'Enter tag names.', 'foldernest' ), 'error' );
+					toast( __( 'Enter tag names.', 'plugnest-media-folders' ), 'error' );
 					return;
 				}
 				data = await api(
@@ -1405,7 +1392,7 @@
 					description: $( '#mn-mm-edit-desc' ).value,
 				};
 				if ( ! fields.title && ! fields.alt && ! fields.caption && ! fields.description ) {
-					toast( __( 'Fill in at least one field.', 'foldernest' ), 'error' );
+					toast( __( 'Fill in at least one field.', 'plugnest-media-folders' ), 'error' );
 					return;
 				}
 				data = await api(
@@ -1467,8 +1454,8 @@
 		const current = anchor.dataset.current || '';
 		pop.innerHTML =
 			'<div class="mn-mm-color-pop-head">' +
-			'<span class="mn-mm-color-pop-title">' + __( 'Folder color', 'foldernest' ) + '</span>' +
-			'<button type="button" class="mn-mm-color-pop-close" title="' + __( 'Close', 'foldernest' ) + '">✕</button>' +
+			'<span class="mn-mm-color-pop-title">' + __( 'Folder color', 'plugnest-media-folders' ) + '</span>' +
+			'<button type="button" class="mn-mm-color-pop-close" title="' + __( 'Close', 'plugnest-media-folders' ) + '">✕</button>' +
 			'</div>' +
 			'<div class="mn-mm-color-swatches">' +
 			COLOR_SWATCHES.map( ( c ) =>
@@ -1477,11 +1464,11 @@
 				( '' === c ? ' is-none' : '' ) +
 				'" style="' + ( c ? 'background:' + c : '' ) + '" data-swatch="' +
 				c +
-				'" title="' + ( c ? c : __( 'No color', 'foldernest' ) ) + '"></button>'
+				'" title="' + ( c ? c : __( 'No color', 'plugnest-media-folders' ) ) + '"></button>'
 			).join( '' ) +
 			'</div>' +
 			'<label class="mn-mm-color-custom">' +
-			__( 'Custom', 'foldernest' ) +
+			__( 'Custom', 'plugnest-media-folders' ) +
 			' <input type="color" value="' + ( current || '#2271b1' ) + '">' +
 			'</label>';
 
@@ -1518,14 +1505,14 @@
 	}
 
 	async function addFolder( parent ) {
-		const name = window.prompt( __( 'New folder name:', 'foldernest' ) );
+		const name = window.prompt( __( 'New folder name:', 'plugnest-media-folders' ) );
 		if ( ! name ) {
 			return;
 		}
 		try {
 			await api( 'folder_create', { name, parent: parent || 0 } );
 			await loadTree();
-			toast( __( 'Folder created.', 'foldernest' ), 'ok' );
+			toast( __( 'Folder created.', 'plugnest-media-folders' ), 'ok' );
 		} catch ( e ) {
 			toast( e.message, 'error' );
 		}
@@ -1533,14 +1520,14 @@
 
 	async function renameFolder( termId ) {
 		const current = state.folders.find( ( f ) => f.term_id === termId );
-		const name = window.prompt( __( 'New folder name:', 'foldernest' ), current ? current.name : '' );
+		const name = window.prompt( __( 'New folder name:', 'plugnest-media-folders' ), current ? current.name : '' );
 		if ( ! name ) {
 			return;
 		}
 		try {
 			await api( 'folder_rename', { term_id: termId, name } );
 			await loadTree();
-			toast( __( 'Folder renamed.', 'foldernest' ), 'ok' );
+			toast( __( 'Folder renamed.', 'plugnest-media-folders' ), 'ok' );
 		} catch ( e ) {
 			toast( e.message, 'error' );
 		}
@@ -1565,7 +1552,7 @@
 				state.folderId = 0;
 			}
 			await refresh( true );
-			toast( __( 'Folder deleted.', 'foldernest' ), 'ok' );
+			toast( __( 'Folder deleted.', 'plugnest-media-folders' ), 'ok' );
 		} catch ( e ) {
 			toast( e.message, 'error' );
 		}
@@ -1574,14 +1561,14 @@
 	
 
 	async function addTag() {
-		const name = window.prompt( __( 'New tag name:', 'foldernest' ) );
+		const name = window.prompt( __( 'New tag name:', 'plugnest-media-folders' ) );
 		if ( ! name ) {
 			return;
 		}
 		try {
 			await api( 'tag_create', { name } );
 			await loadTree();
-			toast( __( 'Tag created.', 'foldernest' ), 'ok' );
+			toast( __( 'Tag created.', 'plugnest-media-folders' ), 'ok' );
 		} catch ( e ) {
 			toast( e.message, 'error' );
 		}
@@ -1602,7 +1589,7 @@
 
 		if ( ! state.rules.length ) {
 			box.innerHTML =
-				'<div class="mn-mm-empty">' + __( 'No rules yet. Click "Add rule" below to start.', 'foldernest' ) + '</div>' + datalist;
+				'<div class="mn-mm-empty">' + __( 'No rules yet. Click "Add rule" below to start.', 'plugnest-media-folders' ) + '</div>' + datalist;
 			return;
 		}
 
@@ -1620,51 +1607,51 @@
 					'<div class="mn-mm-rule-head">' +
 					'<label class="mn-mm-check"><input type="checkbox" data-field="enabled"' +
 					( rule.enabled ? ' checked' : '' ) +
-					'>' + __( 'Enable', 'foldernest' ) + '</label>' +
+					'>' + __( 'Enable', 'plugnest-media-folders' ) + '</label>' +
 					'<input type="text" data-field="label" value="' +
 					esc( rule.label ) +
-					'" placeholder="' + __( 'Rule name', 'foldernest' ) + '">' +
+					'" placeholder="' + __( 'Rule name', 'plugnest-media-folders' ) + '">' +
 					'<button type="button" class="button button-small" data-rule-move="up">↑</button>' +
 					'<button type="button" class="button button-small" data-rule-move="down">↓</button>' +
-					'<button type="button" class="button button-small" data-rule-delete>' + __( 'Delete', 'foldernest' ) + '</button>' +
+					'<button type="button" class="button button-small" data-rule-delete>' + __( 'Delete', 'plugnest-media-folders' ) + '</button>' +
 					'</div>' +
 					'<div class="mn-mm-rule-grid">' +
-					'<label>' + __( 'Filename contains (comma-separated, any)', 'foldernest' ) + '<input type="text" data-match="filename_contains" value="' +
+					'<label>' + __( 'Filename contains (comma-separated, any)', 'plugnest-media-folders' ) + '<input type="text" data-match="filename_contains" value="' +
 					esc( m.filename_contains || '' ) +
-					'" placeholder="' + __( 'e.g. asmr,drama', 'foldernest' ) + '"></label>' +
-					'<label>' + __( 'File extensions (comma-separated)', 'foldernest' ) + '<input type="text" data-match="ext_in" value="' +
+					'" placeholder="' + __( 'e.g. asmr,drama', 'plugnest-media-folders' ) + '"></label>' +
+					'<label>' + __( 'File extensions (comma-separated)', 'plugnest-media-folders' ) + '<input type="text" data-match="ext_in" value="' +
 					esc( m.ext_in || '' ) +
-					'" placeholder="' + __( 'e.g. mp3,m4a', 'foldernest' ) + '"></label>' +
-					'<label>' + __( 'Filename regex (advanced, optional)', 'foldernest' ) + '<input type="text" data-match="filename_regex" value="' +
+					'" placeholder="' + __( 'e.g. mp3,m4a', 'plugnest-media-folders' ) + '"></label>' +
+					'<label>' + __( 'Filename regex (advanced, optional)', 'plugnest-media-folders' ) + '<input type="text" data-match="filename_regex" value="' +
 					esc( m.filename_regex || '' ) +
-					'" placeholder="' + __( 'e.g. ^3star-', 'foldernest' ) + '"></label>' +
-					'<label>' + __( 'Type', 'foldernest' ) + '<select data-match="mime_group">' +
-					option( '', __( 'Any', 'foldernest' ), m.mime_group ) +
-					option( 'image', __( 'Image', 'foldernest' ), m.mime_group ) +
-					option( 'audio', __( 'Audio', 'foldernest' ), m.mime_group ) +
-					option( 'video', __( 'Video', 'foldernest' ), m.mime_group ) +
-					option( 'document', __( 'Document', 'foldernest' ), m.mime_group ) +
+					'" placeholder="' + __( 'e.g. ^3star-', 'plugnest-media-folders' ) + '"></label>' +
+					'<label>' + __( 'Type', 'plugnest-media-folders' ) + '<select data-match="mime_group">' +
+					option( '', __( 'Any', 'plugnest-media-folders' ), m.mime_group ) +
+					option( 'image', __( 'Image', 'plugnest-media-folders' ), m.mime_group ) +
+					option( 'audio', __( 'Audio', 'plugnest-media-folders' ), m.mime_group ) +
+					option( 'video', __( 'Video', 'plugnest-media-folders' ), m.mime_group ) +
+					option( 'document', __( 'Document', 'plugnest-media-folders' ), m.mime_group ) +
 					'</select></label>' +
-					'<label>' + __( 'Min width (px, 0 = any)', 'foldernest' ) + '<input type="number" data-match="min_width" value="' +
+					'<label>' + __( 'Min width (px, 0 = any)', 'plugnest-media-folders' ) + '<input type="number" data-match="min_width" value="' +
 					esc( m.min_width || 0 ) +
 					'"></label>' +
-					'<label>' + __( 'Year (0 = any)', 'foldernest' ) + '<input type="number" data-match="year" value="' +
+					'<label>' + __( 'Year (0 = any)', 'plugnest-media-folders' ) + '<input type="number" data-match="year" value="' +
 					esc( m.year || 0 ) +
 					'"></label>' +
 					'</div>' +
 					'<div class="mn-mm-rule-grid">' +
-					'<label>' + __( 'Target folder (use / for nesting; folders are created automatically)', 'foldernest' ) +
+					'<label>' + __( 'Target folder (use / for nesting; folders are created automatically)', 'plugnest-media-folders' ) +
 					'<input type="text" data-field="target_folder" list="mn-mm-folder-paths" value="' +
 					esc( rule.target_folder || '' ) +
-					'" placeholder="' + __( 'e.g. Videos/ASMR', 'foldernest' ) + '"></label>' +
-					'<label>' + __( 'Also add tags (comma-separated, optional)', 'foldernest' ) + '<input type="text" data-field="add_tags" value="' +
+					'" placeholder="' + __( 'e.g. Videos/ASMR', 'plugnest-media-folders' ) + '"></label>' +
+					'<label>' + __( 'Also add tags (comma-separated, optional)', 'plugnest-media-folders' ) + '<input type="text" data-field="add_tags" value="' +
 					esc( ( rule.add_tags || [] ).join( ',' ) ) +
 					'"></label>' +
 					'</div>' +
 					'<div class="mn-mm-rule-foot">' +
 					'<label class="mn-mm-check"><input type="checkbox" data-field="only_unassigned"' +
 					( rule.only_unassigned ? ' checked' : '' ) +
-					'>' + __( 'Only process unassigned media (recommended)', 'foldernest' ) + '</label>' +
+					'>' + __( 'Only process unassigned media (recommended)', 'plugnest-media-folders' ) + '</label>' +
 					'</div>' +
 					'</div>'
 				);
@@ -1756,7 +1743,7 @@
 			state.rules = data.rules || [];
 			renderRules();
 			if ( ! silent ) {
-				toast( data.message || __( 'Rules saved.', 'foldernest' ), 'ok' );
+				toast( data.message || __( 'Rules saved.', 'plugnest-media-folders' ), 'ok' );
 			}
 			return true;
 		} catch ( e ) {
@@ -1786,7 +1773,7 @@
 			.filter( ( r ) => r.count > 0 || r.skipped > 0 )
 			.map( ( r ) => {
 				const samples = r.samples.length
-					? '<div class="mn-mm-preview-samples">' + __( 'Examples:', 'foldernest' ) + ' ' +
+					? '<div class="mn-mm-preview-samples">' + __( 'Examples:', 'plugnest-media-folders' ) + ' ' +
 					  r.samples.map( ( s ) => esc( s.filename ) ).join( ', ' ) +
 					  '</div>'
 					: '';
@@ -1798,8 +1785,8 @@
 					esc( r.target ) +
 					'</span></span><span><strong>' +
 					esc( r.count ) +
-					'</strong> ' + __( 'items', 'foldernest' ) +
-					( r.skipped ? sprintf( __( ' (skipped %d)', 'foldernest' ), esc( r.skipped ) ) : '' ) +
+					'</strong> ' + __( 'items', 'plugnest-media-folders' ) +
+					( r.skipped ? sprintf( __( ' (skipped %d)', 'plugnest-media-folders' ), esc( r.skipped ) ) : '' ) +
 					'</span></div>' +
 					samples
 				);
@@ -1807,20 +1794,20 @@
 			.join( '' );
 
 		box.innerHTML =
-			'<div class="mn-mm-preview-head">' + __( 'Dry run (nothing has been saved yet)', 'foldernest' ) + '</div>' +
-			( rows || '<div class="mn-mm-preview-row">' + __( 'No media matches the current rules.', 'foldernest' ) + '</div>' ) +
-			'<div class="mn-mm-preview-row"><span>' + __( 'Media in scope', 'foldernest' ) + '</span><span><strong>' +
+			'<div class="mn-mm-preview-head">' + __( 'Dry run (nothing has been saved yet)', 'plugnest-media-folders' ) + '</div>' +
+			( rows || '<div class="mn-mm-preview-row">' + __( 'No media matches the current rules.', 'plugnest-media-folders' ) + '</div>' ) +
+			'<div class="mn-mm-preview-row"><span>' + __( 'Media in scope', 'plugnest-media-folders' ) + '</span><span><strong>' +
 			esc( data.candidates ) +
 			'</strong></span></div>' +
-			'<div class="mn-mm-preview-row"><span>' + __( 'No rule matched', 'foldernest' ) + '</span><span><strong>' +
+			'<div class="mn-mm-preview-row"><span>' + __( 'No rule matched', 'plugnest-media-folders' ) + '</span><span><strong>' +
 			esc( data.unmatched ) +
 			'</strong></span></div>' +
-			'<div class="mn-mm-preview-row"><span>' + __( 'Skipped (already assigned)', 'foldernest' ) + '</span><span><strong>' +
+			'<div class="mn-mm-preview-row"><span>' + __( 'Skipped (already assigned)', 'plugnest-media-folders' ) + '</span><span><strong>' +
 			esc( data.skipped ) +
 			'</strong></span></div>' +
-			'<div class="mn-mm-preview-row"><span>' + __( 'Will be assigned', 'foldernest' ) + '</span><span><strong>' +
+			'<div class="mn-mm-preview-row"><span>' + __( 'Will be assigned', 'plugnest-media-folders' ) + '</span><span><strong>' +
 			esc( data.will_apply ) +
-			'</strong> ' + __( 'items', 'foldernest' ) + '</span></div>';
+			'</strong> ' + __( 'items', 'plugnest-media-folders' ) + '</span></div>';
 	}
 
 	async function applyAuto() {
@@ -1839,7 +1826,7 @@
 				...autoScope(),
 			} );
 
-			progress( true, __( 'Auto-assigning…', 'foldernest' ), 0, true );
+			progress( true, __( 'Auto-assigning…', 'plugnest-media-folders' ), 0, true );
 			await runAutoSteps();
 		} catch ( e ) {
 			progress( false );
@@ -1864,7 +1851,7 @@
 			const percent = data.total ? Math.round( ( data.processed / data.total ) * 100 ) : 100;
 			progress(
 				true,
-				sprintf( __( 'Auto-assigning… %1$d / %2$d (assigned %3$d, skipped %4$d)', 'foldernest' ), data.processed, data.total, data.applied, data.skipped ),
+				sprintf( __( 'Auto-assigning… %1$d / %2$d (assigned %3$d, skipped %4$d)', 'plugnest-media-folders' ), data.processed, data.total, data.applied, data.skipped ),
 				percent,
 				true
 			);
@@ -1874,7 +1861,7 @@
 			if ( done ) {
 				progress( false );
 				toast(
-					sprintf( __( 'Auto-assign complete: %1$d assigned, %2$d skipped. Undo it from Activity Log if needed.', 'foldernest' ), data.applied, data.skipped ),
+					sprintf( __( 'Auto-assign complete: %1$d assigned, %2$d skipped. Undo it from Activity Log if needed.', 'plugnest-media-folders' ), data.applied, data.skipped ),
 					'ok'
 				);
 				$( '#mn-mm-preview' ).hidden = true;
@@ -1886,7 +1873,7 @@
 
 		if ( guard >= 500 ) {
 			progress( false );
-			toast( __( 'Too many batches; stopped. Run again to continue.', 'foldernest' ), 'error' );
+			toast( __( 'Too many batches; stopped. Run again to continue.', 'plugnest-media-folders' ), 'error' );
 		}
 	}
 
@@ -1896,7 +1883,7 @@
 
 	async function scanUsage() {
 		try {
-			progress( true, __( 'Analyzing site references…', 'foldernest' ), 2, false );
+			progress( true, __( 'Analyzing site references…', 'plugnest-media-folders' ), 2, false );
 
 			let offset = 0;
 			let done = false;
@@ -1916,11 +1903,11 @@
 				done = !! data.done;
 
 				const percent = total ? Math.round( ( offset / total ) * 100 ) : 100;
-				progress( true, sprintf( __( 'Scanning usage… %1$d / %2$d', 'foldernest' ), offset, total ), percent, false );
+				progress( true, sprintf( __( 'Scanning usage… %1$d / %2$d', 'plugnest-media-folders' ), offset, total ), percent, false );
 			}
 
 			progress( false );
-			toast( sprintf( __( 'Scan complete: %d media processed.', 'foldernest' ), offset ), 'ok' );
+			toast( sprintf( __( 'Scan complete: %d media processed.', 'plugnest-media-folders' ), offset ), 'ok' );
 			await refresh( true );
 		} catch ( e ) {
 			progress( false );
@@ -1935,14 +1922,14 @@
 	async function openLogs() {
 		openModal( '#mn-mm-modal-logs' );
 		const box = $( '#mn-mm-log-list' );
-		box.innerHTML = '<div class="mn-mm-loading">' + __( 'Loading…', 'foldernest' ) + '</div>';
+		box.innerHTML = '<div class="mn-mm-loading">' + __( 'Loading…', 'plugnest-media-folders' ) + '</div>';
 
 		try {
 			const data = await api( 'log_list', { limit: 40 } );
 			const logs = data.logs || [];
 
 			if ( ! logs.length ) {
-				box.innerHTML = '<div class="mn-mm-empty">' + __( 'No activity yet.', 'foldernest' ) + '</div>';
+				box.innerHTML = '<div class="mn-mm-empty">' + __( 'No activity yet.', 'plugnest-media-folders' ) + '</div>';
 				return;
 			}
 
@@ -1954,7 +1941,7 @@
 						'<div class="mn-mm-log-action">' +
 						esc( log.label ) +
 						'　<span style="font-weight:400;color:#646970;">' +
-						sprintf( __( '%d media', 'foldernest' ), esc( log.object_count ) ) +
+						sprintf( __( '%d media', 'plugnest-media-folders' ), esc( log.object_count ) ) +
 						'</span></div>' +
 						'<div class="mn-mm-log-meta">' +
 						esc( log.created_at ) +
@@ -1963,12 +1950,12 @@
 						'</div>' +
 						'</div>' +
 						( parseInt( log.undone, 10 ) === 1
-							? '<span class="mn-mm-log-undone">' + __( 'Undone', 'foldernest' ) + '</span>'
+							? '<span class="mn-mm-log-undone">' + __( 'Undone', 'plugnest-media-folders' ) + '</span>'
 							: log.undoable
 							? '<button type="button" class="button button-small" data-undo="' +
 							  log.id +
-							  '">' + __( 'Undo', 'foldernest' ) + '</button>'
-							: '<span class="mn-mm-log-undone">' + __( 'Cannot undo', 'foldernest' ) + '</span>' ) +
+							  '">' + __( 'Undo', 'plugnest-media-folders' ) + '</button>'
+							: '<span class="mn-mm-log-undone">' + __( 'Cannot undo', 'plugnest-media-folders' ) + '</span>' ) +
 						'</div>'
 				)
 				.join( '' );
@@ -1978,12 +1965,12 @@
 	}
 
 	async function undoLog( logId ) {
-		if ( ! window.confirm( __( 'Undo this action?', 'foldernest' ) ) ) {
+		if ( ! window.confirm( __( 'Undo this action?', 'plugnest-media-folders' ) ) ) {
 			return;
 		}
 		try {
 			const data = await api( 'log_undo', { log_id: logId } );
-			toast( data.message || __( 'Undone.', 'foldernest' ), 'ok' );
+			toast( data.message || __( 'Undone.', 'plugnest-media-folders' ), 'ok' );
 			await openLogs();
 			await refresh( true );
 		} catch ( e ) {
@@ -2127,6 +2114,13 @@
 		 * 從作業系統拖「檔案」進來（上傳）是另一種手勢：types 含 Files，
 		 * 資料夾列只做 override 標記，實際上傳交給 plupload 的整頁 dropzone。 */
 		function isFileDrag( e ) {
+			/* 內部拖動優先：只要是我們 dragstart 發起的（dragIds 已設），
+			 * 一律不算檔案拖動——拖縮圖（<img>）時瀏覽器會把圖片以
+			 * 虛擬檔案塞進 dataTransfer（types 含 Files），外觀跟外部
+			 * 拖檔案一模一樣，只能以發起者區分。 */
+			if ( state.dragIds && state.dragIds.length ) {
+				return false;
+			}
 			try {
 				const types = e.dataTransfer && e.dataTransfer.types;
 				return !! types && Array.prototype.indexOf.call( types, 'Files' ) !== -1;
@@ -2212,6 +2206,9 @@
 			}
 			e.preventDefault();
 			row.classList.remove( 'is-drop-target' );
+			/* 內部拖動到此為止：擋掉 wrap 上 plupload 的 drop（拖縮圖時
+			 * 瀏覽器會附帶虛擬檔案，不擋會被撿去重新上傳）。 */
+			e.stopPropagation();
 
 			const ids = state.dragIds && state.dragIds.length ? state.dragIds : selectedIds();
 			const selectAll = state.selectAll && ! state.dragIds ? 1 : 0;
@@ -2308,6 +2305,8 @@
 				}
 
 				e.preventDefault();
+				/* 內部拖動到此為止（同樹列：防 plupload 撿走縮圖虛擬檔案）。 */
+				e.stopPropagation();
 				moveSelectionToFolder( parseInt( tile.dataset.tile, 10 ) );
 			} );
 		}
@@ -2369,7 +2368,7 @@
 						done = d.done;
 						progress(
 							true,
-							sprintf( __( 'Building file size index… %d remaining', 'foldernest' ), d.missing ),
+							sprintf( __( 'Building file size index… %d remaining', 'plugnest-media-folders' ), d.missing ),
 							0,
 							false
 						);
@@ -2456,7 +2455,7 @@
 			e.preventDefault();
 			e.stopImmediatePropagation();
 			const ok = await copyToClipboard( btn.dataset.url );
-			toast( ok ? __( 'URL copied to clipboard.', 'foldernest' ) : __( 'Copy failed. Copy it manually from the details panel.', 'foldernest' ), ok ? 'ok' : 'error' );
+			toast( ok ? __( 'URL copied to clipboard.', 'plugnest-media-folders' ) : __( 'Copy failed. Copy it manually from the details panel.', 'plugnest-media-folders' ), ok ? 'ok' : 'error' );
 		} );
 
 		/* ---------- 網格：選取與詳情 ---------- */
@@ -2501,37 +2500,21 @@
 			const additive = e.ctrlKey || e.metaKey || e.shiftKey;
 			const card = e.target.closest( '.mn-mm-card' );
 
-			/* 空白處 → 立即開始框選 */
-			if ( ! card ) {
-				e.preventDefault();
-				marqueeStart( e.clientX, e.clientY, additive, null );
+			/* 卡片上按下 → 什麼都不搶：短按是勾選、按住移動是原生拖曳。
+			 * （曾有「長按 350ms 轉框選」的設計，但拖動前稍作停頓就會超過
+			 * 門檻，框選接管後 draggable 被關、拖曳再也啟動不了——移除。
+			 * 要框選請從網格空白處拖曳。） */
+			if ( card ) {
 				return;
 			}
 
-			/* 卡片上 → 長按才轉為框選；短按拖曳仍維持「拖到資料夾」 */
-			holdCard = card;
-			holdPoint = { x: e.clientX, y: e.clientY };
-			holdTimer = window.setTimeout( () => {
-				holdTimer = null;
-				if ( ! holdPoint ) {
-					return;
-				}
-				const owner = holdCard;
-				owner.draggable = false; /* 免得原生拖曳把手勢搶走 */
-				marqueeStart( holdPoint.x, holdPoint.y, additive, owner );
-			}, MARQUEE_HOLD_MS );
+			/* 空白處 → 立即開始框選 */
+			e.preventDefault();
+			marqueeStart( e.clientX, e.clientY, additive, null );
 		} );
 
-		/* 長按／框選期間的全域滑鼠事件 */
+		/* 框選期間的全域滑鼠事件 */
 		document.addEventListener( 'mousemove', ( e ) => {
-			if ( holdTimer ) {
-				const moved =
-					Math.abs( e.clientX - holdPoint.x ) + Math.abs( e.clientY - holdPoint.y );
-				if ( moved > MARQUEE_TOLERANCE ) {
-					cancelHold(); /* 使用者在拖曳，不是在長按 */
-				}
-				return;
-			}
 			if ( marquee ) {
 				marquee.curX = e.clientX;
 				marquee.curY = e.clientY;
@@ -2539,10 +2522,6 @@
 		} );
 
 		document.addEventListener( 'mouseup', () => {
-			if ( holdTimer ) {
-				cancelHold(); /* 短按 → 交給 click 處理 */
-				return;
-			}
 			if ( marquee ) {
 				marqueeEnd();
 			}
@@ -2550,7 +2529,6 @@
 
 		/* 視窗失焦時 mouseup 可能收不到，補一道安全網避免框選卡住。 */
 		window.addEventListener( 'blur', () => {
-			cancelHold();
 			if ( marquee ) {
 				marqueeEnd();
 			}
@@ -2558,10 +2536,10 @@
 
 		/* 拖拉卡片 */
 		$( '#mn-mm-grid' ).addEventListener( 'dragstart', ( e ) => {
-			/* 框選進行中不允許拖曳卡片 */
+			/* 拖動優先：框選若在跑（或異常殘留）直接取消，讓拖曳放行——
+			 * 舊行為是 preventDefault 擋掉拖曳，殘留的框選會永久殺死拖動。 */
 			if ( marquee ) {
-				e.preventDefault();
-				return;
+				marqueeCancel();
 			}
 
 			const card = e.target.closest( '.mn-mm-card' );
@@ -2616,7 +2594,7 @@
 				.forEach( ( c ) => c.classList.add( 'is-selected' ) );
 			renderBulkbar();
 			toast(
-				sprintf( __( 'Selected all %d matching media (across pages).', 'foldernest' ), state.total ),
+				sprintf( __( 'Selected all %d matching media (across pages).', 'plugnest-media-folders' ), state.total ),
 				'ok'
 			);
 		} );
@@ -2662,9 +2640,9 @@
 			if ( delBtn ) {
 				const id = parseInt( delBtn.dataset.inspectorDelete, 10 );
 				const item = state.current;
-				let msg = __( 'Permanently delete this media?\nThe files and all thumbnails will be removed. This cannot be undone!', 'foldernest' );
+				let msg = __( 'Permanently delete this media?\nThe files and all thumbnails will be removed. This cannot be undone!', 'plugnest-media-folders' );
 				if ( item && item.used === 1 ) {
-					msg += '\n\n' + __( 'Warning: this media is currently in use by posts; deleting will leave missing images in your content.', 'foldernest' );
+					msg += '\n\n' + __( 'Warning: this media is currently in use by posts; deleting will leave missing images in your content.', 'plugnest-media-folders' );
 				}
 				if ( ! window.confirm( msg ) ) {
 					return;
@@ -2688,10 +2666,10 @@
 				if ( navigator.clipboard && navigator.clipboard.writeText ) {
 					navigator.clipboard
 						.writeText( text )
-						.then( () => toast( __( 'URL copied.', 'foldernest' ), 'ok' ) )
-						.catch( () => toast( __( 'Copy failed. Select and copy manually.', 'foldernest' ), 'error' ) );
+						.then( () => toast( __( 'URL copied.', 'plugnest-media-folders' ), 'ok' ) )
+						.catch( () => toast( __( 'Copy failed. Select and copy manually.', 'plugnest-media-folders' ), 'error' ) );
 				} else {
-					toast( __( 'Auto-copy is not supported in this browser. Select and copy manually.', 'foldernest' ), 'error' );
+					toast( __( 'Auto-copy is not supported in this browser. Select and copy manually.', 'plugnest-media-folders' ), 'error' );
 				}
 				return;
 			}
@@ -2738,7 +2716,7 @@
 				state.uploadFolderOverride = 0; /* 整批完成才清一次性目標 */
 				if ( n > 0 ) {
 					await refresh( true );
-					toast( sprintf( __( 'Uploaded %d media. The list and folders have been updated.', 'foldernest' ), n ), 'ok' );
+					toast( sprintf( __( 'Uploaded %d media. The list and folders have been updated.', 'plugnest-media-folders' ), n ), 'ok' );
 				}
 				const bar = document.querySelector( '#mn-mm-upload-progress' );
 				if ( bar ) {
@@ -2747,7 +2725,7 @@
 			} );
 
 			wrapper.uploader.bind( 'Error', ( up, err ) => {
-				toast( ( err && err.message ) ? sprintf( __( 'Upload failed: %s', 'foldernest' ), err.message ) : __( 'Upload failed.', 'foldernest' ), 'error' );
+				toast( ( err && err.message ) ? sprintf( __( 'Upload failed: %s', 'plugnest-media-folders' ), err.message ) : __( 'Upload failed.', 'plugnest-media-folders' ), 'error' );
 			} );
 		}
 
@@ -2755,14 +2733,14 @@
 
 		$( '#mn-mm-btn-upload' ).addEventListener( 'click', () => {
 			if ( typeof window.wp === 'undefined' || ! window.wp.media ) {
-				toast( __( 'Media scripts are not loaded. Please reload the page.', 'foldernest' ), 'error' );
+				toast( __( 'Media scripts are not loaded. Please reload the page.', 'plugnest-media-folders' ), 'error' );
 				return;
 			}
 			uploadedCount = 0;
 
 			if ( ! uploadFrame ) {
 				uploadFrame = window.wp.media( {
-					title: __( 'Upload media', 'foldernest' ),
+					title: __( 'Upload media', 'plugnest-media-folders' ),
 					frame: 'post',
 					multiple: true,
 				} );
@@ -2833,7 +2811,7 @@
 								fill.style.width = up.total.percent + '%';
 							}
 							if ( text ) {
-								text.textContent = sprintf( __( 'Uploading %1$d / %2$d (%3$d%%)', 'foldernest' ), up.total.uploaded, up.total.count, up.total.percent );
+								text.textContent = sprintf( __( 'Uploading %1$d / %2$d (%3$d%%)', 'plugnest-media-folders' ), up.total.uploaded, up.total.count, up.total.percent );
 							}
 						}
 					} );
@@ -2857,6 +2835,45 @@
 					e.preventDefault();
 				}
 			} );
+
+			/* wp-plupload 用 dragover 模擬 dragenter 給上傳區加 drag-over（全頁
+			 * 「放開即可上傳」遮罩），但不區分拖動來源——內部拖卡片也會亮遮罩。
+			 * 它的 handler 在 plupload runtime 非同步初始化「之後」才掛上，
+			 * 註冊順序永遠晚於我們 → 同步摘除贏不了它。
+			 * 解法＝把摘除排進 rAF：本輪事件（含它的 add）全部跑完、
+			 * 下一帧繪製之前執行 → 遮罩永遠畫不出來。
+			 * 外部檔案拖動（types 含 Files）一律不動，遮罩照常。 */
+			const mmWrap = document.querySelector( '.mn-mm-wrap' );
+			if ( mmWrap ) {
+				const clearUploadMask = () => {
+					mmWrap.classList.remove( 'drag-over' );
+					const bar = document.querySelector( '.mn-mm-uploadbar' );
+					if ( bar ) {
+						bar.classList.remove( 'drag-over', 'is-dragover' );
+					}
+				};
+				mmWrap.addEventListener(
+					'dragover',
+					( e ) => {
+						if ( isFileDrag( e ) ) {
+							return;
+						}
+						requestAnimationFrame( clearUploadMask );
+					},
+					true
+				);
+				mmWrap.addEventListener( 'drop', ( e ) => {
+					if ( isFileDrag( e ) ) {
+						return;
+					}
+					requestAnimationFrame( clearUploadMask );
+					/* 內部拖動掉在樹列／磚列以外：攔在 wrap 上，
+					 * 防 plupload 把縮圖的虛擬檔案撿去上傳。
+					 * （stopImmediate＝同一元素上後掛的 plupload handler 也不跑；
+					 * 我們的 handler 同步註冊、它非同步晚掛，順序保證成立。） */
+					e.stopImmediatePropagation();
+				} );
+			}
 		}
 
 		/* ---------- 自動分類對話框 ---------- */
@@ -2865,7 +2882,7 @@
 		$( '#mn-mm-save-rules' ).addEventListener( 'click', () => saveRules( false ) );
 
 		$( '#mn-mm-reset-rules' ).addEventListener( 'click', async () => {
-			if ( ! window.confirm( __( 'Reset to the default rules? Your current rules will be overwritten.', 'foldernest' ) ) ) {
+			if ( ! window.confirm( __( 'Reset to the default rules? Your current rules will be overwritten.', 'plugnest-media-folders' ) ) ) {
 				return;
 			}
 			try {
@@ -2882,7 +2899,7 @@
 			state.rules = collectRules();
 			state.rules.push( {
 				id: '',
-				label: __( 'New rule', 'foldernest' ),
+				label: __( 'New rule', 'plugnest-media-folders' ),
 				enabled: true,
 				only_unassigned: true,
 				match: {
@@ -2951,10 +2968,6 @@
 			}
 
 			/* 框選進行中 → 先取消框選 */
-			if ( holdTimer ) {
-				cancelHold();
-				return;
-			}
 			if ( marquee ) {
 				marqueeCancel();
 				return;

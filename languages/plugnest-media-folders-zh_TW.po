@@ -1,0 +1,1090 @@
+# PlugNest Media Folders 繁體中文.
+msgid ""
+msgstr ""
+"Project-Id-Version: PlugNest Media Folders 2.5.0\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Processing…"
+msgstr "處理中…"
+
+msgid "Invalid server response. Please reload the page."
+msgstr "伺服器回應格式錯誤，請重新整理頁面。"
+
+msgid "Operation failed."
+msgstr "操作失敗。"
+
+msgid "Total media"
+msgstr "媒體總數"
+
+msgid "Folders"
+msgstr "資料夾"
+
+msgid "Unassigned"
+msgstr "未分類"
+
+msgid "In use"
+msgstr "使用中"
+
+msgid "Unused"
+msgstr "未被引用"
+
+msgid "Not scanned"
+msgstr "尚未掃描"
+
+msgid "All media"
+msgstr "全部媒體"
+
+msgid "Pinned"
+msgstr "釘選"
+
+msgid "Folder access roles"
+msgstr "存取角色限制"
+
+msgid "Unpin folder"
+msgstr "取消釘選"
+
+msgid "Pin folder"
+msgstr "釘選資料夾"
+
+msgid "Folder color"
+msgstr "資料夾顏色"
+
+msgid "Rename"
+msgstr "重新命名"
+
+msgid "Delete"
+msgstr "刪除"
+
+msgid "All media (uploads land in Unassigned)"
+msgstr "全部媒體（上傳後落在未分類）"
+
+msgid "No tags yet."
+msgstr "還沒有標籤。"
+
+msgid "Copy URL"
+msgstr "複製網址"
+
+msgid "Add new folder"
+msgstr "新增資料夾"
+
+msgid "Add"
+msgstr "加入"
+
+msgid "%d media in total"
+msgstr "%d 個媒體"
+
+msgid "Previous"
+msgstr "上一頁"
+
+msgid "Page %1$d of %2$d, %3$d media in total"
+msgstr "第 %1$d / %2$d 頁，共 %3$d 個媒體"
+
+msgid "Next"
+msgstr "下一頁"
+
+msgid "— Select folder —"
+msgstr "— 選擇資料夾 —"
+
+msgid "— Unassigned —"
+msgstr "— 未分類 —"
+
+msgid "Open in native editor"
+msgstr "在原生編輯頁開啟"
+
+msgid "Delete permanently (skips trash, cannot be undone)"
+msgstr "永久刪除（不進回收桶，無法復原）"
+
+msgid "Delete permanently"
+msgstr "永久刪除"
+
+msgid "Title"
+msgstr "標題"
+
+msgid "Alt text"
+msgstr "替代文字 Alt"
+
+msgid "Caption"
+msgstr "說明 Caption"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "Folder"
+msgstr "所屬資料夾"
+
+msgid "Tags"
+msgstr "標籤"
+
+msgid "Save changes"
+msgstr "儲存變更"
+
+msgid "File size: "
+msgstr "檔案大小："
+
+msgid "Dimensions: "
+msgstr "尺寸："
+
+msgid "Type: "
+msgstr "類型："
+
+msgid "Uploaded: "
+msgstr "上傳日期："
+
+msgid "Usage: "
+msgstr "使用狀態："
+
+msgid "Saved."
+msgstr "已儲存。"
+
+msgid "Select a target folder first."
+msgstr "請先選擇目標資料夾。"
+
+msgid "Permanently delete ALL %d matching media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr "確定要「永久刪除」全部符合條件的 %d 個媒體嗎？\n檔案與所有縮圖會一併移除，無法復原！"
+
+msgid "Permanently delete %d media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr "確定要「永久刪除」%d 個媒體嗎？\n檔案與所有縮圖會一併移除，無法復原！"
+
+msgid "Warning: %d of them are in use by posts; deleting will leave missing images in your content."
+msgstr "⚠ 注意：其中 %d 個正在被文章使用中，刪除會造成文章內容缺圖。"
+
+msgid "Enter tag names."
+msgstr "請輸入標籤名稱。"
+
+msgid "Fill in at least one field."
+msgstr "請至少填寫一個欄位。"
+
+msgid "Close"
+msgstr "關閉"
+
+msgid "No color"
+msgstr "無顏色"
+
+msgid "Custom"
+msgstr "自訂顏色"
+
+msgid "New folder name:"
+msgstr "新資料夾名稱："
+
+msgid "Folder created."
+msgstr "資料夾已建立。"
+
+msgid "Folder renamed."
+msgstr "資料夾已重新命名。"
+
+msgid "Folder deleted."
+msgstr "資料夾已刪除。"
+
+msgid "New tag name:"
+msgstr "新標籤名稱："
+
+msgid "Tag created."
+msgstr "標籤已建立。"
+
+msgid "No rules yet. Click \"Add rule\" below to start."
+msgstr "還沒有規則，按下方「新增規則」開始。"
+
+msgid "Enable"
+msgstr " 啟用"
+
+msgid "Rule name"
+msgstr "規則名稱"
+
+msgid "Filename contains (comma-separated, any)"
+msgstr "檔名包含（逗號分隔，任一命中）"
+
+msgid "e.g. asmr,drama"
+msgstr "例：asmr,drama"
+
+msgid "File extensions (comma-separated)"
+msgstr "副檔名（逗號分隔）"
+
+msgid "e.g. mp3,m4a"
+msgstr "例：mp3,m4a"
+
+msgid "Filename regex (advanced, optional)"
+msgstr "檔名正則（進階，可留空）"
+
+msgid "e.g. ^3star-"
+msgstr "例：^3star-"
+
+msgid "Type"
+msgstr "類型"
+
+msgid "Any"
+msgstr "不限"
+
+msgid "Image"
+msgstr "圖片"
+
+msgid "Audio"
+msgstr "音訊"
+
+msgid "Video"
+msgstr "影片"
+
+msgid "Document"
+msgstr "文件"
+
+msgid "Min width (px, 0 = any)"
+msgstr "最小寬度（px，0=不限）"
+
+msgid "Year (0 = any)"
+msgstr "年份（0=不限）"
+
+msgid "Target folder (use / for nesting; folders are created automatically)"
+msgstr "歸入資料夾（可用 / 建立多層，不存在會自動建立）"
+
+msgid "e.g. Videos/ASMR"
+msgstr "例：影音匯/ASMR"
+
+msgid "Also add tags (comma-separated, optional)"
+msgstr "同時加上標籤（逗號分隔，可留空）"
+
+msgid "Only process unassigned media (recommended)"
+msgstr " 只處理尚未分類的媒體（建議保持勾選）"
+
+msgid "Rules saved."
+msgstr "規則已儲存。"
+
+msgid "Examples:"
+msgstr "例："
+
+msgid "items"
+msgstr "個"
+
+msgid " (skipped %d)"
+msgstr "（略過 %d）"
+
+msgid "Dry run (nothing has been saved yet)"
+msgstr "試跑結果（尚未寫入任何資料）"
+
+msgid "No media matches the current rules."
+msgstr "沒有任何媒體符合目前的規則。"
+
+msgid "Media in scope"
+msgstr "範圍內媒體總數"
+
+msgid "No rule matched"
+msgstr "沒有規則命中"
+
+msgid "Skipped (already assigned)"
+msgstr "已分類而略過"
+
+msgid "Will be assigned"
+msgstr "將會被歸類"
+
+msgid "Auto-assigning…"
+msgstr "自動分類中…"
+
+msgid "Auto-assigning… %1$d / %2$d (assigned %3$d, skipped %4$d)"
+msgstr "自動分類中… %1$d / %2$d（已歸類 %3$d，略過 %4$d）"
+
+msgid "Auto-assign complete: %1$d assigned, %2$d skipped. Undo it from Activity Log if needed."
+msgstr "自動分類完成：歸類 %1$d 個，略過 %2$d 個。可從「操作記錄」還原。"
+
+msgid "Too many batches; stopped. Run again to continue."
+msgstr "處理批次過多，已停止。可重新執行以繼續。"
+
+msgid "Analyzing site references…"
+msgstr "正在分析全站引用…"
+
+msgid "Scanning usage… %1$d / %2$d"
+msgstr "掃描使用狀態… %1$d / %2$d"
+
+msgid "Scan complete: %d media processed."
+msgstr "掃描完成，共處理 %d 個媒體。"
+
+msgid "Loading…"
+msgstr "載入中…"
+
+msgid "No activity yet."
+msgstr "還沒有任何操作記錄。"
+
+msgid "%d media"
+msgstr "%d 個媒體"
+
+msgid "Undone"
+msgstr "已還原"
+
+msgid "Undo"
+msgstr "還原"
+
+msgid "Cannot undo"
+msgstr "無法還原"
+
+msgid "Undo this action?"
+msgstr "確定要還原這筆操作嗎？"
+
+msgid "Undone."
+msgstr "已還原。"
+
+msgid "Building file size index… %d remaining"
+msgstr "正在建立檔案尺寸索引…剩餘 %d 個"
+
+msgid "URL copied to clipboard."
+msgstr "已複製網址到剪貼簿。"
+
+msgid "Copy failed. Copy it manually from the details panel."
+msgstr "複製失敗，請從詳細面板手動複製。"
+
+msgid "Selected all %d matching media (across pages)."
+msgstr "已選取全部符合條件的 %d 個媒體（跨頁生效）。"
+
+msgid "Permanently delete this media?\nThe files and all thumbnails will be removed. This cannot be undone!"
+msgstr "確定要「永久刪除」這個媒體嗎？\n檔案與所有縮圖會一併移除，無法復原！"
+
+msgid "Warning: this media is currently in use by posts; deleting will leave missing images in your content."
+msgstr "⚠ 注意：此媒體目前正在被文章使用中，刪除會造成文章內容缺圖。"
+
+msgid "URL copied."
+msgstr "網址已複製。"
+
+msgid "Copy failed. Select and copy manually."
+msgstr "複製失敗，請手動選取。"
+
+msgid "Auto-copy is not supported in this browser. Select and copy manually."
+msgstr "此瀏覽器不支援自動複製，請手動選取。"
+
+msgid "Uploaded %d media. The list and folders have been updated."
+msgstr "已上傳 %d 個媒體，清單與資料夾已更新。"
+
+msgid "Upload failed: %s"
+msgstr "上傳失敗：%s"
+
+msgid "Upload failed."
+msgstr "上傳失敗。"
+
+msgid "Media scripts are not loaded. Please reload the page."
+msgstr "媒體腳本尚未載入，請重新整理頁面。"
+
+msgid "Upload media"
+msgstr "上傳媒體"
+
+msgid "Uploading %1$d / %2$d (%3$d%%)"
+msgstr "上傳中 %1$d / %2$d（%3$d%%）"
+
+msgid "Reset to the default rules? Your current rules will be overwritten."
+msgstr "確定要還原成預設規則嗎？目前的規則會被覆蓋。"
+
+msgid "New rule"
+msgstr "新規則"
+
+msgid "Load failed"
+msgstr "載入失敗"
+
+msgid "Save failed"
+msgstr "儲存失敗"
+
+msgid "No media is directly attached to this post (featured image included)."
+msgstr "此文章沒有直接附屬的媒體（含精選圖片）。"
+
+msgid "Media folders"
+msgstr "媒體資料夾"
+
+msgid "PlugNest Media Folders"
+msgstr "PlugNest Media Folders"
+
+msgid "Unused-media cleanup wizard"
+msgstr "未使用媒體清理精靈"
+
+msgid "Missing-alt batch workflow"
+msgstr "待補 Alt 批次工作流"
+
+msgid "Folder import/export & import from other folder plugins"
+msgstr "資料夾匯入/匯出與從其他資料夾外掛匯入"
+
+msgid "Delete folder together with its files (typed confirmation)"
+msgstr "刪除資料夾時可連帶刪除其中檔案（打字確認）"
+
+msgid "Delete this folder?\n\nMedia and physical files inside are kept; subfolders move up one level."
+msgstr "確定要刪除這個資料夾嗎？\n\n資料夾內的媒體與實體檔案都會完整保留，子資料夾會移到上一層。"
+
+msgid "Delete this tag? The media itself is not affected."
+msgstr "確定要刪除這個標籤嗎？媒體本身不會受影響。"
+
+msgid "Apply auto-assign? You can undo it from Activity Log afterwards."
+msgstr "確定要套用自動分類嗎？套用後可以從「操作記錄」還原。"
+
+msgid "Select some media first."
+msgstr "請先選取媒體。"
+
+msgid "No media matches the current filters."
+msgstr "沒有符合條件的媒體。"
+
+msgid "Your account does not have permission to manage media."
+msgstr "你的帳號沒有管理媒體的權限。"
+
+msgid "This plugin only writes classification data; it never moves or rewrites media files."
+msgstr "本外掛只寫入分類資料，不會移動或改寫任何媒體檔案"
+
+msgid "File paths untouched"
+msgstr "不影響檔案路徑"
+
+msgid "Organize media with folders and tags. Everything writes to the database only — media URLs and physical files never change."
+msgstr "用資料夾與標籤整理媒體，所有操作都只寫入資料庫，媒體網址與實體檔案完全不變。"
+
+msgid "Pro feature"
+msgstr "Pro 功能"
+
+msgid "Clean up unused"
+msgstr "清理未使用"
+
+msgid "Missing alt"
+msgstr "待補 Alt"
+
+msgid "Scan usage"
+msgstr "掃描使用狀態"
+
+msgid "Auto-assign"
+msgstr "自動分類"
+
+msgid "Activity log"
+msgstr "操作記錄"
+
+msgid "Select files to upload"
+msgstr "選擇檔案上傳"
+
+msgid "Or drop files here — actually"
+msgstr "或把檔案拖進此區——其實"
+
+msgid "the whole page is a dropzone"
+msgstr "整頁都是拖放區"
+
+msgid "drop onto a folder row and the files land in that folder; drop anywhere else and they land in"
+msgstr "拖到哪個資料夾就傳進那個資料夾，拖在其他位置＝"
+
+msgid "the folder you are browsing"
+msgstr "目前瀏覽的資料夾"
+
+msgid " (it follows the folder selected on the left)."
+msgstr "（切換左側資料夾即跟著變）。"
+
+msgid "Export"
+msgstr "匯出結構"
+
+msgid "Import"
+msgstr "匯入結構"
+
+msgid "From plugins"
+msgstr "從外掛匯入"
+
+msgid "Add new tag"
+msgstr "新增標籤"
+
+msgid "Search filename or title…"
+msgstr "搜尋檔名或標題…"
+
+msgid "All types"
+msgstr "全部類型"
+
+msgid "Usage status: All"
+msgstr "使用狀態：全部"
+
+msgid "Newest first"
+msgstr "最新上傳"
+
+msgid "Oldest first"
+msgstr "最舊上傳"
+
+msgid "Title A→Z"
+msgstr "標題 A→Z"
+
+msgid "Title Z→A"
+msgstr "標題 Z→A"
+
+msgid "File size high→low"
+msgstr "檔案大→小"
+
+msgid "File size low→high"
+msgstr "檔案小→大"
+
+msgid "ID high→low"
+msgstr "ID 大→小"
+
+msgid "Include subfolders"
+msgstr "含子資料夾"
+
+msgid "View mode"
+msgstr "檢視模式"
+
+msgid "Grid view"
+msgstr "縮略圖檢視"
+
+msgid "List view"
+msgstr "列表檢視"
+
+msgid "Hold and drag on empty space, or press a card briefly and drag, to box-select multiple items. Hold Ctrl/Cmd while dragging to add to the selection."
+msgstr "在空白處按住拖曳、或長按卡片後拖曳，即可框選多個；按住 Ctrl 拖曳則為累加選取。"
+
+msgid "Drag cards onto a folder on the left to move them (multi-select works); drop on \"Unassigned\" to remove folders."
+msgstr "選取後把卡片直接拖到左側資料夾即可移動（可多選、可跨資料夾）；拖到「未分類」則移出資料夾。"
+
+msgid "Selected"
+msgstr "已選"
+
+msgid "Select all matching"
+msgstr "選取全部符合條件"
+
+msgid "Clear selection"
+msgstr "清除選取"
+
+msgid "Move to"
+msgstr "移動到"
+
+msgid "Remove from folders"
+msgstr "移出資料夾"
+
+msgid "Comma-separated; missing tags are created"
+msgstr "多個標籤用逗號分隔，不存在會自動建立"
+
+msgid "Add tags"
+msgstr "新增標籤"
+
+msgid "Remove tags"
+msgstr "移除標籤"
+
+msgid "Batch edit fields"
+msgstr "批次編輯欄位"
+
+msgid "Variables:"
+msgstr "可用變數："
+
+msgid "full filename"
+msgstr "完整檔名"
+
+msgid "filename without extension"
+msgstr "不含副檔名的檔名"
+
+msgid "extension"
+msgstr "副檔名"
+
+msgid "counter"
+msgstr "流水號"
+
+msgid "original value"
+msgstr "原值"
+
+msgid "Empty fields are left unchanged."
+msgstr "留空的欄位不會被更動。"
+
+msgid "e.g. {stem}"
+msgstr "例：{stem}"
+
+msgid "Apply mode"
+msgstr "套用方式"
+
+msgid "Replace original value"
+msgstr "覆蓋原值"
+
+msgid "Append after original"
+msgstr "附加在原值後面"
+
+msgid "Prepend before original"
+msgstr "加在原值前面"
+
+msgid "Apply fields"
+msgstr "套用欄位"
+
+msgid "Click any media to edit its details here"
+msgstr "點選任一媒體即可在這裡編輯資訊"
+
+msgid "Rules are evaluated top-down; the first matching rule wins."
+msgstr "規則由上往下比對，第一條命中的規則生效。"
+
+msgid "Run \"Dry run\" to preview the result before applying."
+msgstr "建議先按「試跑預覽」確認結果，再按「開始套用」。"
+
+msgid "Scope:"
+msgstr "套用範圍："
+
+msgid "Unassigned only"
+msgstr "僅未分類"
+
+msgid "Images only"
+msgstr "僅圖片"
+
+msgid "Audio only"
+msgstr "僅音訊"
+
+msgid "Videos only"
+msgstr "僅影片"
+
+msgid "Save rules"
+msgstr "儲存規則"
+
+msgid "Restore default rules"
+msgstr "還原預設規則"
+
+msgid "Dry run"
+msgstr "試跑預覽"
+
+msgid "Apply now"
+msgstr "開始套用"
+
+msgid "Every batch action keeps a snapshot and can be undone with one click. Only classification and field changes are recorded — files are never touched."
+msgstr "每一次批次操作都留有快照，可以一鍵還原。記錄只保留分類與欄位變更，不涉及任何檔案。"
+
+msgid "PlugNest Media Folders Pro"
+msgstr "PlugNest Media Folders Pro"
+
+msgid "This feature is part of PlugNest Media Folders Pro:"
+msgstr "此功能屬於 PlugNest Media Folders Pro："
+
+msgid "Annual license, activate instantly with the key we email you."
+msgstr "年度授權，付款後序號立即寄到你的信箱，貼上即用。"
+
+msgid "Buy PlugNest Media Folders Pro"
+msgstr "購買 PlugNest Media Folders Pro"
+
+msgid "Cancel"
+msgstr "中止"
+
+msgid "Security check failed. Please reload the page."
+msgstr "安全性驗證失敗，請重新整理頁面。"
+
+msgid "Media not found."
+msgstr "找不到這個媒體。"
+
+msgid "No media selected."
+msgstr "沒有選取任何媒體。"
+
+msgid "Removed %d media from all folders."
+msgstr "已將 %d 個媒體移出所有資料夾。"
+
+msgid "Select a valid target folder."
+msgstr "請選擇有效的目標資料夾。"
+
+msgid "Specify at least one tag."
+msgstr "請指定至少一個標籤。"
+
+msgid "Updated fields for %d media."
+msgstr "已更新 %d 個媒體的欄位。"
+
+msgid "Permanently deleted %d media."
+msgstr "已永久刪除 %d 個媒體。"
+
+msgid "(%d failed)"
+msgstr "（%d 個刪除失敗）"
+
+msgid "Post not found."
+msgstr "找不到文章。"
+
+msgid "Folder not found."
+msgstr "找不到資料夾。"
+
+msgid "Invalid color."
+msgstr "顏色格式不正確。"
+
+msgid "Folder color updated."
+msgstr "資料夾顏色已更新。"
+
+msgid "Folder pinned."
+msgstr "資料夾已釘選。"
+
+msgid "Folder unpinned."
+msgstr "資料夾已取消釘選。"
+
+msgid "Enter a folder name."
+msgstr "請輸入資料夾名稱。"
+
+msgid "A folder with the same name already exists at this level."
+msgstr "同一層已經有同名資料夾了。"
+
+msgid "Missing parameters."
+msgstr "參數不完整。"
+
+msgid "Folder deleted (the media itself is not affected)."
+msgstr "資料夾已刪除（媒體本身完全不受影響）。"
+
+msgid "A folder cannot be moved into itself."
+msgstr "不能把資料夾移到它自己裡面。"
+
+msgid "A folder cannot be moved into its own subfolder."
+msgstr "不能把資料夾移到它自己的子資料夾裡。"
+
+msgid "Folder moved."
+msgstr "資料夾已移動。"
+
+msgid "This tag already exists."
+msgstr "這個標籤已經存在。"
+
+msgid "Tag deleted."
+msgstr "標籤已刪除。"
+
+msgid "Invalid rule format."
+msgstr "規則格式不正確。"
+
+msgid "Saved %d rules."
+msgstr "已儲存 %d 條規則。"
+
+msgid "Restored the default rules."
+msgstr "已還原為預設規則。"
+
+msgid "Cancelled. Everything already applied can be undone from Activity Log."
+msgstr "已中止，先前套用的部分仍可從操作記錄還原。"
+
+msgid "No job is running."
+msgstr "沒有進行中的工作。"
+
+msgid "Reference index rebuilt. The next scan will re-analyze site content."
+msgstr "引用索引已重建，下次掃描會重新分析全站內容。"
+
+msgid "Restored the previous state of %d media."
+msgstr "已還原 %d 個媒體的先前狀態。"
+
+msgid "Videos"
+msgstr "影片"
+
+msgid "Pictures"
+msgstr "圖片"
+
+msgid "Documents"
+msgstr "文件"
+
+msgid "Rule"
+msgstr "規則"
+
+msgid "No media in scope."
+msgstr "沒有符合範圍的媒體。"
+
+msgid "No auto-assign job is running."
+msgstr "沒有進行中的自動分類工作。"
+
+msgid "Activity entry not found."
+msgstr "找不到這筆操作記錄。"
+
+msgid "This action has already been undone."
+msgstr "這筆操作已經還原過了。"
+
+msgid "This action has no restorable snapshot (too many items, or the record is corrupted)."
+msgstr "這筆操作沒有可還原的完整快照（項目數過多或記錄已損毀）。"
+
+msgid "Assign folder"
+msgstr "指派資料夾"
+
+msgid "Usage scan"
+msgstr "使用狀態掃描"
+
+msgid "System"
+msgstr "系統"
+
+msgid "User #%d"
+msgstr "使用者 #%d"
+
+msgid "Upload to folder:"
+msgstr "上傳到資料夾："
+
+msgid "(none — classify later)"
+msgstr "（不指定，之後再分類）"
+
+msgid "Folder:"
+msgstr "資料夾："
+
+msgid "All folders"
+msgstr "所有資料夾"
+
+msgid "Filter by folder"
+msgstr "依資料夾篩選"
+
+msgid "Filter by tag"
+msgstr "依標籤篩選"
+
+msgid "All tags"
+msgstr "所有標籤"
+
+msgid "Filter by usage status"
+msgstr "依使用狀態篩選"
+
+msgid "Open PlugNest Media Folders"
+msgstr "前往PlugNest Media Folders"
+
+msgid "PlugNest Media Folders is now active."
+msgstr "PlugNest Media Folders 已啟用。"
+
+msgid "Media can now be organized with folders and tags — file paths and URLs are never touched."
+msgstr "媒體現在可以用「資料夾」與「標籤」分類，完全不會影響檔案路徑與網址。"
+
+msgid "Dismiss"
+msgstr "不再顯示"
+
+msgid "Media folder"
+msgstr "媒體資料夾"
+
+msgid "Search folders"
+msgstr "搜尋資料夾"
+
+msgid "Parent folder"
+msgstr "上層資料夾"
+
+msgid "Edit folder"
+msgstr "編輯資料夾"
+
+msgid "Update folder"
+msgstr "更新資料夾"
+
+msgid "New folder name"
+msgstr "新資料夾名稱"
+
+msgid "Media tags"
+msgstr "媒體標籤"
+
+msgid "Media tag"
+msgstr "媒體標籤"
+
+msgid "Search tags"
+msgstr "搜尋標籤"
+
+msgid "Edit tag"
+msgstr "編輯標籤"
+
+msgid "Update tag"
+msgstr "更新標籤"
+
+msgid "New tag name"
+msgstr "新標籤名稱"
+
+msgid "Pick a folder before uploading and files land in it directly. Classification only — file paths and URLs never change."
+msgstr "選好資料夾再上傳，檔案會直接歸到該資料夾。只影響分類，不會改變檔案路徑與網址。"
+
+msgid "Unused media is now filtered. Review it, then delete with \"Delete permanently\" in the bulk bar."
+msgstr "已篩選出未使用媒體。確認後用批次列的「永久刪除」刪除。"
+
+msgid "Will rescan all site references (about 10–30 seconds), then permanently delete all %d unused media.\nFiles will be removed. This cannot be undone!\n\nContinue?"
+msgstr "將先重新掃描全站引用（約 10–30 秒），再「永久刪除」全部 %d 個未被引用的媒體。\n檔案會一併移除，無法復原！\n\n確定繼續嗎？"
+
+msgid "Rescanning site references…"
+msgstr "正在重新掃描全站引用…"
+
+msgid "Rescanning site references… %1$d / %2$d"
+msgstr "正在重新掃描全站引用… %1$d / %2$d"
+
+msgid "Great! No images are missing alt text."
+msgstr "太好了！沒有缺替代文字的圖片。"
+
+msgid "Alt text…"
+msgstr "替代文字…"
+
+msgid "Load failed: %s"
+msgstr "載入失敗：%s"
+
+msgid "Filled %d empty fields from filenames."
+msgstr "已依檔名填入 %d 個空欄。"
+
+msgid "Nothing to fill — every field already has text."
+msgstr "沒有可填的欄位——每欄都已有文字。"
+
+msgid "All fields restored to their original values."
+msgstr "所有欄位已還原原值。"
+
+msgid "No alt text was filled in."
+msgstr "沒有填寫任何替代文字。"
+
+msgid "Folder structure exported."
+msgstr "已匯出資料夾結構。"
+
+msgid "Export failed: %s"
+msgstr "匯出失敗：%s"
+
+msgid "Paste the exported JSON first."
+msgstr "請先貼上匯出的 JSON。"
+
+msgid "Invalid JSON. Please check the content."
+msgstr "JSON 格式錯誤，請確認內容。"
+
+msgid "No other folder plugins with folder data were detected."
+msgstr "沒有偵測到其他含資料夾資料的外掛。"
+
+msgid "%d folders"
+msgstr "%d 個資料夾"
+
+msgid "Imported"
+msgstr "已匯入"
+
+msgid "Clean up unused media"
+msgstr "清理未使用媒體"
+
+msgid "\"Unused\" means no reference was found in any post or page content at scan time. We recommend filtering and reviewing before deleting; deletion cannot be undone."
+msgstr "「未被引用」代表掃描時沒有在任何文章／頁面內容中找到引用。建議先篩選確認再刪除；刪除後無法復原。"
+
+msgid "Currently unused:"
+msgstr "目前未被引用："
+
+msgid "Filter unused media (recommended — review first)"
+msgstr "篩選出未使用媒體（推薦，先人工確認）"
+
+msgid "Permanently delete ALL unused media now"
+msgstr "直接永久刪除全部未使用"
+
+msgid "Run"
+msgstr "執行"
+
+msgid "Missing alt text"
+msgstr "待補替代文字（Alt）"
+
+msgid "Lists images without alt text. Alt text is a basic accessibility and SEO requirement. Empty rows are skipped."
+msgstr "列出尚未填寫替代文字的圖片。替代文字是無障礙與 SEO 的基本要求。留空的列會被略過。"
+
+msgid "Fill every empty field with a humanized version of its filename (you can edit before applying)."
+msgstr "以檔名轉成的可讀文字填入每個空欄（套用前可再編輯）。"
+
+msgid "Auto-fill from filename"
+msgstr "依檔名自動填寫"
+
+msgid "Restore original"
+msgstr "還原原值"
+
+msgid "Apply all (skip empty)"
+msgstr "套用全部（略過留空）"
+
+msgid "Import folder structure"
+msgstr "匯入資料夾結構"
+
+msgid "Paste a previously exported JSON. Folders with the same name at the same level are skipped; nothing is overwritten."
+msgstr "貼上先前匯出的 JSON。同名同層的資料夾會跳過，不會覆蓋現有結構。"
+
+msgid "Import JSON"
+msgstr "匯入 JSON"
+
+msgid "Start import"
+msgstr "開始匯入"
+
+msgid "Once set, only users with the selected roles can see this folder (and its subfolders) and its media. Leave all unchecked to make it visible to everyone. Administrators are never restricted."
+msgstr "設定後，只有具備勾選角色的使用者能看到這個資料夾（含子資料夾）與其中媒體。全部不勾＝所有人可見。管理員不受限制。"
+
+msgid "Visible roles (multi-select)"
+msgstr "可見角色（可多選）"
+
+msgid "Save"
+msgstr "儲存"
+
+msgid "Delete folder"
+msgstr "刪除資料夾"
+
+msgid "media"
+msgstr "個媒體"
+
+msgid "Keep media — remove this folder only (media becomes unassigned)"
+msgstr "保留媒體——只刪除資料夾本身（媒體變為未分類）"
+
+msgid "Also permanently delete ALL media inside this folder and its subfolders (cannot be undone!)"
+msgstr "同時永久刪除此資料夾與其子資料夾內的全部媒體（無法復原！）"
+
+msgid "Type the folder name exactly to confirm:"
+msgstr "輸入完整的資料夾名稱以確認："
+
+msgid "Import from other folder plugins"
+msgstr "從其他資料夾外掛匯入"
+
+msgid "Detected plugins with folder data are listed below. Importing copies the folder tree into PlugNest Media Folders; your source plugin's data is never modified, and importing twice duplicates nothing."
+msgstr "下方列出偵測到含資料夾資料的外掛。匯入會把資料夾樹複製到 PlugNest Media Folders；來源外掛的資料完全不會被更動，重複匯入也不會重複建立。"
+
+msgid "This feature requires an active PlugNest Media Folders Pro license."
+msgstr "此功能需要有效的 PlugNest Media Folders Pro 授權。"
+
+msgid "Updated alt text for %d media."
+msgstr "已更新 %d 個替代文字。"
+
+msgid "The import data contains no usable folders or tags."
+msgstr "匯入資料中沒有可用的資料夾或標籤。"
+
+msgid "Imported: %1$d new folders (%2$d already existed), %3$d tags."
+msgstr "已匯入：新增 %1$d 個資料夾（略過已存在 %2$d 個）、標籤 %3$d 個。"
+
+msgid "Only administrators can change folder permissions."
+msgstr "只有管理員能變更資料夾權限。"
+
+msgid "Access roles for \"%s\" updated."
+msgstr "「%s」的存取角色已更新。"
+
+msgid "Type the folder name exactly to confirm the deletion."
+msgstr "請輸入完整的資料夾名稱以確認刪除。"
+
+msgid "Folder \"%1$s\" and %2$d media files were permanently deleted."
+msgstr "資料夾「%1$s」與其中 %2$d 個媒體檔案已永久刪除。"
+
+msgid "Unknown import source."
+msgstr "未知的匯入來源。"
+
+msgid "No folders found in the source plugin."
+msgstr "來源外掛中沒有找到任何資料夾。"
+
+msgid "Imported: %1$d folders created, %2$d already existed (skipped)."
+msgstr "匯入完成：新增 %1$d 個資料夾，%2$d 個已存在（略過）。"
+
+msgid "Activation failed: %s"
+msgstr "啟用失敗：%s"
+
+msgid "License activated. Pro features are unlocked."
+msgstr "授權已啟用，Pro 功能已解鎖。"
+
+msgid "License deactivated."
+msgstr "授權已停用。"
+
+msgid "Email support@plugnest.dev with your license key for priority support."
+msgstr "來信 support@plugnest.dev 並附上你的序號，可獲優先支援。"
+
+msgid "PlugNest Media Folders Pro — License"
+msgstr "PlugNest Media Folders Pro — 授權"
+
+msgid "Pro features: unused-media cleanup wizard, missing-alt batch workflow, folder import/export, folder access roles."
+msgstr "Pro 功能：未使用媒體清理精靈、待補 Alt 批次工作流、資料夾匯入/匯出與資料夾存取角色。"
+
+msgid "Status"
+msgstr "狀態"
+
+msgid "Active"
+msgstr "有效"
+
+msgid "renews / expires on %s"
+msgstr "續訂／到期日：%s"
+
+msgid "Expired — Pro features locked, renew to restore"
+msgstr "已過期——Pro 功能已鎖定，續約即恢復"
+
+msgid "expired on %s"
+msgstr "已於 %s 過期"
+
+msgid "Not active"
+msgstr "未啟用"
+
+msgid "Last validation"
+msgstr "最後驗證時間"
+
+msgid "Support"
+msgstr "支援"
+
+msgid "Documentation"
+msgstr "使用文檔"
+
+msgid "Deactivate license on this site"
+msgstr "在本站停用授權"
+
+msgid "License key"
+msgstr "序號"
+
+msgid "Activate"
+msgstr "啟用"
+
+msgid "your license expired on %s. Pro features are locked — renew to restore them instantly (your folders and data are untouched)."
+msgstr "你的授權已於 %s 到期。Pro 功能已鎖定——立即續約即可恢復（你的資料夾與資料完全不受影響）。"
+
+msgid "the license has been revoked (for example after a refund). Pro features are locked."
+msgstr "序號已被撤銷（例如退款後）。Pro 功能已鎖定。"
+
+msgid "no license key entered. Pro features are locked."
+msgstr "尚未輸入序號，Pro 功能已鎖定。"
+
+msgid "the license could not be validated. Pro features are locked."
+msgstr "序號無法通過驗證。Pro 功能已鎖定。"
+
+msgid "Open license settings"
+msgstr "開啟授權設定"
+
+msgid "Renew"
+msgstr "續約"
+

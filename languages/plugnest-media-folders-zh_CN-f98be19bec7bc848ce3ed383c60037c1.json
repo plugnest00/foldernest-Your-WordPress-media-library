@@ -1,0 +1,380 @@
+{
+    "translation-revision-date": "2026-10-02T13:05:40+00:00",
+    "generator": "PlugNest i18n-build",
+    "domain": "plugnest-media-folders",
+    "locale_data": {
+        "plugnest-media-folders": {
+            "": {
+                "domain": "plugnest-media-folders",
+                "lang": "zh_CN",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Processing…": [
+                "处理中…"
+            ],
+            "Invalid server response. Please reload the page.": [
+                "服务器响应格式错误，请重新加载页面。"
+            ],
+            "Operation failed.": [
+                "操作失败。"
+            ],
+            "Total media": [
+                "媒体总数"
+            ],
+            "Folders": [
+                "文件夹"
+            ],
+            "Unassigned": [
+                "未分类"
+            ],
+            "In use": [
+                "使用中"
+            ],
+            "Unused": [
+                "未被引用"
+            ],
+            "Not scanned": [
+                "尚未扫描"
+            ],
+            "All media": [
+                "全部媒体"
+            ],
+            "Pinned": [
+                "钉选"
+            ],
+            "Folder access roles": [
+                "文件夹访问角色"
+            ],
+            "Unpin folder": [
+                "取消钉选"
+            ],
+            "Pin folder": [
+                "钉选文件夹"
+            ],
+            "Folder color": [
+                "文件夹颜色"
+            ],
+            "Rename": [
+                "重命名"
+            ],
+            "Delete": [
+                "删除"
+            ],
+            "All media (uploads land in Unassigned)": [
+                "全部媒体（上传后归入未分类）"
+            ],
+            "No tags yet.": [
+                "还没有标签。"
+            ],
+            "Copy URL": [
+                "复制网址"
+            ],
+            "Add new folder": [
+                "新增文件夹"
+            ],
+            "Add": [
+                "加入"
+            ],
+            "%d media in total": [
+                "%d 个媒体"
+            ],
+            "Previous": [
+                "上一页"
+            ],
+            "Page %1$d of %2$d, %3$d media in total": [
+                "第 %1$d \/ %2$d 页，共 %3$d 个媒体"
+            ],
+            "Next": [
+                "下一页"
+            ],
+            "— Select folder —": [
+                "— 选择文件夹 —"
+            ],
+            "— Unassigned —": [
+                "— 未分类 —"
+            ],
+            "Open in native editor": [
+                "在原生编辑页开启"
+            ],
+            "Delete permanently (skips trash, cannot be undone)": [
+                "永久删除（不进回收桶，无法复原）"
+            ],
+            "Delete permanently": [
+                "永久删除"
+            ],
+            "Title": [
+                "标题"
+            ],
+            "Alt text": [
+                "替代文字 Alt"
+            ],
+            "Caption": [
+                "说明 Caption"
+            ],
+            "Description": [
+                "描述"
+            ],
+            "Folder": [
+                "所属文件夹"
+            ],
+            "Tags": [
+                "标签"
+            ],
+            "Save changes": [
+                "保存更改"
+            ],
+            "File size: ": [
+                "文件大小："
+            ],
+            "Dimensions: ": [
+                "尺寸："
+            ],
+            "Type: ": [
+                "类型："
+            ],
+            "Uploaded: ": [
+                "上传日期："
+            ],
+            "Usage: ": [
+                "使用状态："
+            ],
+            "Saved.": [
+                "已保存。"
+            ],
+            "Select a target folder first.": [
+                "请先选择目标文件夹。"
+            ],
+            "Permanently delete ALL %d matching media?\nThe files and all thumbnails will be removed. This cannot be undone!": [
+                "确定要「永久删除」全部符合条件的 %d 个媒体吗？\n文件与所有缩图会一并移除，无法复原！"
+            ],
+            "Permanently delete %d media?\nThe files and all thumbnails will be removed. This cannot be undone!": [
+                "确定要「永久删除」%d 个媒体吗？\n文件与所有缩图会一并移除，无法复原！"
+            ],
+            "Warning: %d of them are in use by posts; deleting will leave missing images in your content.": [
+                "⚠ 注意：其中 %d 个正在被文章使用中，删除会造成文章内容缺图。"
+            ],
+            "Enter tag names.": [
+                "请输入标签名称。"
+            ],
+            "Fill in at least one field.": [
+                "请至少填写一个字段。"
+            ],
+            "Close": [
+                "关闭"
+            ],
+            "No color": [
+                "无颜色"
+            ],
+            "Custom": [
+                "自定义颜色"
+            ],
+            "New folder name:": [
+                "新文件夹名称："
+            ],
+            "Folder created.": [
+                "文件夹已创建。"
+            ],
+            "Folder renamed.": [
+                "文件夹已重命名。"
+            ],
+            "Folder deleted.": [
+                "文件夹已删除。"
+            ],
+            "New tag name:": [
+                "新标签名称："
+            ],
+            "Tag created.": [
+                "标签已创建。"
+            ],
+            "No rules yet. Click \"Add rule\" below to start.": [
+                "还没有规则，点击下方“新增规则”开始。"
+            ],
+            "Enable": [
+                "启用"
+            ],
+            "Rule name": [
+                "规则名称"
+            ],
+            "Filename contains (comma-separated, any)": [
+                "文件名包含（逗号分隔，任一命中）"
+            ],
+            "e.g. asmr,drama": [
+                "如：asmr,drama"
+            ],
+            "File extensions (comma-separated)": [
+                "扩展名（逗号分隔）"
+            ],
+            "e.g. mp3,m4a": [
+                "如：mp3,m4a"
+            ],
+            "Filename regex (advanced, optional)": [
+                "文件名正则（进阶，可留空）"
+            ],
+            "e.g. ^3star-": [
+                "如：^3star-"
+            ],
+            "Type": [
+                "类型"
+            ],
+            "Any": [
+                "不限"
+            ],
+            "Image": [
+                "图片"
+            ],
+            "Audio": [
+                "音频"
+            ],
+            "Video": [
+                "视频"
+            ],
+            "Document": [
+                "文档"
+            ],
+            "Min width (px, 0 = any)": [
+                "最小宽度（px，0=不限）"
+            ],
+            "Year (0 = any)": [
+                "年份（0=不限）"
+            ],
+            "Target folder (use \/ for nesting; folders are created automatically)": [
+                "归入文件夹（可用 \/ 建立多层，不存在会自动创建）"
+            ],
+            "e.g. Videos\/ASMR": [
+                "如：影音汇\/ASMR"
+            ],
+            "Also add tags (comma-separated, optional)": [
+                "同时加上标签（逗号分隔，可留空）"
+            ],
+            "Only process unassigned media (recommended)": [
+                "只处理尚未分类的媒体（建议保持勾选）"
+            ],
+            "Rules saved.": [
+                "规则已保存。"
+            ],
+            "Examples:": [
+                "例："
+            ],
+            "items": [
+                "个"
+            ],
+            " (skipped %d)": [
+                "（略过 %d）"
+            ],
+            "Dry run (nothing has been saved yet)": [
+                "试跑结果（尚未写入任何数据）"
+            ],
+            "No media matches the current rules.": [
+                "没有任何媒体符合目前的规则。"
+            ],
+            "Media in scope": [
+                "范围内媒体总数"
+            ],
+            "No rule matched": [
+                "没有规则命中"
+            ],
+            "Skipped (already assigned)": [
+                "已分类而略过"
+            ],
+            "Will be assigned": [
+                "将会被归类"
+            ],
+            "Auto-assigning…": [
+                "自动分类中…"
+            ],
+            "Auto-assigning… %1$d \/ %2$d (assigned %3$d, skipped %4$d)": [
+                "自动分类中… %1$d \/ %2$d（已归类 %3$d，略过 %4$d）"
+            ],
+            "Auto-assign complete: %1$d assigned, %2$d skipped. Undo it from Activity Log if needed.": [
+                "自动分类完成：归类 %1$d 个，略过 %2$d 个。可从“操作记录”还原。"
+            ],
+            "Too many batches; stopped. Run again to continue.": [
+                "处理批次过多，已停止。可重新执行以继续。"
+            ],
+            "Analyzing site references…": [
+                "正在分析全站引用…"
+            ],
+            "Scanning usage… %1$d \/ %2$d": [
+                "扫描使用状态… %1$d \/ %2$d"
+            ],
+            "Scan complete: %d media processed.": [
+                "扫描完成，共处理 %d 个媒体。"
+            ],
+            "Loading…": [
+                "加载中…"
+            ],
+            "No activity yet.": [
+                "还没有任何操作记录。"
+            ],
+            "%d media": [
+                "%d 个媒体"
+            ],
+            "Undone": [
+                "已还原"
+            ],
+            "Undo": [
+                "还原"
+            ],
+            "Cannot undo": [
+                "无法还原"
+            ],
+            "Undo this action?": [
+                "确定要还原这笔操作吗？"
+            ],
+            "Undone.": [
+                "已还原。"
+            ],
+            "Building file size index… %d remaining": [
+                "正在创建文件尺寸索引…剩余 %d 个"
+            ],
+            "URL copied to clipboard.": [
+                "已复制网址到剪贴板。"
+            ],
+            "Copy failed. Copy it manually from the details panel.": [
+                "复制失败，请从详情面板手动复制。"
+            ],
+            "Selected all %d matching media (across pages).": [
+                "已选取全部符合条件的 %d 个媒体（跨页生效）。"
+            ],
+            "Permanently delete this media?\nThe files and all thumbnails will be removed. This cannot be undone!": [
+                "确定要「永久删除」这个媒体吗？\n文件与所有缩图会一并移除，无法复原！"
+            ],
+            "Warning: this media is currently in use by posts; deleting will leave missing images in your content.": [
+                "⚠ 注意：此媒体目前正在被文章使用中，删除会造成文章内容缺图。"
+            ],
+            "URL copied.": [
+                "网址已复制。"
+            ],
+            "Copy failed. Select and copy manually.": [
+                "复制失败，请手动选取。"
+            ],
+            "Auto-copy is not supported in this browser. Select and copy manually.": [
+                "此浏览器不支持自动复制，请手动选取。"
+            ],
+            "Uploaded %d media. The list and folders have been updated.": [
+                "已上传 %d 个媒体，列表与文件夹已更新。"
+            ],
+            "Upload failed: %s": [
+                "上传失败：%s"
+            ],
+            "Upload failed.": [
+                "上传失败。"
+            ],
+            "Media scripts are not loaded. Please reload the page.": [
+                "媒体脚本尚未加载，请重新加载页面。"
+            ],
+            "Upload media": [
+                "上传媒体"
+            ],
+            "Uploading %1$d \/ %2$d (%3$d%%)": [
+                "上传中 %1$d \/ %2$d（%3$d%%）"
+            ],
+            "Reset to the default rules? Your current rules will be overwritten.": [
+                "确定要还原成预设规则吗？目前的规则会被覆盖。"
+            ],
+            "New rule": [
+                "新规则"
+            ]
+        }
+    }
+}

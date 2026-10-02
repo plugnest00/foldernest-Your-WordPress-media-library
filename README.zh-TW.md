@@ -1,12 +1,12 @@
-# FolderNest
+# PlugNest Media Folders
 
 [English](README.md) | 繁體中文 | [简体中文](README.zh-CN.md)
 
 **給 WordPress 媒體庫的真實資料夾——完全不碰你的檔案。**
 
-FolderNest 為 WordPress 媒體庫加入可巢狀、可拖曳的資料夾、標籤、批次工具與使用狀態掃描。它只寫入分類資料：你的檔案不會被搬動、改名或改網址；停用外掛後，網站與原本完全一樣。
+PlugNest Media Folders 為 WordPress 媒體庫加入可巢狀、可拖曳的資料夾、標籤、批次工具與使用狀態掃描。它只寫入分類資料：你的檔案不會被搬動、改名或改網址；停用外掛後，網站與原本完全一樣。
 
-📦 **從 WordPress.org 安裝**（審核通過後）· 🏠 [產品網站](https://foldernest.plugnest.dev/zh-tw.html) · 📖 [文件](https://foldernest.plugnest.dev/docs.html)
+📦 **從 WordPress.org 安裝**（審核通過後）· 🏠 [產品網站](https://media-folders.plugnest.dev/zh-tw.html) · 📖 [文件](https://media-folders.plugnest.dev/docs.html)
 
 ## 功能特色
 
@@ -21,12 +21,12 @@ FolderNest 為 WordPress 媒體庫加入可巢狀、可拖曳的資料夾、標�
 
 ## 免費版與 Pro
 
-免費版即是完整的媒體管理工具。[FolderNest Pro](https://foldernest.plugnest.dev/zh-tw.html) 追加：未使用媒體清理精靈、待補替代文字批次流程、資料夾匯入／匯出、一鍵從 FileBird／Real Media Library／HappyFiles 等資料夾外掛匯入、資料夾存取角色、資料夾連檔刪除。
+免費版即是完整的媒體管理工具。[PlugNest Media Folders Pro](https://media-folders.plugnest.dev/zh-tw.html) 追加：未使用媒體清理精靈、待補替代文字批次流程、資料夾匯入／匯出、一鍵從 FileBird／Real Media Library／HappyFiles 等資料夾外掛匯入、資料夾存取角色、資料夾連檔刪除。
 
 ## 安裝
 
-1. 在 WordPress 後台前往**外掛 → 安裝外掛**，搜尋「FolderNest」（或上傳 zip）。
-2. 啟用——側邊選單會出現「FolderNest」。
+1. 在 WordPress 後台前往**外掛 → 安裝外掛**，搜尋「PlugNest Media Folders」（或上傳 zip）。
+2. 啟用——側邊選單會出現「PlugNest Media Folders」。
 3. 在左側建立資料夾、把媒體拖進去，完成。
 
 ## 常見問題

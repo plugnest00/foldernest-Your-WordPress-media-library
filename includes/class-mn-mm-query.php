@@ -1,13 +1,13 @@
 <?php
 /**
- * FolderNest — 媒體查詢引擎。
+ * PlugNest Media Folders — 媒體查詢引擎。
  *
  * 把「資料夾 + 標籤 + 類型 + 日期 + 使用狀態 + 關鍵字」這些條件
  * 組合成一次查詢，回傳前端要用的完整資料。
  *
  * 全程使用 WP_Query / 分類法 API，不涉及任何檔案系統操作。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;

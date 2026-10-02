@@ -1,6 +1,6 @@
 <?php
 /**
- * FolderNest — 上傳時直接指定資料夾。
+ * PlugNest Media Folders — 上傳時直接指定資料夾。
  *
  * 在「媒體 → 新增媒體」(media-new.php) 的拖放上傳區上方加一個資料夾下拉：
  * 選好資料夾再上傳，檔案就直接歸到該資料夾，不必上傳完再搬一次。
@@ -14,7 +14,7 @@
  * 與外掛其他部分一致：只動分類關係（wp_term_relationships），
  * 完全不碰實體檔案、不改 guid、不改 _wp_attached_file、不產生任何網址。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -130,9 +130,9 @@ class MN_MM_Upload {
 
 		?>
 		<div class="mn-mm-upload-picker">
-			<label for="mn-mm-upload-folder"><?php esc_html_e( 'Upload to folder:', 'foldernest' ); ?></label>
+			<label for="mn-mm-upload-folder"><?php esc_html_e( 'Upload to folder:', 'plugnest-media-folders' ); ?></label>
 			<select id="mn-mm-upload-folder" name="<?php echo esc_attr( self::FIELD ); ?>">
-				<option value=""><?php esc_html_e( '(none — classify later)', 'foldernest' ); ?></option>
+				<option value=""><?php esc_html_e( '(none — classify later)', 'plugnest-media-folders' ); ?></option>
 				<?php foreach ( $folders as $folder ) : ?>
 					<option value="<?php echo (int) $folder['term_id']; ?>"><?php
 						// 縮排用 &nbsp; 呈現層級，與原生媒體庫的篩選下拉一致。
@@ -148,7 +148,7 @@ class MN_MM_Upload {
 				value="<?php echo esc_attr( wp_create_nonce( self::NONCE_ACTION ) ); ?>"
 			/>
 			<p class="description">
-				<?php esc_html_e( 'Pick a folder before uploading and files land in it directly. Classification only — file paths and URLs never change.', 'foldernest' ); ?>
+				<?php esc_html_e( 'Pick a folder before uploading and files land in it directly. Classification only — file paths and URLs never change.', 'plugnest-media-folders' ); ?>
 			</p>
 		</div>
 		<?php

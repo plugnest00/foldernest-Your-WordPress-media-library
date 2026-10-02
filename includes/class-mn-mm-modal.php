@@ -1,6 +1,6 @@
 <?php
 /**
- * FolderNest — 媒體框（wp.media）整合。
+ * PlugNest Media Folders — 媒體框（wp.media）整合。
  *
  * Elementor、古騰堡等「插入媒體」用的都是核心媒體框（wp.media）。
  * 在不改寫框本體的前提下，用 Backbone 擴充加上兩個功能：
@@ -14,7 +14,7 @@
  *
  * 與外掛其他部分一致：只動分類關係，完全不碰檔案與網址。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -97,11 +97,11 @@ class MN_MM_Modal {
 				'field'   => MN_MM_Upload::FIELD,
 				'nonce'   => wp_create_nonce( MN_MM_Upload::NONCE_ACTION ),
 				'strings' => array(
-					'uploadTo'    => __( 'Upload to folder:', 'foldernest' ),
-					'unspecified' => __( '(none — classify later)', 'foldernest' ),
-					'filterBy'    => __( 'Folder:', 'foldernest' ),
-					'all'         => __( 'All folders', 'foldernest' ),
-					'unassigned'  => __( 'Unassigned', 'foldernest' ),
+					'uploadTo'    => __( 'Upload to folder:', 'plugnest-media-folders' ),
+					'unspecified' => __( '(none — classify later)', 'plugnest-media-folders' ),
+					'filterBy'    => __( 'Folder:', 'plugnest-media-folders' ),
+					'all'         => __( 'All folders', 'plugnest-media-folders' ),
+					'unassigned'  => __( 'Unassigned', 'plugnest-media-folders' ),
 				),
 			)
 		);

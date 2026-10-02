@@ -1,12 +1,12 @@
-# FolderNest
+# PlugNest Media Folders
 
 [English](README.md) | [繁體中文](README.zh-TW.md) | 简体中文
 
 **给 WordPress 媒体库的真实文件夹——完全不碰你的文件。**
 
-FolderNest 为 WordPress 媒体库加入可嵌套、可拖拽的文件夹、标签、批量工具与使用状态扫描。它只写入分类数据：你的文件不会被移动、改名或改网址；停用插件后，网站与原来完全一样。
+PlugNest Media Folders 为 WordPress 媒体库加入可嵌套、可拖拽的文件夹、标签、批量工具与使用状态扫描。它只写入分类数据：你的文件不会被移动、改名或改网址；停用插件后，网站与原来完全一样。
 
-📦 **从 WordPress.org 安装**（审核通过后）· 🏠 [产品网站](https://foldernest.plugnest.dev/zh-cn.html) · 📖 [文档](https://foldernest.plugnest.dev/docs.html)
+📦 **从 WordPress.org 安装**（审核通过后）· 🏠 [产品网站](https://media-folders.plugnest.dev/zh-cn.html) · 📖 [文档](https://media-folders.plugnest.dev/docs.html)
 
 ## 功能特色
 
@@ -21,12 +21,12 @@ FolderNest 为 WordPress 媒体库加入可嵌套、可拖拽的文件夹、标�
 
 ## 免费版与 Pro
 
-免费版即是完整的媒体管理工具。[FolderNest Pro](https://foldernest.plugnest.dev/zh-cn.html) 追加：未使用媒体清理向导、待补替代文字批量流程、文件夹导入／导出、一键从 FileBird／Real Media Library／HappyFiles 等文件夹插件导入、文件夹访问角色、文件夹连文件删除。
+免费版即是完整的媒体管理工具。[PlugNest Media Folders Pro](https://media-folders.plugnest.dev/zh-cn.html) 追加：未使用媒体清理向导、待补替代文字批量流程、文件夹导入／导出、一键从 FileBird／Real Media Library／HappyFiles 等文件夹插件导入、文件夹访问角色、文件夹连文件删除。
 
 ## 安装
 
-1. 在 WordPress 后台前往**插件 → 安装插件**，搜索「FolderNest」（或上传 zip）。
-2. 启用——侧边菜单会出现「FolderNest」。
+1. 在 WordPress 后台前往**插件 → 安装插件**，搜索「PlugNest Media Folders」（或上传 zip）。
+2. 启用——侧边菜单会出现「PlugNest Media Folders」。
 3. 在左侧建立文件夹、把媒体拖进去，完成。
 
 ## 常见问题

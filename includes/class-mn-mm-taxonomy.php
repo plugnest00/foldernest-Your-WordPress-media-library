@@ -1,6 +1,6 @@
 <?php
 /**
- * FolderNest — 分類法註冊與預設資料夾。
+ * PlugNest Media Folders — 分類法註冊與預設資料夾。
  *
  * 這是整個外掛的核心機制，也是「不動物件路徑」的關鍵：
  *
@@ -15,7 +15,7 @@
  *   - 從不呼叫 wp_upload_dir 去改寫路徑、從不移動檔案、從不更新 guid / _wp_attached_file
  *   - rewrite => false，連新的 URL 規則都不會產生
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -65,16 +65,16 @@ class MN_MM_Taxonomy {
 			array( 'attachment' ),
 				array(
 					'labels'             => array(
-						'name'          => __( 'Media folders', 'foldernest' ),
-						'singular_name' => __( 'Media folder', 'foldernest' ),
-						'search_items'  => __( 'Search folders', 'foldernest' ),
-						'all_items'     => __( 'All folders', 'foldernest' ),
-						'parent_item'   => __( 'Parent folder', 'foldernest' ),
-						'edit_item'     => __( 'Edit folder', 'foldernest' ),
-						'update_item'   => __( 'Update folder', 'foldernest' ),
-						'add_new_item'  => __( 'Add new folder', 'foldernest' ),
-						'new_item_name' => __( 'New folder name', 'foldernest' ),
-						'menu_name'     => __( 'Folders', 'foldernest' ),
+						'name'          => __( 'Media folders', 'plugnest-media-folders' ),
+						'singular_name' => __( 'Media folder', 'plugnest-media-folders' ),
+						'search_items'  => __( 'Search folders', 'plugnest-media-folders' ),
+						'all_items'     => __( 'All folders', 'plugnest-media-folders' ),
+						'parent_item'   => __( 'Parent folder', 'plugnest-media-folders' ),
+						'edit_item'     => __( 'Edit folder', 'plugnest-media-folders' ),
+						'update_item'   => __( 'Update folder', 'plugnest-media-folders' ),
+						'add_new_item'  => __( 'Add new folder', 'plugnest-media-folders' ),
+						'new_item_name' => __( 'New folder name', 'plugnest-media-folders' ),
+						'menu_name'     => __( 'Folders', 'plugnest-media-folders' ),
 					),
 				'hierarchical'       => true,
 				/*
@@ -105,15 +105,15 @@ class MN_MM_Taxonomy {
 			array( 'attachment' ),
 				array(
 					'labels'             => array(
-						'name'          => __( 'Media tags', 'foldernest' ),
-						'singular_name' => __( 'Media tag', 'foldernest' ),
-						'search_items'  => __( 'Search tags', 'foldernest' ),
-						'all_items'     => __( 'All tags', 'foldernest' ),
-						'edit_item'     => __( 'Edit tag', 'foldernest' ),
-						'update_item'   => __( 'Update tag', 'foldernest' ),
-						'add_new_item'  => __( 'Add new tag', 'foldernest' ),
-						'new_item_name' => __( 'New tag name', 'foldernest' ),
-						'menu_name'     => __( 'Tags', 'foldernest' ),
+						'name'          => __( 'Media tags', 'plugnest-media-folders' ),
+						'singular_name' => __( 'Media tag', 'plugnest-media-folders' ),
+						'search_items'  => __( 'Search tags', 'plugnest-media-folders' ),
+						'all_items'     => __( 'All tags', 'plugnest-media-folders' ),
+						'edit_item'     => __( 'Edit tag', 'plugnest-media-folders' ),
+						'update_item'   => __( 'Update tag', 'plugnest-media-folders' ),
+						'add_new_item'  => __( 'Add new tag', 'plugnest-media-folders' ),
+						'new_item_name' => __( 'New tag name', 'plugnest-media-folders' ),
+						'menu_name'     => __( 'Tags', 'plugnest-media-folders' ),
 					),
 				'hierarchical'       => false,
 				'public'             => false,

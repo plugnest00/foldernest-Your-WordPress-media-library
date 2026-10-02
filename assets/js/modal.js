@@ -1,5 +1,5 @@
 /**
- * FolderNest — 媒體框（wp.media）整合（前端）。
+ * PlugNest Media Folders — 媒體框（wp.media）整合（前端）。
  *
  * 對所有 wp.media 框（古騰堡、Elementor、小工具、upload.php 網格模式……）生效：
  *   1. 「上傳文件」頁籤：加上「上傳到資料夾」下拉，選好再傳，

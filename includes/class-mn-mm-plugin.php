@@ -1,8 +1,8 @@
 <?php
 /**
- * FolderNest — 主控制器。
+ * PlugNest Media Folders — 主控制器。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -213,7 +213,7 @@ class MN_MM_Plugin {
 	/**
 	 * Pro 是否啟用。
 	 *
-	 * 免費版本身永遠回 false；Pro 外掛（FolderNest Pro）在授權
+	 * 免費版本身永遠回 false；Pro 外掛（PlugNest Media Folders Pro）在授權
 	 * 有效時掛 `mn_mm_pro` 過濾器回 true 解鎖。收費功能（清理精靈、
 	 * 待補 Alt 批次、匯入/匯出、資料夾角色）在後端端點與前端 UI 兩側
 	 * 都用這個函式把關。

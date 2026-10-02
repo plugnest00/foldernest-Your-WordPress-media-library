@@ -1,11 +1,11 @@
 <?php
 /**
- * FolderNest — AJAX 端點。
+ * PlugNest Media Folders — AJAX 端點。
  *
  * 所有寫入操作都在這裡集中處理，統一做權限檢查與 nonce 驗證，
  * 並且每一次寫入都會留下可還原的操作記錄。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -69,10 +69,10 @@ class MN_MM_Ajax {
 	 */
 	private function guard() {
 		if ( ! check_ajax_referer( 'mn_mm', 'nonce', false ) ) {
-			wp_send_json_error( array( 'message' => __( 'Security check failed. Please reload the page.', 'foldernest' ) ), 403 );
+			wp_send_json_error( array( 'message' => __( 'Security check failed. Please reload the page.', 'plugnest-media-folders' ) ), 403 );
 		}
 		if ( ! current_user_can( 'upload_files' ) ) {
-			wp_send_json_error( array( 'message' => __( 'Your account does not have permission to manage media.', 'foldernest' ) ), 403 );
+			wp_send_json_error( array( 'message' => __( 'Your account does not have permission to manage media.', 'plugnest-media-folders' ) ), 403 );
 		}
 	}
 
@@ -185,7 +185,7 @@ class MN_MM_Ajax {
 		$post = $id ? get_post( $id ) : null;
 
 		if ( ! $post || 'attachment' !== $post->post_type ) {
-			wp_send_json_error( array( 'message' => __( 'Media not found.', 'foldernest' ) ), 404 );
+			wp_send_json_error( array( 'message' => __( 'Media not found.', 'plugnest-media-folders' ) ), 404 );
 		}
 
 		wp_send_json_success( MN_MM_Query::format_item( $post ) );
@@ -262,7 +262,7 @@ class MN_MM_Ajax {
 		$post = $id ? get_post( $id ) : null;
 
 		if ( ! $post || 'attachment' !== $post->post_type ) {
-			wp_send_json_error( array( 'message' => __( 'Media not found.', 'foldernest' ) ), 404 );
+			wp_send_json_error( array( 'message' => __( 'Media not found.', 'plugnest-media-folders' ) ), 404 );
 		}
 
 		$before = array(
@@ -335,7 +335,7 @@ class MN_MM_Ajax {
 		$mode = sanitize_text_field( (string) $this->param( 'mode', 'add' ) );
 
 		if ( empty( $ids ) ) {
-			wp_send_json_error( array( 'message' => __( 'No media selected.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'No media selected.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$before = MN_MM_Log::snapshot_terms( $ids, MN_MM_TAX_FOLDER );
@@ -356,7 +356,7 @@ class MN_MM_Ajax {
 				array(
 					'affected' => count( $ids ),
 					'log_id'   => $log_id,
-					'message'  => sprintf( __( 'Removed %d media from all folders.', 'foldernest' ), count( $ids ) ),
+					'message'  => sprintf( __( 'Removed %d media from all folders.', 'plugnest-media-folders' ), count( $ids ) ),
 				)
 			);
 		}
@@ -367,7 +367,7 @@ class MN_MM_Ajax {
 		 */
 		$folder_id = (int) $this->param( 'target_folder_id', 0 );
 		if ( $folder_id <= 0 || ! term_exists( $folder_id, MN_MM_TAX_FOLDER ) ) {
-			wp_send_json_error( array( 'message' => __( 'Select a valid target folder.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Select a valid target folder.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$append = ( 'add' === $mode );
@@ -414,7 +414,7 @@ class MN_MM_Ajax {
 		$mode = sanitize_text_field( (string) $this->param( 'mode', 'add' ) );
 
 		if ( empty( $ids ) ) {
-			wp_send_json_error( array( 'message' => __( 'No media selected.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'No media selected.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$before = MN_MM_Log::snapshot_terms( $ids, MN_MM_TAX_TAG );
@@ -444,7 +444,7 @@ class MN_MM_Ajax {
 		$tag_ids = array_values( array_unique( array_filter( $tag_ids ) ) );
 
 		if ( empty( $tag_ids ) ) {
-			wp_send_json_error( array( 'message' => __( 'Specify at least one tag.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Specify at least one tag.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		foreach ( $tag_ids as $tid ) {
@@ -498,7 +498,7 @@ class MN_MM_Ajax {
 
 		$ids = $this->param_ids();
 		if ( empty( $ids ) ) {
-			wp_send_json_error( array( 'message' => __( 'No media selected.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'No media selected.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$fields = (array) $this->param( 'fields', array() );
@@ -584,7 +584,7 @@ class MN_MM_Ajax {
 			array(
 				'affected' => count( $items ),
 				'log_id'   => $log_id,
-				'message'  => sprintf( __( 'Updated fields for %d media.', 'foldernest' ), count( $items ) ),
+				'message'  => sprintf( __( 'Updated fields for %d media.', 'plugnest-media-folders' ), count( $items ) ),
 			)
 		);
 	}
@@ -626,7 +626,7 @@ class MN_MM_Ajax {
 		$ids = $this->param_ids();
 
 		if ( empty( $ids ) ) {
-			wp_send_json_error( array( 'message' => __( 'No media selected.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'No media selected.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$deleted = 0;
@@ -668,9 +668,9 @@ class MN_MM_Ajax {
 			}
 		}
 
-		$message = sprintf( __( 'Permanently deleted %d media.', 'foldernest' ), $deleted );
+		$message = sprintf( __( 'Permanently deleted %d media.', 'plugnest-media-folders' ), $deleted );
 		if ( ! empty( $failed ) ) {
-			$message .= sprintf( __( '(%d failed)', 'foldernest' ), count( $failed ) );
+			$message .= sprintf( __( '(%d failed)', 'plugnest-media-folders' ), count( $failed ) );
 		}
 		/* 批次上限 2000：若剛好刪滿，代表可能還有未使用媒體，提醒再執行一次。 */
 		if ( $deleted >= self::MAX_BULK ) {
@@ -705,7 +705,7 @@ class MN_MM_Ajax {
 		$post_id = (int) $this->param( 'post_id', 0 );
 		$post    = get_post( $post_id );
 		if ( ! $post ) {
-			wp_send_json_error( array( 'message' => __( 'Post not found.', 'foldernest' ) ), 404 );
+			wp_send_json_error( array( 'message' => __( 'Post not found.', 'plugnest-media-folders' ) ), 404 );
 		}
 
 		$ids = get_posts(
@@ -759,13 +759,13 @@ class MN_MM_Ajax {
 		$term_id = (int) $this->param( 'term_id', 0 );
 		$term    = get_term( $term_id, MN_MM_TAX_FOLDER );
 		if ( ! $term || is_wp_error( $term ) ) {
-			wp_send_json_error( array( 'message' => __( 'Folder not found.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Folder not found.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		/* 容忍帶 # 前綴（前端 type=color 與色板都會帶）與 3/6 位 hex。 */
 		$color = ltrim( strtolower( trim( (string) $this->param( 'color', '' ) ) ), '#' );
 		if ( '' !== $color && ! preg_match( '/^[0-9a-f]{3}([0-9a-f]{3})?$/', $color ) ) {
-			wp_send_json_error( array( 'message' => __( 'Invalid color.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Invalid color.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		if ( '' === $color ) {
@@ -780,7 +780,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'folders' => MN_MM_Taxonomy::get_folder_tree( true ),
-				'message' => __( 'Folder color updated.', 'foldernest' ),
+				'message' => __( 'Folder color updated.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -794,7 +794,7 @@ class MN_MM_Ajax {
 		$term_id = (int) $this->param( 'term_id', 0 );
 		$term    = get_term( $term_id, MN_MM_TAX_FOLDER );
 		if ( ! $term || is_wp_error( $term ) ) {
-			wp_send_json_error( array( 'message' => __( 'Folder not found.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Folder not found.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$star = (int) $this->param( 'star', 0 );
@@ -807,7 +807,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'folders' => MN_MM_Taxonomy::get_folder_tree( true ),
-				'message' => $star ? __( 'Folder pinned.', 'foldernest' ) : __( 'Folder unpinned.', 'foldernest' ),
+				'message' => $star ? __( 'Folder pinned.', 'plugnest-media-folders' ) : __( 'Folder unpinned.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -883,12 +883,12 @@ class MN_MM_Ajax {
 		$parent = (int) $this->param( 'parent', 0 );
 
 		if ( '' === $name ) {
-			wp_send_json_error( array( 'message' => __( 'Enter a folder name.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Enter a folder name.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$exists = term_exists( $name, MN_MM_TAX_FOLDER, $parent );
 		if ( $exists ) {
-			wp_send_json_error( array( 'message' => __( 'A folder with the same name already exists at this level.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'A folder with the same name already exists at this level.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$new = wp_insert_term( $name, MN_MM_TAX_FOLDER, array( 'parent' => $parent ) );
@@ -900,7 +900,7 @@ class MN_MM_Ajax {
 			array(
 				'term_id' => (int) $new['term_id'],
 				'folders' => MN_MM_Taxonomy::get_folder_tree( true ),
-				'message' => __( 'Folder created.', 'foldernest' ),
+				'message' => __( 'Folder created.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -915,7 +915,7 @@ class MN_MM_Ajax {
 		$name    = sanitize_text_field( (string) $this->param( 'name', '' ) );
 
 		if ( $term_id <= 0 || '' === $name ) {
-			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$result = wp_update_term( $term_id, MN_MM_TAX_FOLDER, array( 'name' => $name ) );
@@ -926,7 +926,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'folders' => MN_MM_Taxonomy::get_folder_tree( true ),
-				'message' => __( 'Folder renamed.', 'foldernest' ),
+				'message' => __( 'Folder renamed.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -942,12 +942,12 @@ class MN_MM_Ajax {
 
 		$term_id = (int) $this->param( 'term_id', 0 );
 		if ( $term_id <= 0 ) {
-			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$term = get_term( $term_id, MN_MM_TAX_FOLDER );
 		if ( ! $term || is_wp_error( $term ) ) {
-			wp_send_json_error( array( 'message' => __( 'Folder not found.', 'foldernest' ) ), 404 );
+			wp_send_json_error( array( 'message' => __( 'Folder not found.', 'plugnest-media-folders' ) ), 404 );
 		}
 
 		/* 先把子資料夾接到上一層，避免整個子樹被孤立。 */
@@ -964,7 +964,7 @@ class MN_MM_Ajax {
 			array(
 				'folders' => MN_MM_Taxonomy::get_folder_tree( true ),
 				'stats'   => MN_MM_Query::stats(),
-				'message' => __( 'Folder deleted (the media itself is not affected).', 'foldernest' ),
+				'message' => __( 'Folder deleted (the media itself is not affected).', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -979,17 +979,17 @@ class MN_MM_Ajax {
 		$parent  = (int) $this->param( 'parent', 0 );
 
 		if ( $term_id <= 0 ) {
-			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'plugnest-media-folders' ) ), 400 );
 		}
 		if ( $term_id === $parent ) {
-			wp_send_json_error( array( 'message' => __( 'A folder cannot be moved into itself.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'A folder cannot be moved into itself.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		/* 防止把資料夾移到自己的子孫底下（會造成循環）。 */
 		if ( $parent > 0 ) {
 			$descendants = MN_MM_Taxonomy::get_descendant_ids( $term_id );
 			if ( in_array( $parent, $descendants, true ) ) {
-				wp_send_json_error( array( 'message' => __( 'A folder cannot be moved into its own subfolder.', 'foldernest' ) ), 400 );
+				wp_send_json_error( array( 'message' => __( 'A folder cannot be moved into its own subfolder.', 'plugnest-media-folders' ) ), 400 );
 			}
 		}
 
@@ -1001,7 +1001,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'folders' => MN_MM_Taxonomy::get_folder_tree( true ),
-				'message' => __( 'Folder moved.', 'foldernest' ),
+				'message' => __( 'Folder moved.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -1014,12 +1014,12 @@ class MN_MM_Ajax {
 
 		$name = sanitize_text_field( (string) $this->param( 'name', '' ) );
 		if ( '' === $name ) {
-			wp_send_json_error( array( 'message' => __( 'Enter tag names.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Enter tag names.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$exists = term_exists( $name, MN_MM_TAX_TAG );
 		if ( $exists ) {
-			wp_send_json_error( array( 'message' => __( 'This tag already exists.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'This tag already exists.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$new = wp_insert_term( $name, MN_MM_TAX_TAG );
@@ -1030,7 +1030,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'term_id' => (int) $new['term_id'],
-				'message' => __( 'Tag created.', 'foldernest' ),
+				'message' => __( 'Tag created.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -1043,12 +1043,12 @@ class MN_MM_Ajax {
 
 		$term_id = (int) $this->param( 'term_id', 0 );
 		if ( $term_id <= 0 ) {
-			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Missing parameters.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		wp_delete_term( $term_id, MN_MM_TAX_TAG );
 
-		wp_send_json_success( array( 'message' => __( 'Tag deleted.', 'foldernest' ) ) );
+		wp_send_json_success( array( 'message' => __( 'Tag deleted.', 'plugnest-media-folders' ) ) );
 	}
 
 	/* =========================================================
@@ -1068,7 +1068,7 @@ class MN_MM_Ajax {
 
 		$decoded = is_array( $rules ) ? $rules : json_decode( (string) $rules, true );
 		if ( ! is_array( $decoded ) ) {
-			wp_send_json_error( array( 'message' => __( 'Invalid rule format.', 'foldernest' ) ), 400 );
+			wp_send_json_error( array( 'message' => __( 'Invalid rule format.', 'plugnest-media-folders' ) ), 400 );
 		}
 
 		$saved = MN_MM_Auto::save_rules( $decoded );
@@ -1076,7 +1076,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'rules'   => $saved,
-				'message' => sprintf( __( 'Saved %d rules.', 'foldernest' ), count( $saved ) ),
+				'message' => sprintf( __( 'Saved %d rules.', 'plugnest-media-folders' ), count( $saved ) ),
 			)
 		);
 	}
@@ -1090,7 +1090,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'rules'   => MN_MM_Auto::default_rules(),
-				'message' => __( 'Restored the default rules.', 'foldernest' ),
+				'message' => __( 'Restored the default rules.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -1153,7 +1153,7 @@ class MN_MM_Ajax {
 		wp_send_json_success(
 			array(
 				'cancelled' => $ok,
-				'message'   => $ok ? __( 'Cancelled. Everything already applied can be undone from Activity Log.', 'foldernest' ) : __( 'No job is running.', 'foldernest' ),
+				'message'   => $ok ? __( 'Cancelled. Everything already applied can be undone from Activity Log.', 'plugnest-media-folders' ) : __( 'No job is running.', 'plugnest-media-folders' ),
 			)
 		);
 	}
@@ -1192,7 +1192,7 @@ class MN_MM_Ajax {
 	public function usage_flush() {
 		$this->guard();
 		MN_MM_Usage::flush_index();
-		wp_send_json_success( array( 'message' => __( 'Reference index rebuilt. The next scan will re-analyze site content.', 'foldernest' ) ) );
+		wp_send_json_success( array( 'message' => __( 'Reference index rebuilt. The next scan will re-analyze site content.', 'plugnest-media-folders' ) ) );
 	}
 
 	/* =========================================================
@@ -1224,7 +1224,7 @@ class MN_MM_Ajax {
 			array(
 				'restored' => $result['restored'],
 				'stats'    => MN_MM_Query::stats(),
-				'message'  => sprintf( __( 'Restored the previous state of %d media.', 'foldernest' ), $result['restored'] ),
+				'message'  => sprintf( __( 'Restored the previous state of %d media.', 'plugnest-media-folders' ), $result['restored'] ),
 			)
 		);
 	}

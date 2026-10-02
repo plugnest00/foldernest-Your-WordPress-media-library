@@ -1,12 +1,12 @@
-# FolderNest
+# PlugNest Media Folders
 
 English | [繁體中文](README.zh-TW.md) | [简体中文](README.zh-CN.md)
 
 **Real folders for the WordPress media library — without ever touching a file.**
 
-FolderNest adds nested, drag-and-drop folders, tags, batch tools and a usage scanner to the WordPress media library. It only writes classification data: your files are never moved, renamed or re-URLed, and deactivating the plugin leaves your site exactly as it was.
+PlugNest Media Folders adds nested, drag-and-drop folders, tags, batch tools and a usage scanner to the WordPress media library. It only writes classification data: your files are never moved, renamed or re-URLed, and deactivating the plugin leaves your site exactly as it was.
 
-📦 **Install from WordPress.org** (once approved) · 🏠 [Product site](https://foldernest.plugnest.dev/) · 📖 [Documentation](https://foldernest.plugnest.dev/docs.html)
+📦 **Install from WordPress.org** (once approved) · 🏠 [Product site](https://media-folders.plugnest.dev/) · 📖 [Documentation](https://media-folders.plugnest.dev/docs.html)
 
 ## Highlights
 
@@ -21,12 +21,12 @@ FolderNest adds nested, drag-and-drop folders, tags, batch tools and a usage sca
 
 ## Free vs Pro
 
-The free version is a complete media manager. [FolderNest Pro](https://foldernest.plugnest.dev/) adds: unused-media cleanup wizard, missing-alt batch workflow, folder import/export, one-click import from FileBird / Real Media Library / HappyFiles and other folder plugins, folder access roles, and delete-folder-with-files.
+The free version is a complete media manager. [PlugNest Media Folders Pro](https://media-folders.plugnest.dev/) adds: unused-media cleanup wizard, missing-alt batch workflow, folder import/export, one-click import from FileBird / Real Media Library / HappyFiles and other folder plugins, folder access roles, and delete-folder-with-files.
 
 ## Installation
 
-1. In your WordPress admin, go to **Plugins → Add New** and search for "FolderNest" (or upload the zip).
-2. Activate — a "FolderNest" item appears in the admin menu.
+1. In your WordPress admin, go to **Plugins → Add New** and search for "PlugNest Media Folders" (or upload the zip).
+2. Activate — a "PlugNest Media Folders" item appears in the admin menu.
 3. Create folders on the left, drag media in, done.
 
 ## Frequently asked questions

@@ -1,6 +1,6 @@
 <?php
 /**
- * FolderNest — 移除外掛時的清理。
+ * PlugNest Media Folders — 移除外掛時的清理。
  *
  * ⚠️ 這裡做的事：
  *   1. 刪除外掛的設定（規則、旗標）
@@ -14,7 +14,7 @@
  *
  * 若只想停用而不想失去分類，請直接「停用」外掛，不要刪除。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'WP_UNINSTALL_PLUGIN' ) || exit;

@@ -1,6 +1,6 @@
 <?php
 /**
- * FolderNest — 自動分類引擎。
+ * PlugNest Media Folders — 自動分類引擎。
  *
  * 依「檔名 / 副檔名 / 類型 / 尺寸 / 年份」等條件，把媒體自動歸入資料夾。
  *
@@ -10,7 +10,7 @@
  *
  * 整個過程只寫入分類關係（term_relationships），不碰任何檔案。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -57,10 +57,10 @@ class MN_MM_Auto {
 		};
 
 		return array(
-			$rule( 'r_videos', __( 'Videos', 'foldernest' ), 'video' ),
-			$rule( 'r_audio', __( 'Audio', 'foldernest' ), 'audio' ),
-			$rule( 'r_pictures', __( 'Pictures', 'foldernest' ), 'image' ),
-			$rule( 'r_documents', __( 'Documents', 'foldernest' ), 'document' ),
+			$rule( 'r_videos', __( 'Videos', 'plugnest-media-folders' ), 'video' ),
+			$rule( 'r_audio', __( 'Audio', 'plugnest-media-folders' ), 'audio' ),
+			$rule( 'r_pictures', __( 'Pictures', 'plugnest-media-folders' ), 'image' ),
+			$rule( 'r_documents', __( 'Documents', 'plugnest-media-folders' ), 'document' ),
 		);
 	}
 
@@ -97,7 +97,7 @@ class MN_MM_Auto {
 
 			$clean[] = array(
 				'id'              => ! empty( $rule['id'] ) ? sanitize_key( $rule['id'] ) : ( 'r_' . $i . '_' . wp_generate_password( 4, false, false ) ),
-				'label'           => sanitize_text_field( isset( $rule['label'] ) ? $rule['label'] : ( __( 'Rule', 'foldernest' ) . ' ' . $i ) ),
+				'label'           => sanitize_text_field( isset( $rule['label'] ) ? $rule['label'] : ( __( 'Rule', 'plugnest-media-folders' ) . ' ' . $i ) ),
 				'enabled'         => ! empty( $rule['enabled'] ),
 				'only_unassigned' => ! empty( $rule['only_unassigned'] ),
 				'match'           => array(
@@ -445,7 +445,7 @@ class MN_MM_Auto {
 
 		$candidates = self::candidates( $scope );
 		if ( empty( $candidates ) ) {
-			return new WP_Error( 'no_candidates', __( 'No media in scope.', 'foldernest' ) );
+			return new WP_Error( 'no_candidates', __( 'No media in scope.', 'plugnest-media-folders' ) );
 		}
 
 		/* 先寫一筆空的記錄，之後每批把明細 append 進去。 */
@@ -505,7 +505,7 @@ class MN_MM_Auto {
 		$job = get_transient( $key );
 
 		if ( ! is_array( $job ) ) {
-			return new WP_Error( 'no_job', __( 'No auto-assign job is running.', 'foldernest' ) );
+			return new WP_Error( 'no_job', __( 'No auto-assign job is running.', 'plugnest-media-folders' ) );
 		}
 
 		$candidates = self::candidates( isset( $job['scope'] ) ? $job['scope'] : array() );

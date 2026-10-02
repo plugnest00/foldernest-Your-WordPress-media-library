@@ -1,6 +1,6 @@
 <?php
 /**
- * FolderNest — 原生媒體庫整合。
+ * PlugNest Media Folders — 原生媒體庫整合。
  *
  * 不改寫原生媒體庫的介面，只在既有畫面上「加」東西：
  *   - 列表模式加上資料夾／標籤篩選下拉
@@ -10,7 +10,7 @@
  * 這樣平常在原生媒體庫工作的人不會被打斷，
  * 需要大規模整理時再進專屬頁面。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -58,10 +58,10 @@ class MN_MM_Native {
 
 		$folders = MN_MM_Taxonomy::get_folder_tree( true );
 
-		echo '<label for="mn-mm-folder-filter" class="screen-reader-text">' . esc_html__( 'Filter by folder', 'foldernest' ) . '</label>';
+		echo '<label for="mn-mm-folder-filter" class="screen-reader-text">' . esc_html__( 'Filter by folder', 'plugnest-media-folders' ) . '</label>';
 		echo '<select name="mn_mm_folder" id="mn-mm-folder-filter">';
-		echo '<option value="">' . esc_html__( 'All folders', 'foldernest' ) . '</option>';
-		echo '<option value="none"' . selected( $current_folder, 'none', false ) . '>' . esc_html__( 'Unassigned', 'foldernest' ) . '</option>';
+		echo '<option value="">' . esc_html__( 'All folders', 'plugnest-media-folders' ) . '</option>';
+		echo '<option value="none"' . selected( $current_folder, 'none', false ) . '>' . esc_html__( 'Unassigned', 'plugnest-media-folders' ) . '</option>';
 
 		foreach ( $folders as $f ) {
 			$prefix = str_repeat( '&nbsp;&nbsp;&nbsp;', (int) $f['depth'] );
@@ -87,9 +87,9 @@ class MN_MM_Native {
 		if ( ! is_wp_error( $tags ) && ! empty( $tags ) ) {
 			$current_tag = isset( $_GET['mn_mm_tag'] ) ? (int) $_GET['mn_mm_tag'] : 0; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 
-			echo '<label for="mn-mm-tag-filter" class="screen-reader-text">' . esc_html__( 'Filter by tag', 'foldernest' ) . '</label>';
+			echo '<label for="mn-mm-tag-filter" class="screen-reader-text">' . esc_html__( 'Filter by tag', 'plugnest-media-folders' ) . '</label>';
 			echo '<select name="mn_mm_tag" id="mn-mm-tag-filter">';
-			echo '<option value="0">' . esc_html__( 'All tags', 'foldernest' ) . '</option>';
+			echo '<option value="0">' . esc_html__( 'All tags', 'plugnest-media-folders' ) . '</option>';
 			foreach ( $tags as $t ) {
 				printf(
 					'<option value="%d"%s>%s (%d)</option>',
@@ -105,17 +105,17 @@ class MN_MM_Native {
 		/* 使用狀態 */
 		$current_usage = isset( $_GET['mn_mm_usage'] ) ? sanitize_text_field( wp_unslash( $_GET['mn_mm_usage'] ) ) : ''; // phpcs:ignore WordPress.Security.NonceVerification.Recommended
 
-		echo '<label for="mn-mm-usage-filter" class="screen-reader-text">' . esc_html__( 'Filter by usage status', 'foldernest' ) . '</label>';
+		echo '<label for="mn-mm-usage-filter" class="screen-reader-text">' . esc_html__( 'Filter by usage status', 'plugnest-media-folders' ) . '</label>';
 		echo '<select name="mn_mm_usage" id="mn-mm-usage-filter">';
-		printf( '<option value=""%s>%s</option>', selected( $current_usage, '', false ), esc_html__( 'Usage status: All', 'foldernest' ) );
-		printf( '<option value="used"%s>%s</option>', selected( $current_usage, 'used', false ), esc_html__( 'In use', 'foldernest' ) );
-		printf( '<option value="unused"%s>%s</option>', selected( $current_usage, 'unused', false ), esc_html__( 'Unused', 'foldernest' ) );
-		printf( '<option value="unscanned"%s>%s</option>', selected( $current_usage, 'unscanned', false ), esc_html__( 'Not scanned', 'foldernest' ) );
+		printf( '<option value=""%s>%s</option>', selected( $current_usage, '', false ), esc_html__( 'Usage status: All', 'plugnest-media-folders' ) );
+		printf( '<option value="used"%s>%s</option>', selected( $current_usage, 'used', false ), esc_html__( 'In use', 'plugnest-media-folders' ) );
+		printf( '<option value="unused"%s>%s</option>', selected( $current_usage, 'unused', false ), esc_html__( 'Unused', 'plugnest-media-folders' ) );
+		printf( '<option value="unscanned"%s>%s</option>', selected( $current_usage, 'unscanned', false ), esc_html__( 'Not scanned', 'plugnest-media-folders' ) );
 		echo '</select>';
 
 		/* 管理頁連結 */
-		$url = admin_url( 'admin.php?page=foldernest' );
-		echo '<a href="' . esc_url( $url ) . '" class="button" style="margin-left:6px;">' . esc_html__( 'Open FolderNest', 'foldernest' ) . '</a>';
+		$url = admin_url( 'admin.php?page=plugnest-media-folders' );
+		echo '<a href="' . esc_url( $url ) . '" class="button" style="margin-left:6px;">' . esc_html__( 'Open PlugNest Media Folders', 'plugnest-media-folders' ) . '</a>';
 	}
 
 	/**
@@ -133,7 +133,7 @@ class MN_MM_Native {
 		foreach ( $columns as $key => $label ) {
 			$new[ $key ] = $label;
 			if ( 'title' === $key ) {
-				$new['mn_mm_folder'] = __( 'Folder', 'foldernest' );
+				$new['mn_mm_folder'] = __( 'Folder', 'plugnest-media-folders' );
 			}
 		}
 		return $new;
@@ -153,7 +153,7 @@ class MN_MM_Native {
 		$terms = wp_get_object_terms( (int) $post_id, MN_MM_TAX_FOLDER, array( 'fields' => 'names' ) );
 
 		if ( is_wp_error( $terms ) || empty( $terms ) ) {
-			echo '<span style="color:#b32d2e;">' . esc_html__( 'Unassigned', 'foldernest' ) . '</span>';
+			echo '<span style="color:#b32d2e;">' . esc_html__( 'Unassigned', 'plugnest-media-folders' ) . '</span>';
 			return;
 		}
 
@@ -248,16 +248,16 @@ class MN_MM_Native {
 		}
 
 		$dismiss = add_query_arg( 'mn_mm_hide_notice', 1 );
-		$manage  = admin_url( 'admin.php?page=foldernest' );
+		$manage  = admin_url( 'admin.php?page=plugnest-media-folders' );
 
 		printf(
 			'<div class="notice notice-info is-dismissible"><p><strong>%1$s</strong> %2$s <a href="%3$s">%4$s</a>　<a href="%5$s">%6$s</a></p></div>',
-			esc_html__( 'FolderNest is now active.', 'foldernest' ),
-			esc_html__( 'Media can now be organized with folders and tags — file paths and URLs are never touched.', 'foldernest' ),
+			esc_html__( 'PlugNest Media Folders is now active.', 'plugnest-media-folders' ),
+			esc_html__( 'Media can now be organized with folders and tags — file paths and URLs are never touched.', 'plugnest-media-folders' ),
 			esc_url( $manage ),
-			esc_html__( 'Open FolderNest', 'foldernest' ),
+			esc_html__( 'Open PlugNest Media Folders', 'plugnest-media-folders' ),
 			esc_url( $dismiss ),
-			esc_html__( 'Dismiss', 'foldernest' )
+			esc_html__( 'Dismiss', 'plugnest-media-folders' )
 		);
 	}
 }

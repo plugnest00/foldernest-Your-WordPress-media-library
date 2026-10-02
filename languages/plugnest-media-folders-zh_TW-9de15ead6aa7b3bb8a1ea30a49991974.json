@@ -1,0 +1,32 @@
+{
+    "translation-revision-date": "2026-10-02T13:05:40+00:00",
+    "generator": "PlugNest i18n-build",
+    "domain": "plugnest-media-folders",
+    "locale_data": {
+        "plugnest-media-folders": {
+            "": {
+                "domain": "plugnest-media-folders",
+                "lang": "zh_TW",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Load failed": [
+                "載入失敗"
+            ],
+            "Save failed": [
+                "儲存失敗"
+            ],
+            "Loading…": [
+                "載入中…"
+            ],
+            "No media is directly attached to this post (featured image included).": [
+                "此文章沒有直接附屬的媒體（含精選圖片）。"
+            ],
+            "— Unassigned —": [
+                "— 未分類 —"
+            ],
+            "Media folders": [
+                "媒體資料夾"
+            ]
+        }
+    }
+}

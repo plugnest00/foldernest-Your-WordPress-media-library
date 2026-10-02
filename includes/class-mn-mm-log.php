@@ -1,11 +1,11 @@
 <?php
 /**
- * FolderNest — 操作記錄與還原。
+ * PlugNest Media Folders — 操作記錄與還原。
  *
  * 批次操作最大的風險是「按下去就回不去了」。這裡為每一次批次操作
  * 留下完整的 before/after 快照，讓任何一次操作都能一鍵還原。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -107,15 +107,15 @@ class MN_MM_Log {
 		);
 
 		if ( ! $row ) {
-			return new WP_Error( 'not_found', __( 'Activity entry not found.', 'foldernest' ) );
+			return new WP_Error( 'not_found', __( 'Activity entry not found.', 'plugnest-media-folders' ) );
 		}
 		if ( (int) $row['undone'] === 1 ) {
-			return new WP_Error( 'already_undone', __( 'This action has already been undone.', 'foldernest' ) );
+			return new WP_Error( 'already_undone', __( 'This action has already been undone.', 'plugnest-media-folders' ) );
 		}
 
 		$data = json_decode( (string) $row['payload'], true );
 		if ( ! is_array( $data ) || empty( $data['undoable'] ) || empty( $data['items'] ) ) {
-			return new WP_Error( 'not_undoable', __( 'This action has no restorable snapshot (too many items, or the record is corrupted).', 'foldernest' ) );
+			return new WP_Error( 'not_undoable', __( 'This action has no restorable snapshot (too many items, or the record is corrupted).', 'plugnest-media-folders' ) );
 		}
 
 		$restored = 0;
@@ -206,12 +206,12 @@ class MN_MM_Log {
 	 */
 	public static function action_label( $action ) {
 		$map = array(
-			'assign_folder'  => __( 'Assign folder', 'foldernest' ),
-			'add_tag'        => __( 'Add tags', 'foldernest' ),
-			'remove_tag'     => __( 'Remove tags', 'foldernest' ),
-			'bulk_edit'      => __( 'Batch edit fields', 'foldernest' ),
-			'auto_classify'  => __( 'Auto-assign', 'foldernest' ),
-			'usage_scan'     => __( 'Usage scan', 'foldernest' ),
+			'assign_folder'  => __( 'Assign folder', 'plugnest-media-folders' ),
+			'add_tag'        => __( 'Add tags', 'plugnest-media-folders' ),
+			'remove_tag'     => __( 'Remove tags', 'plugnest-media-folders' ),
+			'bulk_edit'      => __( 'Batch edit fields', 'plugnest-media-folders' ),
+			'auto_classify'  => __( 'Auto-assign', 'plugnest-media-folders' ),
+			'usage_scan'     => __( 'Usage scan', 'plugnest-media-folders' ),
 		);
 		return isset( $map[ $action ] ) ? $map[ $action ] : $action;
 	}
@@ -224,9 +224,9 @@ class MN_MM_Log {
 	 */
 	private static function user_name( $user_id ) {
 		if ( $user_id <= 0 ) {
-			return __( 'System', 'foldernest' );
+			return __( 'System', 'plugnest-media-folders' );
 		}
 		$u = get_userdata( $user_id );
-		return $u ? $u->display_name : sprintf( __( 'User #%d', 'foldernest' ), $user_id );
+		return $u ? $u->display_name : sprintf( __( 'User #%d', 'plugnest-media-folders' ), $user_id );
 	}
 }

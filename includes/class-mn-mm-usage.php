@@ -1,6 +1,6 @@
 <?php
 /**
- * FolderNest — 使用狀態掃描。
+ * PlugNest Media Folders — 使用狀態掃描。
  *
  * 回答一個很實際的問題：「這個媒體到底還有沒有人在用？」
  *
@@ -11,7 +11,7 @@
  * ⚠️ 本模組只「標記」與「顯示」，永遠不會自動刪除任何媒體。
  *    刪除是不可逆的，必須由人看過之後自己決定。
  *
- * @package FolderNest
+ * @package PlugNest Media Folders
  */
 
 defined( 'ABSPATH' ) || exit;

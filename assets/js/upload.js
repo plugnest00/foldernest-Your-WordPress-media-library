@@ -1,5 +1,5 @@
 /**
- * FolderNest — 上傳時指定資料夾（前端）。
+ * PlugNest Media Folders — 上傳時指定資料夾（前端）。
  *
  * 「媒體 → 新增媒體」(media-new.php) 用的是核心的 plupload：
  * wp-includes/js/plupload/handlers.js 在 DOM ready 時呼叫全域的 uploader_init()，

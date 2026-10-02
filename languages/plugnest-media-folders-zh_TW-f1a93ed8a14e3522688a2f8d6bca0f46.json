@@ -1,0 +1,77 @@
+{
+    "translation-revision-date": "2026-10-02T13:05:40+00:00",
+    "generator": "PlugNest i18n-build",
+    "domain": "plugnest-media-folders",
+    "locale_data": {
+        "plugnest-media-folders": {
+            "": {
+                "domain": "plugnest-media-folders",
+                "lang": "zh_TW",
+                "plural-forms": "nplurals=1; plural=0;"
+            },
+            "Unused media is now filtered. Review it, then delete with \"Delete permanently\" in the bulk bar.": [
+                "已篩選出未使用媒體。確認後用批次列的「永久刪除」刪除。"
+            ],
+            "Will rescan all site references (about 10–30 seconds), then permanently delete all %d unused media.\nFiles will be removed. This cannot be undone!\n\nContinue?": [
+                "將先重新掃描全站引用（約 10–30 秒），再「永久刪除」全部 %d 個未被引用的媒體。\n檔案會一併移除，無法復原！\n\n確定繼續嗎？"
+            ],
+            "Rescanning site references…": [
+                "正在重新掃描全站引用…"
+            ],
+            "Rescanning site references… %1$d \/ %2$d": [
+                "正在重新掃描全站引用… %1$d \/ %2$d"
+            ],
+            "Loading…": [
+                "載入中…"
+            ],
+            "Great! No images are missing alt text.": [
+                "太好了！沒有缺替代文字的圖片。"
+            ],
+            "Alt text…": [
+                "替代文字…"
+            ],
+            "Load failed: %s": [
+                "載入失敗：%s"
+            ],
+            "Filled %d empty fields from filenames.": [
+                "已依檔名填入 %d 個空欄。"
+            ],
+            "Nothing to fill — every field already has text.": [
+                "沒有可填的欄位——每欄都已有文字。"
+            ],
+            "All fields restored to their original values.": [
+                "所有欄位已還原原值。"
+            ],
+            "No alt text was filled in.": [
+                "沒有填寫任何替代文字。"
+            ],
+            "Operation failed.": [
+                "操作失敗。"
+            ],
+            "Folder structure exported.": [
+                "已匯出資料夾結構。"
+            ],
+            "Export failed: %s": [
+                "匯出失敗：%s"
+            ],
+            "Paste the exported JSON first.": [
+                "請先貼上匯出的 JSON。"
+            ],
+            "Invalid JSON. Please check the content.": [
+                "JSON 格式錯誤，請確認內容。"
+            ],
+            "No other folder plugins with folder data were detected.": [
+                "沒有偵測到其他含資料夾資料的外掛。"
+            ],
+            "%d folders": [
+                "%d 個資料夾"
+            ],
+            "Import": [
+                "匯入結構"
+            ],
+            "Imported": [
+                "已匯入"
+            ]
+        }
+    }
+}
